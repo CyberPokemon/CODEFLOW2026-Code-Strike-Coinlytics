@@ -1,5 +1,6 @@
 package com.coinlytics.backend.service;
 
+import com.coinlytics.backend.model.UserDetailsPrinciple;
 import com.coinlytics.backend.model.Users;
 import com.coinlytics.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,6 @@ public class MyUserDetailsService implements UserDetailsService {
                 .orElseThrow(() ->
                         new UsernameNotFoundException("User Not Found"));
 
-        return new com.santanu.Spring_Security_Project.model.UserDetailsPrinciple(user);
+        return new UserDetailsPrinciple(user);
     }
 }
