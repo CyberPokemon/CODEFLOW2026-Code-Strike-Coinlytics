@@ -1,4 +1,4 @@
-package com.coinlytics.backend.error.customException;
+package com.coinlytics.backend.error;
 
 import java.time.LocalDateTime;
 
