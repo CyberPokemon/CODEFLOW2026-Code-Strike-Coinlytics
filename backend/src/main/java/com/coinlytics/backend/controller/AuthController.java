@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AuthController {
 
-    @Autowired
     private final AuthService authService;
 
     @PostMapping("/signup")

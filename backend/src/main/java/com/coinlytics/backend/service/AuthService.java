@@ -6,6 +6,7 @@ import com.coinlytics.backend.dto.SignupRequest;
 import com.coinlytics.backend.dto.SignupResponseDto;
 import com.coinlytics.backend.error.customException.UserAlreadyExistsException;
 import com.coinlytics.backend.error.customException.UserNotExistsException;
+import com.coinlytics.backend.model.Role;
 import com.coinlytics.backend.model.Users;
 import com.coinlytics.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,7 @@ public class AuthService {
         Users users=new Users();
         users.setName(request.getName());
         users.setEmail(request.getEmail());
-        users.setRole(request.getRole());
+        users.setRole(Role.USER);
         users.setPhoneNumber(request.getPhoneNumber());
         users.setPassword(passwordEncoder.encode(request.getPassword()));
         userRepository.save(users);
