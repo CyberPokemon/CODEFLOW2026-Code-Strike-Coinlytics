@@ -23,14 +23,13 @@ public class Users {
     @Column(unique = true, nullable = false)
     private String email;
 
-
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
     private String phoneNumber;
 
     @Enumerated(EnumType.STRING)
     private Role role;
-
 
 }
