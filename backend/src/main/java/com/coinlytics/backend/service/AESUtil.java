@@ -9,14 +9,9 @@ public class AESUtil {
     private static final String ALGORITHM = "AES";
 
     // 16 bytes = 128-bit AES key
-    private static final String SECRET =
-            "1234567890123456";
+    private static final String SECRET = "1234567890123456";
 
-    private static final SecretKey secretKey =
-            new SecretKeySpec(
-                    SECRET.getBytes(),
-                    ALGORITHM
-            );
+    private static final SecretKey secretKey = new SecretKeySpec(SECRET.getBytes(), ALGORITHM);
 
     public static byte[] encrypt(byte[] data)
             throws Exception {

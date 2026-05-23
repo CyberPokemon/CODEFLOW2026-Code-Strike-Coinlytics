@@ -20,28 +20,21 @@ public class FileService {
     private final UploadedFileRepository uploadedFileRepository;
     private final UserRepository userRepository;
 
-    private static final String UPLOAD_DIR =
-            "encrypted_uploads/";
+    private static final String UPLOAD_DIR = "encrypted_uploads/";
 
-    public String uploadCsv(MultipartFile file)
-            throws Exception {
+    public String uploadCsv(MultipartFile file) throws Exception {
 
         // Validate CSV
         if (!file.getOriginalFilename().endsWith(".csv")) {
-            throw new RuntimeException(
-                    "Only CSV files allowed."
-            );
+            throw new RuntimeException("Only CSV files allowed.");
         }
 
         // Get authenticated user email
-        String email =
-                SecurityContextHolder.getContext()
+        String email = SecurityContextHolder.getContext()
                         .getAuthentication()
                         .getName();
 
-        Users user = userRepository.findByEmail(email)
-                .orElseThrow(() ->
-                        new RuntimeException("User not found"));
+        Users user = userRepository.findByEmail(email).orElseThrow(() -> new RuntimeException("User not found"));
 
         // Create folder
         File directory = new File(UPLOAD_DIR);
@@ -54,24 +47,18 @@ public class FileService {
         byte[] fileBytes = file.getBytes();
 
         // Encrypt bytes
-        byte[] encryptedBytes =
-                AESUtil.encrypt(fileBytes);
+        byte[] encryptedBytes = AESUtil.encrypt(fileBytes);
 
         // Create encrypted filename
-        String encryptedFileName =
-                System.currentTimeMillis()
+        String encryptedFileName = System.currentTimeMillis()
                         + "_"
                         + file.getOriginalFilename()
                         + ".enc";
 
-        String path =
-                UPLOAD_DIR + encryptedFileName;
+        String path = UPLOAD_DIR + encryptedFileName;
 
         // Save encrypted file
-        Files.write(
-                new File(path).toPath(),
-                encryptedBytes
-        );
+        Files.write(new File(path).toPath(), encryptedBytes);
 
         // Save metadata
         UploadedFile uploadedFile =
