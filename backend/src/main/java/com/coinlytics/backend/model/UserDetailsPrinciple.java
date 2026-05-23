@@ -1,6 +1,5 @@
-package com.santanu.Spring_Security_Project.model;
+package com.coinlytics.backend.model;
 
-import com.coinlytics.backend.model.Users;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
