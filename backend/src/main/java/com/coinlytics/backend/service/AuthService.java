@@ -10,6 +10,7 @@ import com.coinlytics.backend.model.Role;
 import com.coinlytics.backend.model.Users;
 import com.coinlytics.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -17,6 +18,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AuthService {
+
+    @Value("${security.pepper}")
+    private String pepper;
 
     @Autowired
     private UserRepository userRepository;
@@ -40,7 +44,7 @@ public class AuthService {
         users.setEmail(request.getEmail());
         users.setRole(Role.USER);
         users.setPhoneNumber(request.getPhoneNumber());
-        users.setPassword(passwordEncoder.encode(request.getPassword()));
+        users.setPassword(passwordEncoder.encode(request.getPassword()+pepper));
         userRepository.save(users);
         return new SignupResponseDto(request.getEmail(),jwtService.generateToken(request.getEmail()));
     }
@@ -56,7 +60,7 @@ public class AuthService {
         }
 
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-                        request.getEmail(),request.getPassword()));
+                        request.getEmail(),request.getPassword()+pepper));
         return new LoginResponseDto(request.getEmail(),jwtService.generateToken(request.getEmail()));
     }
 }
