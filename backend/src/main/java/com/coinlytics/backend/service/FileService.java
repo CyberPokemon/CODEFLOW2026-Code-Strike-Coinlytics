@@ -1,5 +1,6 @@
 package com.coinlytics.backend.service;
 
+import com.coinlytics.backend.dto.FileResponseDto;
 import com.coinlytics.backend.dto.TransactionResponseDto;
 import com.coinlytics.backend.model.TransactionRecord;
 import com.coinlytics.backend.model.UploadedFile;
@@ -408,4 +409,28 @@ public class FileService {
     }
 
 
+    public List<FileResponseDto> getFiles() {
+
+        String email = SecurityContextHolder
+                .getContext()
+                .getAuthentication()
+                .getName();
+
+        Users user = userRepository.findByEmail(email)
+                .orElseThrow();
+
+        List<UploadedFile> files =
+                uploadedFileRepository.findByUserId(user.getId());
+
+        return files.stream()
+                .map(file ->
+                        FileResponseDto.builder()
+                                .fileNo(file.getFileNo())
+                                .originalFilename(file.getOriginalFilename())
+                                .uploadedAt(file.getUploadedAt())
+                                .encryptedExpiryAt(file.getEncryptedExpiryAt())
+                                .build()
+                )
+                .toList();
+    }
 }
