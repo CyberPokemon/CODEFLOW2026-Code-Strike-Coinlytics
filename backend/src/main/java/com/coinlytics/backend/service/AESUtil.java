@@ -1,35 +1,77 @@
 package com.coinlytics.backend.service;
 
+import org.springframework.stereotype.Component;
+
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
+import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.ByteArrayOutputStream;
+import java.security.SecureRandom;
+import java.util.Arrays;
 
+@Component
 public class AESUtil {
 
-    private static final String ALGORITHM = "AES";
+    private static final String AES = "AES/GCM/NoPadding";
 
-    // 16 bytes = 128-bit AES key
-    private static final String SECRET = "1234567890123456";
+    private static final byte[] KEY =
+            "12345678901234567890123456789012"
+                    .getBytes();
 
-    private static final SecretKey secretKey = new SecretKeySpec(SECRET.getBytes(), ALGORITHM);
+    public byte[] encrypt(byte[] data) throws Exception {
 
-    public static byte[] encrypt(byte[] data)
-            throws Exception {
+        Cipher cipher = Cipher.getInstance(AES);
 
-        Cipher cipher = Cipher.getInstance(ALGORITHM);
+        SecretKeySpec keySpec =
+                new SecretKeySpec(KEY, "AES");
 
-        cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+        byte[] iv = new byte[12];
 
-        return cipher.doFinal(data);
+        SecureRandom random = new SecureRandom();
+
+        random.nextBytes(iv);
+
+        GCMParameterSpec spec =
+                new GCMParameterSpec(128, iv);
+
+        cipher.init(Cipher.ENCRYPT_MODE, keySpec, spec);
+
+        byte[] encrypted = cipher.doFinal(data);
+
+        ByteArrayOutputStream outputStream =
+                new ByteArrayOutputStream();
+
+        outputStream.write(iv);
+
+        outputStream.write(encrypted);
+
+        return outputStream.toByteArray();
     }
 
-    public static byte[] decrypt(byte[] encryptedData)
+    public byte[] decrypt(byte[] encryptedData)
             throws Exception {
 
-        Cipher cipher = Cipher.getInstance(ALGORITHM);
+        byte[] iv =
+                Arrays.copyOfRange(encryptedData, 0, 12);
 
-        cipher.init(Cipher.DECRYPT_MODE, secretKey);
+        byte[] actualData =
+                Arrays.copyOfRange(
+                        encryptedData,
+                        12,
+                        encryptedData.length
+                );
 
-        return cipher.doFinal(encryptedData);
+        Cipher cipher = Cipher.getInstance(AES);
+
+        SecretKeySpec keySpec =
+                new SecretKeySpec(KEY, "AES");
+
+        GCMParameterSpec spec =
+                new GCMParameterSpec(128, iv);
+
+        cipher.init(Cipher.DECRYPT_MODE, keySpec, spec);
+
+        return cipher.doFinal(actualData);
     }
 }
