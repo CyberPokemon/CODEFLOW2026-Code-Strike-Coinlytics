@@ -46,7 +46,7 @@ public class AuthService {
         users.setPhoneNumber(request.getPhoneNumber());
         users.setPassword(passwordEncoder.encode(request.getPassword()+pepper));
         userRepository.save(users);
-        return new SignupResponseDto(request.getEmail(),jwtService.generateToken(request.getEmail()));
+        return new SignupResponseDto(users.getName(),request.getEmail(),jwtService.generateToken(request.getEmail()));
     }
 
     public LoginResponseDto login(LoginRequest request) {
@@ -61,6 +61,6 @@ public class AuthService {
 
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                         request.getEmail(),request.getPassword()+pepper));
-        return new LoginResponseDto(request.getEmail(),jwtService.generateToken(request.getEmail()));
+        return new LoginResponseDto(users.getName(),request.getEmail(),jwtService.generateToken(request.getEmail()));
     }
 }
