@@ -17,16 +17,21 @@ public class FileController {
     private final FileService fileService;
 
     @PostMapping("/upload")
-    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<?> upload(
+            @RequestParam("file")
+            MultipartFile file
+    ) {
 
         try {
 
-            return ResponseEntity.ok(fileService.uploadCsv(file));
+            return ResponseEntity.ok(
+                    fileService.upload(file)
+            );
 
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
 
-            return ResponseEntity.internalServerError().body(e.getMessage());
+            return ResponseEntity.badRequest()
+                    .body(e.getMessage());
         }
     }
 }
