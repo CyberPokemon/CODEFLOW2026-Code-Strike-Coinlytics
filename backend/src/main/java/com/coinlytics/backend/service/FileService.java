@@ -7,6 +7,8 @@ import com.coinlytics.backend.model.Users;
 import com.coinlytics.backend.repository.TransactionRepository;
 import com.coinlytics.backend.repository.UploadedFileRepository;
 import com.coinlytics.backend.repository.UserRepository;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.csv.CSVFormat;
@@ -23,6 +25,7 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -45,18 +48,18 @@ public class FileService {
     private static final String DIRECTORY =
             "encrypted_files/";
 
-    @Transactional
-    public String upload(MultipartFile file)
-            throws Exception {
+    @PersistenceContext
+    private EntityManager entityManager;
 
-        String email =
-                SecurityContextHolder
+    @Transactional
+    public String upload(MultipartFile file) throws Exception {
+
+        String email = SecurityContextHolder
                         .getContext()
                         .getAuthentication()
                         .getName();
 
-        Users user =
-                userRepository.findByEmail(email)
+        Users user = userRepository.findByEmail(email)
                         .orElseThrow();
 
         byte[] originalBytes = file.getBytes();
@@ -69,8 +72,7 @@ public class FileService {
             dir.mkdirs();
         }
 
-        String path =
-                DIRECTORY
+        String path = DIRECTORY
                         + System.currentTimeMillis()
                         + ".enc";
 
@@ -81,8 +83,8 @@ public class FileService {
                         .originalFilename(file.getOriginalFilename())
                         .encryptedPath(path)
                         .uploadedAt(LocalDateTime.now())
-                        .sqlExpiryAt(LocalDateTime.now().plusMinutes(30))
-                        .encryptedExpiryAt(LocalDateTime.now().plusHours(1))
+                        .sqlExpiryAt(LocalDateTime.now().plusMinutes(1))
+                        .encryptedExpiryAt(LocalDateTime.now().plusMinutes(2))
                         .sqlPresent(true)
                         .filePresent(true)
                         .user(user)
@@ -90,7 +92,6 @@ public class FileService {
 
         UploadedFile savedFile = uploadedFileRepository.save(uploadedFile);
 
-        /* IMPORTANT */
         validateAndSaveData(
                 originalBytes,
                 user,
@@ -113,21 +114,17 @@ public class FileService {
                         )
                 );
 
-        CSVParser parser =
-                CSVFormat.DEFAULT
+        CSVParser parser = CSVFormat.DEFAULT
                         .withFirstRecordAsHeader()
                         .parse(reader);
 
-        Map<String, Integer> headers =
-                parser.getHeaderMap();
+        Map<String, Integer> headers = parser.getHeaderMap();
 
-        Map<String, String> normalized =
-                new HashMap<>();
+        Map<String, String> normalized = new HashMap<>();
 
         for(String header : headers.keySet()) {
 
-            String mapped =
-                    csvHeaderMapper.normalize(header);
+            String mapped = csvHeaderMapper.normalize(header);
 
             if(mapped != null) {
                 normalized.put(mapped, header);
@@ -150,6 +147,8 @@ public class FileService {
         }
 
         long slNo = 1;
+
+        List<TransactionRecord> batch = new ArrayList<>();
 
         for(CSVRecord record : parser) {
 
@@ -193,7 +192,20 @@ public class FileService {
                             .user(user)
                             .build();
 
-            transactionRepository.save(txn);
+            batch.add(txn);
+
+            if(batch.size() == 1000) {
+                transactionRepository.saveAll(batch);
+
+                entityManager.flush();
+                entityManager.clear();
+
+                batch.clear();
+            }
+        }
+
+        if(!batch.isEmpty()) {
+            transactionRepository.saveAll(batch);
         }
     }
 
@@ -213,47 +225,29 @@ public class FileService {
             Long fileId
     ) throws Exception {
 
-        String email =
-                SecurityContextHolder
+        String email = SecurityContextHolder
                         .getContext()
                         .getAuthentication()
                         .getName();
 
-        Users user =
-                userRepository.findByEmail(email)
-                        .orElseThrow();
+        Users user = userRepository.findByEmail(email).orElseThrow();
 
-        UploadedFile uploadedFile =
-                uploadedFileRepository.findById(fileId)
-                        .orElseThrow(() ->
-                                new RuntimeException(
-                                        "File not found"
-                                )
-                        );
+        UploadedFile uploadedFile = uploadedFileRepository.findById(fileId).orElseThrow(() ->new RuntimeException("File not found"));
 
         // OWNERSHIP VALIDATION
-        if(!uploadedFile.getUser()
-                .getId()
-                .equals(user.getId())) {
+        if(!uploadedFile.getUser().getId().equals(user.getId())) {
 
-            throw new RuntimeException(
-                    "Unauthorized access"
-            );
+            throw new RuntimeException("Unauthorized access");
         }
 
         // CASE 1 → SQL DATA EXISTS
         if(uploadedFile.isSqlPresent()) {
 
-            List<TransactionRecord> records =
-                    transactionRepository.findByTableId(fileId);
+            List<TransactionRecord> records = transactionRepository.findByTableId(fileId);
 
-            uploadedFile.setSqlExpiryAt(
-                    LocalDateTime.now().plusMinutes(30)
-            );
+            uploadedFile.setSqlExpiryAt(LocalDateTime.now().plusMinutes(30));
 
-            uploadedFile.setEncryptedExpiryAt(
-                    LocalDateTime.now().plusHours(1)
-            );
+            uploadedFile.setEncryptedExpiryAt(LocalDateTime.now().plusHours(1));
 
             uploadedFileRepository.save(uploadedFile);
 
@@ -263,73 +257,43 @@ public class FileService {
         // CASE 2 → SQL EXPIRED BUT FILE EXISTS
         if(uploadedFile.isFilePresent()) {
 
-            byte[] encryptedBytes =
-                    Files.readAllBytes(
-                            Path.of(
-                                    uploadedFile.getEncryptedPath()
-                            )
-                    );
+            byte[] encryptedBytes = Files.readAllBytes(Path.of(uploadedFile.getEncryptedPath()));
 
-            byte[] decryptedBytes =
-                    aesUtil.decrypt(encryptedBytes);
+            byte[] decryptedBytes = aesUtil.decrypt(encryptedBytes);
 
-            rebuildTransactions(
-                    decryptedBytes,
-                    uploadedFile,
-                    user
-            );
+            rebuildTransactions(decryptedBytes, uploadedFile, user);
 
             uploadedFile.setSqlPresent(true);
 
-            uploadedFile.setSqlExpiryAt(
-                    LocalDateTime.now().plusMinutes(30)
-            );
+            uploadedFile.setSqlExpiryAt(LocalDateTime.now().plusMinutes(30));
 
-            uploadedFile.setEncryptedExpiryAt(
-                    LocalDateTime.now().plusHours(1)
-            );
+            uploadedFile.setEncryptedExpiryAt(LocalDateTime.now().plusHours(1));
 
             uploadedFileRepository.save(uploadedFile);
 
-            List<TransactionRecord> records =
-                    transactionRepository.findByTableId(fileId);
+            List<TransactionRecord> records = transactionRepository.findByTableId(fileId);
 
             return mapToDto(records);
         }
 
-        throw new RuntimeException(
-                "Data expired permanently"
-        );
+        throw new RuntimeException("Data expired permanently");
     }
 
-    private void rebuildTransactions(
-            byte[] bytes,
-            UploadedFile uploadedFile,
-            Users user
-    ) throws Exception {
+    private void rebuildTransactions(byte[] bytes, UploadedFile uploadedFile, Users user) throws Exception {
 
-        BufferedReader reader =
-                new BufferedReader(
-                        new InputStreamReader(
-                                new ByteArrayInputStream(bytes)
-                        )
-                );
+        BufferedReader reader =new BufferedReader(new InputStreamReader(new ByteArrayInputStream(bytes)));
 
-        CSVParser parser =
-                CSVFormat.DEFAULT
+        CSVParser parser = CSVFormat.DEFAULT
                         .withFirstRecordAsHeader()
                         .parse(reader);
 
-        Map<String, Integer> headers =
-                parser.getHeaderMap();
+        Map<String, Integer> headers = parser.getHeaderMap();
 
-        Map<String, String> normalized =
-                new HashMap<>();
+        Map<String, String> normalized = new HashMap<>();
 
         for(String header : headers.keySet()) {
 
-            String mapped =
-                    csvHeaderMapper.normalize(header);
+            String mapped = csvHeaderMapper.normalize(header);
 
             if(mapped != null) {
                 normalized.put(mapped, header);
@@ -340,8 +304,7 @@ public class FileService {
 
         for(CSVRecord record : parser) {
 
-            TransactionRecord txn =
-                    TransactionRecord.builder()
+            TransactionRecord txn = TransactionRecord.builder()
                             .tableId(uploadedFile.getFileNo())
                             .slNo(slNo++)
                             .txnDate(
@@ -406,14 +369,12 @@ public class FileService {
     public String deleteFile(Long fileId)
             throws Exception {
 
-        String email =
-                SecurityContextHolder
+        String email = SecurityContextHolder
                         .getContext()
                         .getAuthentication()
                         .getName();
 
-        Users user =
-                userRepository.findByEmail(email)
+        Users user = userRepository.findByEmail(email)
                         .orElseThrow();
 
         UploadedFile uploadedFile =
@@ -425,21 +386,16 @@ public class FileService {
                         );
 
         // OWNERSHIP CHECK
-        if(!uploadedFile.getUser()
-                .getId()
-                .equals(user.getId())) {
+        if(!uploadedFile.getUser().getId().equals(user.getId())) {
 
-            throw new RuntimeException(
-                    "Unauthorized"
-            );
+            throw new RuntimeException("Unauthorized");
         }
 
         // DELETE SQL DATA
         transactionRepository.deleteByTableId(fileId);
 
         // DELETE ENCRYPTED FILE
-        File encryptedFile =
-                new File(uploadedFile.getEncryptedPath());
+        File encryptedFile = new File(uploadedFile.getEncryptedPath());
 
         if(encryptedFile.exists()) {
             encryptedFile.delete();

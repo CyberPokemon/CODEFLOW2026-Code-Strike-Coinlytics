@@ -52,11 +52,6 @@ public class CsvHeaderMapper {
             return null;
         }
 
-        return mappings.getOrDefault(
-                column
-                        .trim()
-                        .toLowerCase(),
-                null
-        );
+        return mappings.getOrDefault(column.trim().toLowerCase(), null);
     }
 }

@@ -6,6 +6,7 @@ import com.coinlytics.backend.repository.UploadedFileRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.File;
 import java.time.LocalDateTime;
@@ -20,31 +21,27 @@ public class CleanupService {
     private final TransactionRepository transactionRepository;
 
     @Scheduled(fixedRate = 60000)
+    @Transactional
     public void cleanup() {
 
-        List<UploadedFile> files =
-                uploadedFileRepository.findAll();
+        List<UploadedFile> files = uploadedFileRepository.findAll();
 
         LocalDateTime now = LocalDateTime.now();
 
         for(UploadedFile file : files) {
 
-            if(file.isSqlPresent() &&
-                    now.isAfter(file.getSqlExpiryAt())) {
+            if(file.isSqlPresent() && now.isAfter(file.getSqlExpiryAt())) {
 
-                transactionRepository.deleteByTableId(
-                        file.getFileNo()
-                );
+                transactionRepository.deleteByTableId(file.getFileNo());
 
                 file.setSqlPresent(false);
+                uploadedFileRepository.save(file);
+
             }
 
-            if(file.isFilePresent() &&
-                    now.isAfter(file.getEncryptedExpiryAt())) {
+            if(file.isFilePresent() && now.isAfter(file.getEncryptedExpiryAt())) {
 
-                new File(
-                        file.getEncryptedPath()
-                ).delete();
+                new File(file.getEncryptedPath()).delete();
 
                 file.setFilePresent(false);
 
