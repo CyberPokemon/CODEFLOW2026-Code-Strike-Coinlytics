@@ -61,13 +61,7 @@ public class FileService {
 
         byte[] originalBytes = file.getBytes();
 
-        validateAndSaveData(
-                originalBytes,
-                user
-        );
-
-        byte[] encrypted =
-                aesUtil.encrypt(originalBytes);
+        byte[] encrypted = aesUtil.encrypt(originalBytes);
 
         File dir = new File(DIRECTORY);
 
@@ -84,32 +78,32 @@ public class FileService {
 
         UploadedFile uploadedFile =
                 UploadedFile.builder()
-                        .originalFilename(
-                                file.getOriginalFilename()
-                        )
+                        .originalFilename(file.getOriginalFilename())
                         .encryptedPath(path)
                         .uploadedAt(LocalDateTime.now())
-                        .sqlExpiryAt(
-                                LocalDateTime.now()
-                                        .plusMinutes(30)
-                        )
-                        .encryptedExpiryAt(
-                                LocalDateTime.now()
-                                        .plusHours(1)
-                        )
+                        .sqlExpiryAt(LocalDateTime.now().plusMinutes(30))
+                        .encryptedExpiryAt(LocalDateTime.now().plusHours(1))
                         .sqlPresent(true)
                         .filePresent(true)
                         .user(user)
                         .build();
 
-        uploadedFileRepository.save(uploadedFile);
+        UploadedFile savedFile = uploadedFileRepository.save(uploadedFile);
+
+        /* IMPORTANT */
+        validateAndSaveData(
+                originalBytes,
+                user,
+                savedFile.getFileNo()
+        );
 
         return "File Uploaded Successfully";
     }
 
     private void validateAndSaveData(
             byte[] bytes,
-            Users user
+            Users user,
+            Long tableId
     ) throws Exception {
 
         BufferedReader reader =
@@ -161,6 +155,7 @@ public class FileService {
 
             TransactionRecord txn =
                     TransactionRecord.builder()
+                            .tableId(tableId)
                             .slNo(slNo++)
                             .txnDate(
                                     LocalDate.parse(
