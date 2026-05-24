@@ -14,43 +14,20 @@ from sklearn.pipeline import Pipeline
 ####################################################
 
 BANKING_WORDS = {
-    "upi",
-    "imps",
-    "neft",
-    "rtgs",
-    "txn",
-    "txnid",
-    "payment",
-    "transfer",
-    "ref",
-    "dr",
-    "cr",
-    "debit",
-    "credit",
-    "limited",
-    "ltd",
-    "india", # Added to prevent the model from learning "india" as a feature
-    "nan",   # Added to catch pandas NaN string conversions
-    "inb"
+    "upi", "imps", "neft", "rtgs", "txn", "txnid", "payment", 
+    "transfer", "ref", "dr", "cr", "debit", "credit", "limited", 
+    "ltd", "india", "nan", "inb"
 }
 
 def clean_text(text):
-    # Handle missing/NaN values safely
     if pd.isna(text):
         return ""
 
     text = str(text).lower()
-
-    # remove numbers
     text = re.sub(r"\d+", " ", text)
-
-    # replace special chars
     text = re.sub(r"[^a-zA-Z ]", " ", text)
-
-    # tokenize
+    
     words = text.split()
-
-    # remove banking words
     words = [w for w in words if w not in BANKING_WORDS]
 
     return " ".join(words)
@@ -94,6 +71,7 @@ investment_merchants = [
     "coin", "kuvera", "indmoney", "paytm money", "epfo", 
     "ppf", "sip", "icici direct", "hdfc sec", "sbi mutual fund"
 ]
+
 ####################################################
 # DATA AUGMENTATION (WITH NOISE)
 ####################################################
@@ -111,7 +89,6 @@ PATTERNS = [
 
 def generate_samples(merchant_list, category):
     rows = []
-
     for merchant in merchant_list:
         for pattern in PATTERNS:
             # 1. Standard pattern
@@ -128,12 +105,9 @@ def generate_samples(merchant_list, category):
                 "text": noisy_narration,
                 "category": category
             })
-
     return rows
 
-
 training_data = []
-
 training_data.extend(generate_samples(food_merchants, "Food"))
 training_data.extend(generate_samples(travel_merchants, "Travel"))
 training_data.extend(generate_samples(shopping_merchants, "Shopping"))
@@ -142,7 +116,12 @@ training_data.extend(generate_samples(income_merchants, "Income"))
 training_data.extend(generate_samples(investment_merchants, "Investment"))
 
 train_df = pd.DataFrame(training_data)
-train_df.to_csv("train/train_wo_cleaning.csv",index=False)
+
+# Create train directory if it doesn't exist
+os.makedirs("train", exist_ok=True)
+
+train_df.to_csv("train/train_wo_cleaning.csv", index=False)
+print("Saved raw training data to train/train_wo_cleaning.csv")
 
 ####################################################
 # CLEAN TRAINING TEXT
@@ -152,11 +131,14 @@ train_df["clean_text"] = train_df["text"].apply(clean_text)
 
 # Drop any rows where cleaning resulted in an empty string to prevent bad training data
 train_df = train_df[train_df["clean_text"] != ""]
-train_df.to_csv("train/train_with_cleaning.csv",index=False)
+train_df.to_csv("train/train_with_cleaning.csv", index=False)
+print("Saved cleaned training data to train/train_with_cleaning.csv")
 
 ####################################################
 # 3. TRAIN TFIDF + LOGISTIC REGRESSION
 ####################################################
+
+print("Starting model training...")
 
 model = Pipeline(
     [
@@ -171,7 +153,7 @@ model = Pipeline(
             "clf",
             LogisticRegression(
                 max_iter=1000,
-                class_weight="balanced" # Added to handle unequal merchant counts
+                class_weight="balanced"
             )
         )
     ]
@@ -182,93 +164,15 @@ model.fit(
     train_df["category"]
 )
 
-print("Training completed")
+print("Training completed successfully.")
 
 ####################################################
-# 4. READ TRANSACTION CSV
-####################################################
-
-try:
-    transactions_df = pd.read_csv("test/transactions.csv")
-except FileNotFoundError:
-    print("Error: transactions.csv not found. Please ensure the file is in the same directory.")
-    exit()
-
-transactions_df["clean_text"] = (
-    transactions_df["transaction_statement"]
-    .apply(clean_text)
-)
-
-####################################################
-# 5. PREDICT CATEGORY
-####################################################
-
-# We only predict on rows that actually have text left after cleaning
-transactions_df["predicted_category"] = model.predict(
-    transactions_df["clean_text"]
-)
-
-####################################################
-# OPTIONAL CONFIDENCE SCORE
-####################################################
-
-probs = model.predict_proba(
-    transactions_df["clean_text"]
-)
-
-transactions_df["confidence"] = probs.max(axis=1)
-
-####################################################
-# HANDLE LOW CONFIDENCE & EMPTY STRINGS
-####################################################
-
-# Override prediction to "Other" if confidence is low OR if the text was completely stripped
-transactions_df.loc[
-    (transactions_df["confidence"] < 0.40) | (transactions_df["clean_text"] == ""),
-    "predicted_category"
-] = "Other"
-
-# Force confidence to 0 for empty strings so reports remain accurate
-transactions_df.loc[
-    transactions_df["clean_text"] == "", 
-    "confidence"
-] = 0.0
-
-####################################################
-# 6. FINAL OUTPUT DATAFRAME
-####################################################
-
-result_df = transactions_df[
-    [
-        "sl_no",
-        "transaction_statement",
-        "predicted_category",
-        "confidence"
-    ]
-]
-
-print(result_df.head())
-
-####################################################
-# SAVE OUTPUT
-####################################################
-
-result_df.to_csv(
-    "test/categorized_transactions.csv",
-    index=False
-)
-
-print("Saved categorized_transactions.csv")
-
-####################################################
-# SAVE MODEL
+# 4. SAVE MODEL
 ####################################################
 
 # Create model folder if it doesn't exist
 model_folder = "model"
-if not os.path.exists(model_folder):
-    os.makedirs(model_folder)
-    print(f"Created {model_folder} folder")
+os.makedirs(model_folder, exist_ok=True)
 
 # Save model in joblib format
 joblib_path = os.path.join(model_folder, "transaction_categorizer.joblib")
