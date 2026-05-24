@@ -49,4 +49,22 @@ public class FileController {
                     .body(e.getMessage());
         }
     }
+
+    @DeleteMapping("/{fileId}")
+    public ResponseEntity<?> deleteFile(
+            @PathVariable Long fileId
+    ) {
+
+        try {
+
+            return ResponseEntity.ok(
+                    fileService.deleteFile(fileId)
+            );
+
+        } catch (Exception e) {
+
+            return ResponseEntity.badRequest()
+                    .body(e.getMessage());
+        }
+    }
 }

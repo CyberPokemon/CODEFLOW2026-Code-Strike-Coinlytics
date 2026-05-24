@@ -405,4 +405,55 @@ public class FileService {
                 )
                 .toList();
     }
+
+    @Transactional
+    public String deleteFile(Long fileId)
+            throws Exception {
+
+        String email =
+                SecurityContextHolder
+                        .getContext()
+                        .getAuthentication()
+                        .getName();
+
+        Users user =
+                userRepository.findByEmail(email)
+                        .orElseThrow();
+
+        UploadedFile uploadedFile =
+                uploadedFileRepository.findById(fileId)
+                        .orElseThrow(() ->
+                                new RuntimeException(
+                                        "File not found"
+                                )
+                        );
+
+        // OWNERSHIP CHECK
+        if(!uploadedFile.getUser()
+                .getId()
+                .equals(user.getId())) {
+
+            throw new RuntimeException(
+                    "Unauthorized"
+            );
+        }
+
+        // DELETE SQL DATA
+        transactionRepository.deleteByTableId(fileId);
+
+        // DELETE ENCRYPTED FILE
+        File encryptedFile =
+                new File(uploadedFile.getEncryptedPath());
+
+        if(encryptedFile.exists()) {
+            encryptedFile.delete();
+        }
+
+        // DELETE METADATA
+        uploadedFileRepository.delete(uploadedFile);
+
+        return "File deleted successfully";
+    }
+
+
 }
