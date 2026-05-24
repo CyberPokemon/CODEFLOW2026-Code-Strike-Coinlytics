@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LoginResponseDto {
-    String jwt;
+
     private String username;
+    private String jwt;
 }
