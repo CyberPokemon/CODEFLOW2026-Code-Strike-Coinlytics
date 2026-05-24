@@ -24,31 +24,24 @@ public class CleanupService {
     @Transactional
     public void cleanup() {
 
-        List<UploadedFile> files =
-                uploadedFileRepository.findAll();
+        List<UploadedFile> files = uploadedFileRepository.findAll();
 
         LocalDateTime now = LocalDateTime.now();
 
         for(UploadedFile file : files) {
 
-            if(file.isSqlPresent() &&
-                    now.isAfter(file.getSqlExpiryAt())) {
+            if(file.isSqlPresent() && now.isAfter(file.getSqlExpiryAt())) {
 
-                transactionRepository.deleteByTableId(
-                        file.getFileNo()
-                );
+                transactionRepository.deleteByTableId(file.getFileNo());
 
                 file.setSqlPresent(false);
                 uploadedFileRepository.save(file);
 
             }
 
-            if(file.isFilePresent() &&
-                    now.isAfter(file.getEncryptedExpiryAt())) {
+            if(file.isFilePresent() && now.isAfter(file.getEncryptedExpiryAt())) {
 
-                new File(
-                        file.getEncryptedPath()
-                ).delete();
+                new File(file.getEncryptedPath()).delete();
 
                 file.setFilePresent(false);
 

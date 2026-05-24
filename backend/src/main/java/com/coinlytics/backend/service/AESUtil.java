@@ -15,16 +15,13 @@ public class AESUtil {
 
     private static final String AES = "AES/GCM/NoPadding";
 
-    private static final byte[] KEY =
-            "12345678901234567890123456789012"
-                    .getBytes();
+    private static final byte[] KEY = "12345678901234567890123456789012".getBytes();
 
     public byte[] encrypt(byte[] data) throws Exception {
 
         Cipher cipher = Cipher.getInstance(AES);
 
-        SecretKeySpec keySpec =
-                new SecretKeySpec(KEY, "AES");
+        SecretKeySpec keySpec = new SecretKeySpec(KEY, "AES");
 
         byte[] iv = new byte[12];
 
@@ -32,15 +29,13 @@ public class AESUtil {
 
         random.nextBytes(iv);
 
-        GCMParameterSpec spec =
-                new GCMParameterSpec(128, iv);
+        GCMParameterSpec spec = new GCMParameterSpec(128, iv);
 
         cipher.init(Cipher.ENCRYPT_MODE, keySpec, spec);
 
         byte[] encrypted = cipher.doFinal(data);
 
-        ByteArrayOutputStream outputStream =
-                new ByteArrayOutputStream();
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
         outputStream.write(iv);
 
@@ -49,26 +44,21 @@ public class AESUtil {
         return outputStream.toByteArray();
     }
 
-    public byte[] decrypt(byte[] encryptedData)
-            throws Exception {
+    public byte[] decrypt(byte[] encryptedData) throws Exception {
 
-        byte[] iv =
-                Arrays.copyOfRange(encryptedData, 0, 12);
+        byte[] iv = Arrays.copyOfRange(encryptedData, 0, 12);
 
-        byte[] actualData =
-                Arrays.copyOfRange(
-                        encryptedData,
-                        12,
-                        encryptedData.length
-                );
+        byte[] actualData = Arrays.copyOfRange(
+                encryptedData,
+                12,
+                encryptedData.length
+        );
 
         Cipher cipher = Cipher.getInstance(AES);
 
-        SecretKeySpec keySpec =
-                new SecretKeySpec(KEY, "AES");
+        SecretKeySpec keySpec = new SecretKeySpec(KEY, "AES");
 
-        GCMParameterSpec spec =
-                new GCMParameterSpec(128, iv);
+        GCMParameterSpec spec = new GCMParameterSpec(128, iv);
 
         cipher.init(Cipher.DECRYPT_MODE, keySpec, spec);
 

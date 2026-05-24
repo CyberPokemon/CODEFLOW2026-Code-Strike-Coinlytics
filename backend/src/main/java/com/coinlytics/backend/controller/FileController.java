@@ -14,57 +14,43 @@ public class FileController {
     private final FileService fileService;
 
     @PostMapping("/upload")
-    public ResponseEntity<?> upload(
-            @RequestParam("file")
-            MultipartFile file
-    ) {
+    public ResponseEntity<?> upload(@RequestParam("file") MultipartFile file) {
 
         try {
 
-            return ResponseEntity.ok(
-                    fileService.upload(file)
-            );
+            return ResponseEntity.ok(fileService.upload(file));
 
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
 
-            return ResponseEntity.badRequest()
-                    .body(e.getMessage());
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 
     @GetMapping("/{fileId}")
-    public ResponseEntity<?> getFile(
-            @PathVariable Long fileId
-    ) {
+    public ResponseEntity<?> getFile(@PathVariable Long fileId) {
 
         try {
 
-            return ResponseEntity.ok(
-                    fileService.getFileData(fileId)
-            );
+            return ResponseEntity.ok(fileService.getFileData(fileId));
 
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
 
-            return ResponseEntity.badRequest()
-                    .body(e.getMessage());
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 
     @DeleteMapping("/{fileId}")
-    public ResponseEntity<?> deleteFile(
-            @PathVariable Long fileId
-    ) {
+    public ResponseEntity<?> deleteFile(@PathVariable Long fileId) {
 
         try {
 
-            return ResponseEntity.ok(
-                    fileService.deleteFile(fileId)
-            );
+            return ResponseEntity.ok(fileService.deleteFile(fileId));
 
         } catch (Exception e) {
 
-            return ResponseEntity.badRequest()
-                    .body(e.getMessage());
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 }
