@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coinlytics — AI Financial Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/dashboard2.css" />
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <div>
+        <div class="logo-text">Coinlytics</div>
+        <div class="logo-sub">AI Intelligence</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item active" href="#"><i data-icon="grid"></i><span>Dashboard</span></a>
+      <a class="nav-item" href="#uploads"><i data-icon="upload"></i><span>Uploads</span></a>
+      <a class="nav-item" href="#analytics"><i data-icon="chart"></i><span>Analytics</span></a>
+      <a class="nav-item" href="#ai"><i data-icon="spark"></i><span>AI Insights</span></a>
+      <a class="nav-item" href="#security"><i data-icon="shield"></i><span>Security</span></a>
+      <a class="nav-item" href="#"><i data-icon="cog"></i><span>Settings</span></a>
+      <a class="nav-item" href="#"><i data-icon="user"></i><span>Profile</span></a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <a class="nav-item logout" href="homepage1.html"><i data-icon="logout"></i><span>Logout</span></a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- HEADER -->
+    <header class="topbar glass">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="welcome">
+        <h1>Welcome back, Soumi <span class="wave">👋</span></h1>
+        <p>Here's your encrypted financial intelligence overview.</p>
+      </div>
+      <div class="topbar-actions">
+        <div class="search">
+          <i data-icon="search"></i>
+          <input type="text" placeholder="Search statements, transactions, insights…" />
+          <span class="kbd">⌘K</span>
+        </div>
+        <div class="badge secure">
+          <i data-icon="lock"></i><span>AES-256 Protected</span>
+        </div>
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+        <div class="avatar">
+          <span>SM</span>
+        </div>
+      </div>
+    </header>
+
+    <!--
+    <section class="stats">
+      <div class="stat-card glass">
+        <div class="stat-head">
+          <div class="stat-icon cyan"><i data-icon="file"></i></div>
+          <span class="trend up">+12.4%</span>
+        </div>
+        <div class="stat-value" data-count="1284">0</div>
+        <div class="stat-label">Statements Uploaded</div>
+        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,22 12,18 24,20 36,12 48,15 60,8 72,11 84,5 100,9" fill="none" stroke="url(#g1)" stroke-width="2"/><defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#14f195"/></linearGradient></defs></svg>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-head">
+          <div class="stat-icon green"><i data-icon="zap"></i></div>
+          <span class="trend up">+8.1%</span>
+        </div>
+        <div class="stat-value" data-count="38421">0</div>
+        <div class="stat-label">Transactions Processed</div>
+        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,18 12,20 24,14 36,16 48,10 60,12 72,6 84,9 100,4" fill="none" stroke="url(#g1)" stroke-width="2"/></svg>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-head">
+          <div class="stat-icon violet"><i data-icon="spark"></i></div>
+          <span class="trend up">+24.7%</span>
+        </div>
+        <div class="stat-value" data-count="412">0</div>
+        <div class="stat-label">AI Insights Generated</div>
+        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,24 12,20 24,22 36,15 48,17 60,10 72,13 84,6 100,8" fill="none" stroke="url(#g1)" stroke-width="2"/></svg>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-head">
+          <div class="stat-icon red"><i data-icon="alert"></i></div>
+          <span class="trend down">-3.2%</span>
+        </div>
+        <div class="stat-value" data-count="7">0</div>
+        <div class="stat-label">Fraud Alerts Detected</div>
+        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,10 12,14 24,8 36,16 48,12 60,18 72,14 84,20 100,16" fill="none" stroke="#ff5577" stroke-width="2"/></svg>
+      </div>
+    </section>
+    -->
+
+    <!-- UPLOAD -->
+    <section id="uploads" class="dashboard-grid">
+      <div class="card glass upload-card">
+        <div class="card-head">
+          <h2>Upload Statement</h2>
+          <span class="chip"><i data-icon="lock"></i> Encrypted at rest</span>
+        </div>
+        <div class="dropzone" id="dropzone">
+          <div class="drop-icon"><i data-icon="upload-cloud"></i></div>
+          <h3>Drag & drop your bank statement</h3>
+          <p>or <label for="fileInput" class="browse">browse files</label> from your device</p>
+          <div class="formats">
+            <span>CSV</span><span>PDF</span>
+          </div>
+          <input type="file" id="fileInput" accept=".csv,.pdf" hidden multiple />
+          <div class="progress" id="progress"><div class="bar"></div></div>
+          <div class="secure-note"><i data-icon="shield"></i> Files are encrypted with AES-256 before storage.</div>
+        </div>
+      </div>
+
+      <!-- HEALTH SCORE -->
+      <!--
+      <div class="card glass health-card">
+        <div class="card-head">
+          <h2>Financial Health</h2>
+          <span class="chip good">Good</span>
+        </div>
+        <div class="health-body">
+          <div class="gauge">
+            <svg viewBox="0 0 160 160">
+              <defs>
+                <linearGradient id="ggrad" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#00d4ff"/>
+                  <stop offset="1" stop-color="#14f195"/>
+                </linearGradient>
+              </defs>
+              <circle cx="80" cy="80" r="66" stroke="rgba(255,255,255,0.07)" stroke-width="12" fill="none"/>
+              <circle id="gaugeArc" cx="80" cy="80" r="66" stroke="url(#ggrad)" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="414" stroke-dashoffset="414" transform="rotate(-90 80 80)"/>
+            </svg>
+            <div class="gauge-text">
+              <div class="score" id="scoreNum">0</div>
+              <div class="score-out">/ 100</div>
+            </div>
+          </div>
+          <ul class="health-list">
+            <li><span class="dot ok"></span> Strong saving pattern</li>
+            <li><span class="dot warn"></span> Moderate spending risk</li>
+            <li><span class="dot ok"></span> Low debt exposure</li>
+            <li><span class="dot ok"></span> Income stability: high</li>
+          </ul>
+        </div>
+      </div>
+    -->
+    </section>
+
+    <!-- STATEMENTS TABLE -->
+    <section class="card glass">
+      <div class="card-head">
+        <h2>Uploaded Statements</h2>
+        <span class="muted"><i data-icon="clock"></i> Auto-deleted after retention period</span>
+      </div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>File Name</th>
+              <th>Uploaded At</th>
+              <th>Status</th>
+              <th>Expired At</th>
+              <th class="ta-right">Actions</th>
+            </tr>
+          </thead>
+        
+          <tbody id="filesBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ANALYTICS -->
+    <section id="analytics" class="grid-2">
+      <div class="card glass">
+        <div class="card-head">
+          <h2>Spending Categories</h2>
+          <select class="select"><option>This Month</option><option>Last Month</option><option>Year</option></select>
+        </div>
+        <div class="pie-wrap">
+          <svg class="pie" id="pie" viewBox="0 0 200 200"></svg>
+          <div class="pie-center">
+            <div class="pc-label">Total Spend</div>
+            <div class="pc-value">₹ 84,210</div>
+          </div>
+        </div>
+        <ul class="cat-list" id="catList"></ul>
+      </div>
+
+      <div class="card glass">
+        <div class="card-head">
+          <h2>Monthly Trend</h2>
+          <div class="legend"><span class="lg cyan">Income</span><span class="lg green">Expenses</span></div>
+        </div>
+        <div class="chart-wrap">
+          <svg id="lineChart" viewBox="0 0 600 260" preserveAspectRatio="none"></svg>
+          <div class="tooltip" id="tooltip"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI + ANOMALIES -->
+    <section id="ai" class="grid-2">
+      <div class="card glass">
+        <div class="card-head">
+          <h2><i data-icon="spark"></i> AI Insights</h2>
+          <span class="chip ai">Generated by Coinlytics AI</span>
+        </div>
+        <div class="insights">
+          <div class="insight">
+            <div class="ins-icon"><i data-icon="trend"></i></div>
+            <div><h4>Food spending up 23%</h4><p>You spent ₹4,820 more on food this month versus last month's average.</p></div>
+          </div>
+          <div class="insight">
+            <div class="ins-icon"><i data-icon="entertain"></i></div>
+            <div><h4>Entertainment spike detected</h4><p>Subscriptions and outings increased 41% — consider review.</p></div>
+          </div>
+          <div class="insight">
+            <div class="ins-icon"><i data-icon="save"></i></div>
+            <div><h4>Savings opportunity</h4><p>Switching to annual plans could save ~₹2,300/month.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass">
+        <div class="card-head">
+          <h2><i data-icon="alert"></i> Anomaly Detection</h2>
+          <span class="chip warn">3 active</span>
+        </div>
+        <div class="alerts">
+          <div class="alert"><div class="pulse"></div><div><h4>Unusual high-value transaction</h4><p>₹ 1,24,500 on Mar 26 — flagged for review.</p></div></div>
+          <div class="alert"><div class="pulse"></div><div><h4>Spending spike identified</h4><p>Shopping category +68% this week.</p></div></div>
+          <div class="alert"><div class="pulse"></div><div><h4>Duplicate transaction pattern</h4><p>2 identical charges of ₹ 1,299 within 4 minutes.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECURITY + ACTIVITY -->
+     <!--
+    <section id="security" class="grid-2">
+      <div class="card glass security-card">
+        <div class="card-head">
+          <h2><i data-icon="shield"></i> Security Center</h2>
+          <span class="chip good">All systems secure</span>
+        </div>
+        <div class="sec-grid">
+          <div class="sec-item"><i data-icon="lock"></i><div><h4>AES-256 Encryption</h4><p>Active on all uploads</p></div></div>
+          <div class="sec-item"><i data-icon="cloud"></i><div><h4>Secure Cloud Storage</h4><p>Isolated, region-locked</p></div></div>
+          <div class="sec-item"><i data-icon="clock"></i><div><h4>Limited Retention</h4><p>Auto-purge after 30 days</p></div></div>
+          <div class="sec-item"><i data-icon="eye-off"></i><div><h4>Privacy-First</h4><p>Zero third-party trackers</p></div></div>
+          <div class="sec-item"><i data-icon="key"></i><div><h4>Zero Credentials</h4><p>No bank passwords collected</p></div></div>
+          <div class="sec-item"><i data-icon="shield"></i><div><h4>SOC 2 Aligned</h4><p>Audited controls</p></div></div>
+        </div>
+        <div class="pledge">
+          <i data-icon="shield"></i>
+          <p>We <strong>never</strong> ask for your banking password or login credentials.</p>
+        </div>
+      </div>
+    -->
+
+      <div class="card glass">
+        <div class="card-head">
+          <h2>Recent Activity</h2>
+          <a class="muted-link" href="#">View all</a>
+        </div>
+        <ul class="timeline">
+          <li><span class="tl-dot cyan"></span><div><b>SBI_March_2026.pdf</b> uploaded<small>2 min ago</small></div></li>
+          <li><span class="tl-dot green"></span><div>AI analysis completed for <b>HDFC_Transactions.csv</b><small>14 min ago</small></div></li>
+          <li><span class="tl-dot red"></span><div>Fraud alert generated on <b>ICICI_Feb_2026</b><small>1 hr ago</small></div></li>
+          <li><span class="tl-dot violet"></span><div>AI insight report created<small>3 hrs ago</small></div></li>
+          <li><span class="tl-dot muted"></span><div><b>Axis_Jan_2026.csv</b> auto-deleted<small>Yesterday</small></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© 2026 Coinlytics — AI Financial Intelligence</span>
+      <span class="muted">Built with security at its core.</span>
+    </footer>
+  </main>
+</div>
+
+<script src="js/dashboard2.js"></script>
+</body>
+</html>

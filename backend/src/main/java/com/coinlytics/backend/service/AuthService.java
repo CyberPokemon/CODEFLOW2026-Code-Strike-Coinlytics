@@ -1,10 +1,16 @@
 package com.coinlytics.backend.service;
 
 import com.coinlytics.backend.dto.LoginRequest;
+import com.coinlytics.backend.dto.LoginResponseDto;
 import com.coinlytics.backend.dto.SignupRequest;
+import com.coinlytics.backend.dto.SignupResponseDto;
+import com.coinlytics.backend.error.customException.UserAlreadyExistsException;
+import com.coinlytics.backend.error.customException.UserNotExistsException;
+import com.coinlytics.backend.model.Role;
 import com.coinlytics.backend.model.Users;
 import com.coinlytics.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -12,6 +18,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AuthService {
+
+    @Value("${security.pepper}")
+    private String pepper;
 
     @Autowired
     private UserRepository userRepository;
@@ -25,34 +34,33 @@ public class AuthService {
     @Autowired
     private JwtService jwtService;
 
-    public String register(SignupRequest request) {
+    public SignupResponseDto register(SignupRequest request) {
         if(userRepository.findByEmail(request.getEmail()).isPresent())
         {
-            return "User already exists. Please login.";
+            throw new UserAlreadyExistsException("User already exists. Please login.");
         }
         Users users=new Users();
         users.setName(request.getName());
         users.setEmail(request.getEmail());
-        users.setRole(request.getRole());
+        users.setRole(Role.USER);
         users.setPhoneNumber(request.getPhoneNumber());
-        users.setPassword(passwordEncoder.encode(request.getPassword()));
+        users.setPassword(passwordEncoder.encode(request.getPassword()+pepper));
         userRepository.save(users);
-        return "Registration Done.";
+        return new SignupResponseDto(users.getName(),request.getEmail(),jwtService.generateToken(request.getEmail()));
     }
 
-    public String login(LoginRequest request) {
+    public LoginResponseDto login(LoginRequest request) {
 
         Users users=userRepository.findByEmail(request.getEmail())
                 .orElse(null);
 
         if(users==null)
         {
-            return "User not registered. Please signup first.";
+            throw new UserNotExistsException("User not registered. Please signup first.");
         }
 
-        authenticationManager.authenticate
-                (new UsernamePasswordAuthenticationToken(
-                        request.getEmail(),request.getPassword()));
-        return jwtService.generateToken(request.getEmail());
+        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
+                        request.getEmail(),request.getPassword()+pepper));
+        return new LoginResponseDto(users.getName(),request.getEmail(),jwtService.generateToken(request.getEmail()));
     }
 }

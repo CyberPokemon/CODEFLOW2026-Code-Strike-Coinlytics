@@ -1,0 +1,47 @@
+{
+  "total_income": 7860473.38,
+  "total_expenses": 4417296.61,
+  "net_savings": 3443176.77,
+  "category_statistics": [
+    {
+      "category": "Income",
+      "total_credit": 5412405.31,
+      "total_debit": 229069.92,
+      "net_amount": 5183335.39,
+      "transaction_count": 74,
+      "average_transaction": 70045.07,
+      "percentage_of_income": 68.86,
+      "percentage_of_expenses": 5.19
+    },
+    {
+      "category": "Subscription",
+      "total_credit": 212806.97,
+      "total_debit": 126610.21,
+      "net_amount": 86196.76,
+      "transaction_count": 36,
+      "average_transaction": 2394.35,
+      "percentage_of_income": 2.71,
+      "percentage_of_expenses": 2.87
+    },
+    {
+      "category": "Shopping",
+      "total_credit": 225953.8,
+      "total_debit": 791073.46,
+      "net_amount": -565119.66,
+      "transaction_count": 42,
+      "average_transaction": -13455.23,
+      "percentage_of_income": 2.87,
+      "percentage_of_expenses": 17.91
+    },
+    {
+      "category": "Other",
+      "total_credit": 2009307.3,
+      "total_debit": 3270543.02,
+      "net_amount": -1261235.72,
+      "transaction_count": 348,
+      "average_transaction": -3624.24,
+      "percentage_of_income": 25.56,
+      "percentage_of_expenses": 74.04
+    }
+  ]
+}

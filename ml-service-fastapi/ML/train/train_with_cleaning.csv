@@ -1,0 +1,1329 @@
+text,category,clean_text
+UPI/swiggy/12345,Food,swiggy
+UPI/swiggy/12345,Food,swiggy
+IMPS/swiggy/98765,Food,swiggy
+IMPS/swiggy/98765,Food,swiggy
+swiggy LIMITED,Food,swiggy
+swiggy LIMITED,Food,swiggy
+swiggy PAYMENT,Food,swiggy
+swiggy PAYMENT,Food,swiggy
+UPI PAYMENT swiggy,Food,swiggy
+UPI PAYMENT swiggy,Food,swiggy
+swiggy INDIA,Food,swiggy
+swiggy INDIA,Food,swiggy
+TRANSFER swiggy,Food,swiggy
+TRANSFER swiggy,Food,swiggy
+swiggy,Food,swiggy
+swiggy,Food,swiggy
+UPI/zomato/12345,Food,zomato
+UPI/zomto/12345,Food,zomto
+IMPS/zomato/98765,Food,zomato
+IMPS/zomto/98765,Food,zomto
+zomato LIMITED,Food,zomato
+zomto LIMITED,Food,zomto
+zomato PAYMENT,Food,zomato
+zomto PAYMENT,Food,zomto
+UPI PAYMENT zomato,Food,zomato
+UPI PAYMENT zomto,Food,zomto
+zomato INDIA,Food,zomato
+zomto INDIA,Food,zomto
+TRANSFER zomato,Food,zomato
+TRANSFER zomto,Food,zomto
+zomato,Food,zomato
+zomto,Food,zomto
+UPI/dominos/12345,Food,dominos
+UPI/dominos/12345,Food,dominos
+IMPS/dominos/98765,Food,dominos
+IMPS/dominos/98765,Food,dominos
+dominos LIMITED,Food,dominos
+dominos LIMITED,Food,dominos
+dominos PAYMENT,Food,dominos
+dominos PAYMENT,Food,dominos
+UPI PAYMENT dominos,Food,dominos
+UPI PAYMENT dominos,Food,dominos
+dominos INDIA,Food,dominos
+dominos INDIA,Food,dominos
+TRANSFER dominos,Food,dominos
+TRANSFER dominos,Food,dominos
+dominos,Food,dominos
+dominos,Food,dominos
+UPI/pizza hut/12345,Food,pizza hut
+UPI/pizzhut/12345,Food,pizzhut
+IMPS/pizza hut/98765,Food,pizza hut
+IMPS/pizzhut/98765,Food,pizzhut
+pizza hut LIMITED,Food,pizza hut
+pizzhut LIMITED,Food,pizzhut
+pizza hut PAYMENT,Food,pizza hut
+pizzhut PAYMENT,Food,pizzhut
+UPI PAYMENT pizza hut,Food,pizza hut
+UPI PAYMENT pizzhut,Food,pizzhut
+pizza hut INDIA,Food,pizza hut
+pizzhut INDIA,Food,pizzhut
+TRANSFER pizza hut,Food,pizza hut
+TRANSFER pizzhut,Food,pizzhut
+pizza hut,Food,pizza hut
+pizzhut,Food,pizzhut
+UPI/kfc/12345,Food,kfc
+UPI/kfc/12345,Food,kfc
+IMPS/kfc/98765,Food,kfc
+IMPS/kfc/98765,Food,kfc
+kfc LIMITED,Food,kfc
+kfc LIMITED,Food,kfc
+kfc PAYMENT,Food,kfc
+kfc PAYMENT,Food,kfc
+UPI PAYMENT kfc,Food,kfc
+UPI PAYMENT kfc,Food,kfc
+kfc INDIA,Food,kfc
+kfc INDIA,Food,kfc
+TRANSFER kfc,Food,kfc
+TRANSFER kfc,Food,kfc
+kfc,Food,kfc
+kfc,Food,kfc
+UPI/burger king/12345,Food,burger king
+UPI/burgerking/12345,Food,burgerking
+IMPS/burger king/98765,Food,burger king
+IMPS/burgerking/98765,Food,burgerking
+burger king LIMITED,Food,burger king
+burgerking LIMITED,Food,burgerking
+burger king PAYMENT,Food,burger king
+burgerking PAYMENT,Food,burgerking
+UPI PAYMENT burger king,Food,burger king
+UPI PAYMENT burgerking,Food,burgerking
+burger king INDIA,Food,burger king
+burgerking INDIA,Food,burgerking
+TRANSFER burger king,Food,burger king
+TRANSFER burgerking,Food,burgerking
+burger king,Food,burger king
+burgerking,Food,burgerking
+UPI/blinkit/12345,Food,blinkit
+UPI/blinkit/12345,Food,blinkit
+IMPS/blinkit/98765,Food,blinkit
+IMPS/blinkit/98765,Food,blinkit
+blinkit LIMITED,Food,blinkit
+blinkit LIMITED,Food,blinkit
+blinkit PAYMENT,Food,blinkit
+blinkit PAYMENT,Food,blinkit
+UPI PAYMENT blinkit,Food,blinkit
+UPI PAYMENT blinkit,Food,blinkit
+blinkit INDIA,Food,blinkit
+blinkit INDIA,Food,blinkit
+TRANSFER blinkit,Food,blinkit
+TRANSFER blinkit,Food,blinkit
+blinkit,Food,blinkit
+blinkit,Food,blinkit
+UPI/zepto/12345,Food,zepto
+UPI/zepto/12345,Food,zepto
+IMPS/zepto/98765,Food,zepto
+IMPS/zepto/98765,Food,zepto
+zepto LIMITED,Food,zepto
+zepto LIMITED,Food,zepto
+zepto PAYMENT,Food,zepto
+zepto PAYMENT,Food,zepto
+UPI PAYMENT zepto,Food,zepto
+UPI PAYMENT zepto,Food,zepto
+zepto INDIA,Food,zepto
+zepto INDIA,Food,zepto
+TRANSFER zepto,Food,zepto
+TRANSFER zepto,Food,zepto
+zepto,Food,zepto
+zepto,Food,zepto
+UPI/instamart/12345,Food,instamart
+UPI/instmart/12345,Food,instmart
+IMPS/instamart/98765,Food,instamart
+IMPS/instmart/98765,Food,instmart
+instamart LIMITED,Food,instamart
+instmart LIMITED,Food,instmart
+instamart PAYMENT,Food,instamart
+instmart PAYMENT,Food,instmart
+UPI PAYMENT instamart,Food,instamart
+UPI PAYMENT instmart,Food,instmart
+instamart INDIA,Food,instamart
+instmart INDIA,Food,instmart
+TRANSFER instamart,Food,instamart
+TRANSFER instmart,Food,instmart
+instamart,Food,instamart
+instmart,Food,instmart
+UPI/mcdonalds/12345,Food,mcdonalds
+UPI/mcdonlds/12345,Food,mcdonlds
+IMPS/mcdonalds/98765,Food,mcdonalds
+IMPS/mcdonlds/98765,Food,mcdonlds
+mcdonalds LIMITED,Food,mcdonalds
+mcdonlds LIMITED,Food,mcdonlds
+mcdonalds PAYMENT,Food,mcdonalds
+mcdonlds PAYMENT,Food,mcdonlds
+UPI PAYMENT mcdonalds,Food,mcdonalds
+UPI PAYMENT mcdonlds,Food,mcdonlds
+mcdonalds INDIA,Food,mcdonalds
+mcdonlds INDIA,Food,mcdonlds
+TRANSFER mcdonalds,Food,mcdonalds
+TRANSFER mcdonlds,Food,mcdonlds
+mcdonalds,Food,mcdonalds
+mcdonlds,Food,mcdonlds
+UPI/starbucks/12345,Food,starbucks
+UPI/strbucks/12345,Food,strbucks
+IMPS/starbucks/98765,Food,starbucks
+IMPS/strbucks/98765,Food,strbucks
+starbucks LIMITED,Food,starbucks
+strbucks LIMITED,Food,strbucks
+starbucks PAYMENT,Food,starbucks
+strbucks PAYMENT,Food,strbucks
+UPI PAYMENT starbucks,Food,starbucks
+UPI PAYMENT strbucks,Food,strbucks
+starbucks INDIA,Food,starbucks
+strbucks INDIA,Food,strbucks
+TRANSFER starbucks,Food,starbucks
+TRANSFER strbucks,Food,strbucks
+starbucks,Food,starbucks
+strbucks,Food,strbucks
+UPI/chaayos/12345,Food,chaayos
+UPI/chayos/12345,Food,chayos
+IMPS/chaayos/98765,Food,chaayos
+IMPS/chayos/98765,Food,chayos
+chaayos LIMITED,Food,chaayos
+chayos LIMITED,Food,chayos
+chaayos PAYMENT,Food,chaayos
+chayos PAYMENT,Food,chayos
+UPI PAYMENT chaayos,Food,chaayos
+UPI PAYMENT chayos,Food,chayos
+chaayos INDIA,Food,chaayos
+chayos INDIA,Food,chayos
+TRANSFER chaayos,Food,chaayos
+TRANSFER chayos,Food,chayos
+chaayos,Food,chaayos
+chayos,Food,chayos
+UPI/haldirams/12345,Food,haldirams
+UPI/hldirams/12345,Food,hldirams
+IMPS/haldirams/98765,Food,haldirams
+IMPS/hldirams/98765,Food,hldirams
+haldirams LIMITED,Food,haldirams
+hldirams LIMITED,Food,hldirams
+haldirams PAYMENT,Food,haldirams
+hldirams PAYMENT,Food,hldirams
+UPI PAYMENT haldirams,Food,haldirams
+UPI PAYMENT hldirams,Food,hldirams
+haldirams INDIA,Food,haldirams
+hldirams INDIA,Food,hldirams
+TRANSFER haldirams,Food,haldirams
+TRANSFER hldirams,Food,hldirams
+haldirams,Food,haldirams
+hldirams,Food,hldirams
+UPI/bigbasket/12345,Food,bigbasket
+UPI/bigbsket/12345,Food,bigbsket
+IMPS/bigbasket/98765,Food,bigbasket
+IMPS/bigbsket/98765,Food,bigbsket
+bigbasket LIMITED,Food,bigbasket
+bigbsket LIMITED,Food,bigbsket
+bigbasket PAYMENT,Food,bigbasket
+bigbsket PAYMENT,Food,bigbsket
+UPI PAYMENT bigbasket,Food,bigbasket
+UPI PAYMENT bigbsket,Food,bigbsket
+bigbasket INDIA,Food,bigbasket
+bigbsket INDIA,Food,bigbsket
+TRANSFER bigbasket,Food,bigbasket
+TRANSFER bigbsket,Food,bigbsket
+bigbasket,Food,bigbasket
+bigbsket,Food,bigbsket
+UPI/eatclub/12345,Food,eatclub
+UPI/etclub/12345,Food,etclub
+IMPS/eatclub/98765,Food,eatclub
+IMPS/etclub/98765,Food,etclub
+eatclub LIMITED,Food,eatclub
+etclub LIMITED,Food,etclub
+eatclub PAYMENT,Food,eatclub
+etclub PAYMENT,Food,etclub
+UPI PAYMENT eatclub,Food,eatclub
+UPI PAYMENT etclub,Food,etclub
+eatclub INDIA,Food,eatclub
+etclub INDIA,Food,etclub
+TRANSFER eatclub,Food,eatclub
+TRANSFER etclub,Food,etclub
+eatclub,Food,eatclub
+etclub,Food,etclub
+UPI/uber/12345,Travel,uber
+UPI/uber/12345,Travel,uber
+IMPS/uber/98765,Travel,uber
+IMPS/uber/98765,Travel,uber
+uber LIMITED,Travel,uber
+uber LIMITED,Travel,uber
+uber PAYMENT,Travel,uber
+uber PAYMENT,Travel,uber
+UPI PAYMENT uber,Travel,uber
+UPI PAYMENT uber,Travel,uber
+uber INDIA,Travel,uber
+uber INDIA,Travel,uber
+TRANSFER uber,Travel,uber
+TRANSFER uber,Travel,uber
+uber,Travel,uber
+uber,Travel,uber
+UPI/ola/12345,Travel,ola
+UPI/ol/12345,Travel,ol
+IMPS/ola/98765,Travel,ola
+IMPS/ol/98765,Travel,ol
+ola LIMITED,Travel,ola
+ol LIMITED,Travel,ol
+ola PAYMENT,Travel,ola
+ol PAYMENT,Travel,ol
+UPI PAYMENT ola,Travel,ola
+UPI PAYMENT ol,Travel,ol
+ola INDIA,Travel,ola
+ol INDIA,Travel,ol
+TRANSFER ola,Travel,ola
+TRANSFER ol,Travel,ol
+ola,Travel,ola
+ol,Travel,ol
+UPI/irctc/12345,Travel,irctc
+UPI/irctc/12345,Travel,irctc
+IMPS/irctc/98765,Travel,irctc
+IMPS/irctc/98765,Travel,irctc
+irctc LIMITED,Travel,irctc
+irctc LIMITED,Travel,irctc
+irctc PAYMENT,Travel,irctc
+irctc PAYMENT,Travel,irctc
+UPI PAYMENT irctc,Travel,irctc
+UPI PAYMENT irctc,Travel,irctc
+irctc INDIA,Travel,irctc
+irctc INDIA,Travel,irctc
+TRANSFER irctc,Travel,irctc
+TRANSFER irctc,Travel,irctc
+irctc,Travel,irctc
+irctc,Travel,irctc
+UPI/indrive/12345,Travel,indrive
+UPI/indrive/12345,Travel,indrive
+IMPS/indrive/98765,Travel,indrive
+IMPS/indrive/98765,Travel,indrive
+indrive LIMITED,Travel,indrive
+indrive LIMITED,Travel,indrive
+indrive PAYMENT,Travel,indrive
+indrive PAYMENT,Travel,indrive
+UPI PAYMENT indrive,Travel,indrive
+UPI PAYMENT indrive,Travel,indrive
+indrive INDIA,Travel,indrive
+indrive INDIA,Travel,indrive
+TRANSFER indrive,Travel,indrive
+TRANSFER indrive,Travel,indrive
+indrive,Travel,indrive
+indrive,Travel,indrive
+UPI/yatrisathi/12345,Travel,yatrisathi
+UPI/ytrisathi/12345,Travel,ytrisathi
+IMPS/yatrisathi/98765,Travel,yatrisathi
+IMPS/ytrisathi/98765,Travel,ytrisathi
+yatrisathi LIMITED,Travel,yatrisathi
+ytrisathi LIMITED,Travel,ytrisathi
+yatrisathi PAYMENT,Travel,yatrisathi
+ytrisathi PAYMENT,Travel,ytrisathi
+UPI PAYMENT yatrisathi,Travel,yatrisathi
+UPI PAYMENT ytrisathi,Travel,ytrisathi
+yatrisathi INDIA,Travel,yatrisathi
+ytrisathi INDIA,Travel,ytrisathi
+TRANSFER yatrisathi,Travel,yatrisathi
+TRANSFER ytrisathi,Travel,ytrisathi
+yatrisathi,Travel,yatrisathi
+ytrisathi,Travel,ytrisathi
+UPI/rapido/12345,Travel,rapido
+UPI/rpido/12345,Travel,rpido
+IMPS/rapido/98765,Travel,rapido
+IMPS/rpido/98765,Travel,rpido
+rapido LIMITED,Travel,rapido
+rpido LIMITED,Travel,rpido
+rapido PAYMENT,Travel,rapido
+rpido PAYMENT,Travel,rpido
+UPI PAYMENT rapido,Travel,rapido
+UPI PAYMENT rpido,Travel,rpido
+rapido INDIA,Travel,rapido
+rpido INDIA,Travel,rpido
+TRANSFER rapido,Travel,rapido
+TRANSFER rpido,Travel,rpido
+rapido,Travel,rapido
+rpido,Travel,rpido
+UPI/airindia/12345,Travel,airindia
+UPI/irindia/12345,Travel,irindia
+IMPS/airindia/98765,Travel,airindia
+IMPS/irindia/98765,Travel,irindia
+airindia LIMITED,Travel,airindia
+irindia LIMITED,Travel,irindia
+airindia PAYMENT,Travel,airindia
+irindia PAYMENT,Travel,irindia
+UPI PAYMENT airindia,Travel,airindia
+UPI PAYMENT irindia,Travel,irindia
+airindia INDIA,Travel,airindia
+irindia INDIA,Travel,irindia
+TRANSFER airindia,Travel,airindia
+TRANSFER irindia,Travel,irindia
+airindia,Travel,airindia
+irindia,Travel,irindia
+UPI/makemytrip/12345,Travel,makemytrip
+UPI/mkemytrip/12345,Travel,mkemytrip
+IMPS/makemytrip/98765,Travel,makemytrip
+IMPS/mkemytrip/98765,Travel,mkemytrip
+makemytrip LIMITED,Travel,makemytrip
+mkemytrip LIMITED,Travel,mkemytrip
+makemytrip PAYMENT,Travel,makemytrip
+mkemytrip PAYMENT,Travel,mkemytrip
+UPI PAYMENT makemytrip,Travel,makemytrip
+UPI PAYMENT mkemytrip,Travel,mkemytrip
+makemytrip INDIA,Travel,makemytrip
+mkemytrip INDIA,Travel,mkemytrip
+TRANSFER makemytrip,Travel,makemytrip
+TRANSFER mkemytrip,Travel,mkemytrip
+makemytrip,Travel,makemytrip
+mkemytrip,Travel,mkemytrip
+UPI/goibibo/12345,Travel,goibibo
+UPI/goibibo/12345,Travel,goibibo
+IMPS/goibibo/98765,Travel,goibibo
+IMPS/goibibo/98765,Travel,goibibo
+goibibo LIMITED,Travel,goibibo
+goibibo LIMITED,Travel,goibibo
+goibibo PAYMENT,Travel,goibibo
+goibibo PAYMENT,Travel,goibibo
+UPI PAYMENT goibibo,Travel,goibibo
+UPI PAYMENT goibibo,Travel,goibibo
+goibibo INDIA,Travel,goibibo
+goibibo INDIA,Travel,goibibo
+TRANSFER goibibo,Travel,goibibo
+TRANSFER goibibo,Travel,goibibo
+goibibo,Travel,goibibo
+goibibo,Travel,goibibo
+UPI/easemytrip/12345,Travel,easemytrip
+UPI/esemytrip/12345,Travel,esemytrip
+IMPS/easemytrip/98765,Travel,easemytrip
+IMPS/esemytrip/98765,Travel,esemytrip
+easemytrip LIMITED,Travel,easemytrip
+esemytrip LIMITED,Travel,esemytrip
+easemytrip PAYMENT,Travel,easemytrip
+esemytrip PAYMENT,Travel,esemytrip
+UPI PAYMENT easemytrip,Travel,easemytrip
+UPI PAYMENT esemytrip,Travel,esemytrip
+easemytrip INDIA,Travel,easemytrip
+esemytrip INDIA,Travel,esemytrip
+TRANSFER easemytrip,Travel,easemytrip
+TRANSFER esemytrip,Travel,esemytrip
+easemytrip,Travel,easemytrip
+esemytrip,Travel,esemytrip
+UPI/redbus/12345,Travel,redbus
+UPI/redbus/12345,Travel,redbus
+IMPS/redbus/98765,Travel,redbus
+IMPS/redbus/98765,Travel,redbus
+redbus LIMITED,Travel,redbus
+redbus LIMITED,Travel,redbus
+redbus PAYMENT,Travel,redbus
+redbus PAYMENT,Travel,redbus
+UPI PAYMENT redbus,Travel,redbus
+UPI PAYMENT redbus,Travel,redbus
+redbus INDIA,Travel,redbus
+redbus INDIA,Travel,redbus
+TRANSFER redbus,Travel,redbus
+TRANSFER redbus,Travel,redbus
+redbus,Travel,redbus
+redbus,Travel,redbus
+UPI/ixigo/12345,Travel,ixigo
+UPI/ixigo/12345,Travel,ixigo
+IMPS/ixigo/98765,Travel,ixigo
+IMPS/ixigo/98765,Travel,ixigo
+ixigo LIMITED,Travel,ixigo
+ixigo LIMITED,Travel,ixigo
+ixigo PAYMENT,Travel,ixigo
+ixigo PAYMENT,Travel,ixigo
+UPI PAYMENT ixigo,Travel,ixigo
+UPI PAYMENT ixigo,Travel,ixigo
+ixigo INDIA,Travel,ixigo
+ixigo INDIA,Travel,ixigo
+TRANSFER ixigo,Travel,ixigo
+TRANSFER ixigo,Travel,ixigo
+ixigo,Travel,ixigo
+ixigo,Travel,ixigo
+UPI/indigo/12345,Travel,indigo
+UPI/indigo/12345,Travel,indigo
+IMPS/indigo/98765,Travel,indigo
+IMPS/indigo/98765,Travel,indigo
+indigo LIMITED,Travel,indigo
+indigo LIMITED,Travel,indigo
+indigo PAYMENT,Travel,indigo
+indigo PAYMENT,Travel,indigo
+UPI PAYMENT indigo,Travel,indigo
+UPI PAYMENT indigo,Travel,indigo
+indigo INDIA,Travel,indigo
+indigo INDIA,Travel,indigo
+TRANSFER indigo,Travel,indigo
+TRANSFER indigo,Travel,indigo
+indigo,Travel,indigo
+indigo,Travel,indigo
+UPI/spicejet/12345,Travel,spicejet
+UPI/spicejet/12345,Travel,spicejet
+IMPS/spicejet/98765,Travel,spicejet
+IMPS/spicejet/98765,Travel,spicejet
+spicejet LIMITED,Travel,spicejet
+spicejet LIMITED,Travel,spicejet
+spicejet PAYMENT,Travel,spicejet
+spicejet PAYMENT,Travel,spicejet
+UPI PAYMENT spicejet,Travel,spicejet
+UPI PAYMENT spicejet,Travel,spicejet
+spicejet INDIA,Travel,spicejet
+spicejet INDIA,Travel,spicejet
+TRANSFER spicejet,Travel,spicejet
+TRANSFER spicejet,Travel,spicejet
+spicejet,Travel,spicejet
+spicejet,Travel,spicejet
+UPI/akasa/12345,Travel,akasa
+UPI/kasa/12345,Travel,kasa
+IMPS/akasa/98765,Travel,akasa
+IMPS/kasa/98765,Travel,kasa
+akasa LIMITED,Travel,akasa
+kasa LIMITED,Travel,kasa
+akasa PAYMENT,Travel,akasa
+kasa PAYMENT,Travel,kasa
+UPI PAYMENT akasa,Travel,akasa
+UPI PAYMENT kasa,Travel,kasa
+akasa INDIA,Travel,akasa
+kasa INDIA,Travel,kasa
+TRANSFER akasa,Travel,akasa
+TRANSFER kasa,Travel,kasa
+akasa,Travel,akasa
+kasa,Travel,kasa
+UPI/amazon/12345,Shopping,amazon
+UPI/mazon/12345,Shopping,mazon
+IMPS/amazon/98765,Shopping,amazon
+IMPS/mazon/98765,Shopping,mazon
+amazon LIMITED,Shopping,amazon
+mazon LIMITED,Shopping,mazon
+amazon PAYMENT,Shopping,amazon
+mazon PAYMENT,Shopping,mazon
+UPI PAYMENT amazon,Shopping,amazon
+UPI PAYMENT mazon,Shopping,mazon
+amazon INDIA,Shopping,amazon
+mazon INDIA,Shopping,mazon
+TRANSFER amazon,Shopping,amazon
+TRANSFER mazon,Shopping,mazon
+amazon,Shopping,amazon
+mazon,Shopping,mazon
+UPI/flipkart/12345,Shopping,flipkart
+UPI/flipkrt/12345,Shopping,flipkrt
+IMPS/flipkart/98765,Shopping,flipkart
+IMPS/flipkrt/98765,Shopping,flipkrt
+flipkart LIMITED,Shopping,flipkart
+flipkrt LIMITED,Shopping,flipkrt
+flipkart PAYMENT,Shopping,flipkart
+flipkrt PAYMENT,Shopping,flipkrt
+UPI PAYMENT flipkart,Shopping,flipkart
+UPI PAYMENT flipkrt,Shopping,flipkrt
+flipkart INDIA,Shopping,flipkart
+flipkrt INDIA,Shopping,flipkrt
+TRANSFER flipkart,Shopping,flipkart
+TRANSFER flipkrt,Shopping,flipkrt
+flipkart,Shopping,flipkart
+flipkrt,Shopping,flipkrt
+UPI/myntra/12345,Shopping,myntra
+UPI/myntr/12345,Shopping,myntr
+IMPS/myntra/98765,Shopping,myntra
+IMPS/myntr/98765,Shopping,myntr
+myntra LIMITED,Shopping,myntra
+myntr LIMITED,Shopping,myntr
+myntra PAYMENT,Shopping,myntra
+myntr PAYMENT,Shopping,myntr
+UPI PAYMENT myntra,Shopping,myntra
+UPI PAYMENT myntr,Shopping,myntr
+myntra INDIA,Shopping,myntra
+myntr INDIA,Shopping,myntr
+TRANSFER myntra,Shopping,myntra
+TRANSFER myntr,Shopping,myntr
+myntra,Shopping,myntra
+myntr,Shopping,myntr
+UPI/meesho/12345,Shopping,meesho
+UPI/meesho/12345,Shopping,meesho
+IMPS/meesho/98765,Shopping,meesho
+IMPS/meesho/98765,Shopping,meesho
+meesho LIMITED,Shopping,meesho
+meesho LIMITED,Shopping,meesho
+meesho PAYMENT,Shopping,meesho
+meesho PAYMENT,Shopping,meesho
+UPI PAYMENT meesho,Shopping,meesho
+UPI PAYMENT meesho,Shopping,meesho
+meesho INDIA,Shopping,meesho
+meesho INDIA,Shopping,meesho
+TRANSFER meesho,Shopping,meesho
+TRANSFER meesho,Shopping,meesho
+meesho,Shopping,meesho
+meesho,Shopping,meesho
+UPI/nykaa/12345,Shopping,nykaa
+UPI/nyka/12345,Shopping,nyka
+IMPS/nykaa/98765,Shopping,nykaa
+IMPS/nyka/98765,Shopping,nyka
+nykaa LIMITED,Shopping,nykaa
+nyka LIMITED,Shopping,nyka
+nykaa PAYMENT,Shopping,nykaa
+nyka PAYMENT,Shopping,nyka
+UPI PAYMENT nykaa,Shopping,nykaa
+UPI PAYMENT nyka,Shopping,nyka
+nykaa INDIA,Shopping,nykaa
+nyka INDIA,Shopping,nyka
+TRANSFER nykaa,Shopping,nykaa
+TRANSFER nyka,Shopping,nyka
+nykaa,Shopping,nykaa
+nyka,Shopping,nyka
+UPI/ajio/12345,Shopping,ajio
+UPI/jio/12345,Shopping,jio
+IMPS/ajio/98765,Shopping,ajio
+IMPS/jio/98765,Shopping,jio
+ajio LIMITED,Shopping,ajio
+jio LIMITED,Shopping,jio
+ajio PAYMENT,Shopping,ajio
+jio PAYMENT,Shopping,jio
+UPI PAYMENT ajio,Shopping,ajio
+UPI PAYMENT jio,Shopping,jio
+ajio INDIA,Shopping,ajio
+jio INDIA,Shopping,jio
+TRANSFER ajio,Shopping,ajio
+TRANSFER jio,Shopping,jio
+ajio,Shopping,ajio
+jio,Shopping,jio
+UPI/tata cliq/12345,Shopping,tata cliq
+UPI/ttacliq/12345,Shopping,ttacliq
+IMPS/tata cliq/98765,Shopping,tata cliq
+IMPS/ttacliq/98765,Shopping,ttacliq
+tata cliq LIMITED,Shopping,tata cliq
+ttacliq LIMITED,Shopping,ttacliq
+tata cliq PAYMENT,Shopping,tata cliq
+ttacliq PAYMENT,Shopping,ttacliq
+UPI PAYMENT tata cliq,Shopping,tata cliq
+UPI PAYMENT ttacliq,Shopping,ttacliq
+tata cliq INDIA,Shopping,tata cliq
+ttacliq INDIA,Shopping,ttacliq
+TRANSFER tata cliq,Shopping,tata cliq
+TRANSFER ttacliq,Shopping,ttacliq
+tata cliq,Shopping,tata cliq
+ttacliq,Shopping,ttacliq
+UPI/jiomart/12345,Shopping,jiomart
+UPI/jiomrt/12345,Shopping,jiomrt
+IMPS/jiomart/98765,Shopping,jiomart
+IMPS/jiomrt/98765,Shopping,jiomrt
+jiomart LIMITED,Shopping,jiomart
+jiomrt LIMITED,Shopping,jiomrt
+jiomart PAYMENT,Shopping,jiomart
+jiomrt PAYMENT,Shopping,jiomrt
+UPI PAYMENT jiomart,Shopping,jiomart
+UPI PAYMENT jiomrt,Shopping,jiomrt
+jiomart INDIA,Shopping,jiomart
+jiomrt INDIA,Shopping,jiomrt
+TRANSFER jiomart,Shopping,jiomart
+TRANSFER jiomrt,Shopping,jiomrt
+jiomart,Shopping,jiomart
+jiomrt,Shopping,jiomrt
+UPI/reliance smart/12345,Shopping,reliance smart
+UPI/relincesmart/12345,Shopping,relincesmart
+IMPS/reliance smart/98765,Shopping,reliance smart
+IMPS/relincesmart/98765,Shopping,relincesmart
+reliance smart LIMITED,Shopping,reliance smart
+relincesmart LIMITED,Shopping,relincesmart
+reliance smart PAYMENT,Shopping,reliance smart
+relincesmart PAYMENT,Shopping,relincesmart
+UPI PAYMENT reliance smart,Shopping,reliance smart
+UPI PAYMENT relincesmart,Shopping,relincesmart
+reliance smart INDIA,Shopping,reliance smart
+relincesmart INDIA,Shopping,relincesmart
+TRANSFER reliance smart,Shopping,reliance smart
+TRANSFER relincesmart,Shopping,relincesmart
+reliance smart,Shopping,reliance smart
+relincesmart,Shopping,relincesmart
+UPI/dmart/12345,Shopping,dmart
+UPI/dmrt/12345,Shopping,dmrt
+IMPS/dmart/98765,Shopping,dmart
+IMPS/dmrt/98765,Shopping,dmrt
+dmart LIMITED,Shopping,dmart
+dmrt LIMITED,Shopping,dmrt
+dmart PAYMENT,Shopping,dmart
+dmrt PAYMENT,Shopping,dmrt
+UPI PAYMENT dmart,Shopping,dmart
+UPI PAYMENT dmrt,Shopping,dmrt
+dmart INDIA,Shopping,dmart
+dmrt INDIA,Shopping,dmrt
+TRANSFER dmart,Shopping,dmart
+TRANSFER dmrt,Shopping,dmrt
+dmart,Shopping,dmart
+dmrt,Shopping,dmrt
+UPI/croma/12345,Shopping,croma
+UPI/crom/12345,Shopping,crom
+IMPS/croma/98765,Shopping,croma
+IMPS/crom/98765,Shopping,crom
+croma LIMITED,Shopping,croma
+crom LIMITED,Shopping,crom
+croma PAYMENT,Shopping,croma
+crom PAYMENT,Shopping,crom
+UPI PAYMENT croma,Shopping,croma
+UPI PAYMENT crom,Shopping,crom
+croma INDIA,Shopping,croma
+crom INDIA,Shopping,crom
+TRANSFER croma,Shopping,croma
+TRANSFER crom,Shopping,crom
+croma,Shopping,croma
+crom,Shopping,crom
+UPI/reliance digital/12345,Shopping,reliance digital
+UPI/relincedigital/12345,Shopping,relincedigital
+IMPS/reliance digital/98765,Shopping,reliance digital
+IMPS/relincedigital/98765,Shopping,relincedigital
+reliance digital LIMITED,Shopping,reliance digital
+relincedigital LIMITED,Shopping,relincedigital
+reliance digital PAYMENT,Shopping,reliance digital
+relincedigital PAYMENT,Shopping,relincedigital
+UPI PAYMENT reliance digital,Shopping,reliance digital
+UPI PAYMENT relincedigital,Shopping,relincedigital
+reliance digital INDIA,Shopping,reliance digital
+relincedigital INDIA,Shopping,relincedigital
+TRANSFER reliance digital,Shopping,reliance digital
+TRANSFER relincedigital,Shopping,relincedigital
+reliance digital,Shopping,reliance digital
+relincedigital,Shopping,relincedigital
+UPI/max fashion/12345,Shopping,max fashion
+UPI/mxfashion/12345,Shopping,mxfashion
+IMPS/max fashion/98765,Shopping,max fashion
+IMPS/mxfashion/98765,Shopping,mxfashion
+max fashion LIMITED,Shopping,max fashion
+mxfashion LIMITED,Shopping,mxfashion
+max fashion PAYMENT,Shopping,max fashion
+mxfashion PAYMENT,Shopping,mxfashion
+UPI PAYMENT max fashion,Shopping,max fashion
+UPI PAYMENT mxfashion,Shopping,mxfashion
+max fashion INDIA,Shopping,max fashion
+mxfashion INDIA,Shopping,mxfashion
+TRANSFER max fashion,Shopping,max fashion
+TRANSFER mxfashion,Shopping,mxfashion
+max fashion,Shopping,max fashion
+mxfashion,Shopping,mxfashion
+UPI/pantaloons/12345,Shopping,pantaloons
+UPI/pntaloons/12345,Shopping,pntaloons
+IMPS/pantaloons/98765,Shopping,pantaloons
+IMPS/pntaloons/98765,Shopping,pntaloons
+pantaloons LIMITED,Shopping,pantaloons
+pntaloons LIMITED,Shopping,pntaloons
+pantaloons PAYMENT,Shopping,pantaloons
+pntaloons PAYMENT,Shopping,pntaloons
+UPI PAYMENT pantaloons,Shopping,pantaloons
+UPI PAYMENT pntaloons,Shopping,pntaloons
+pantaloons INDIA,Shopping,pantaloons
+pntaloons INDIA,Shopping,pntaloons
+TRANSFER pantaloons,Shopping,pantaloons
+TRANSFER pntaloons,Shopping,pntaloons
+pantaloons,Shopping,pantaloons
+pntaloons,Shopping,pntaloons
+UPI/shoppers stop/12345,Shopping,shoppers stop
+UPI/shoppersstop/12345,Shopping,shoppersstop
+IMPS/shoppers stop/98765,Shopping,shoppers stop
+IMPS/shoppersstop/98765,Shopping,shoppersstop
+shoppers stop LIMITED,Shopping,shoppers stop
+shoppersstop LIMITED,Shopping,shoppersstop
+shoppers stop PAYMENT,Shopping,shoppers stop
+shoppersstop PAYMENT,Shopping,shoppersstop
+UPI PAYMENT shoppers stop,Shopping,shoppers stop
+UPI PAYMENT shoppersstop,Shopping,shoppersstop
+shoppers stop INDIA,Shopping,shoppers stop
+shoppersstop INDIA,Shopping,shoppersstop
+TRANSFER shoppers stop,Shopping,shoppers stop
+TRANSFER shoppersstop,Shopping,shoppersstop
+shoppers stop,Shopping,shoppers stop
+shoppersstop,Shopping,shoppersstop
+UPI/netflix/12345,Subscription,netflix
+UPI/netflix/12345,Subscription,netflix
+IMPS/netflix/98765,Subscription,netflix
+IMPS/netflix/98765,Subscription,netflix
+netflix LIMITED,Subscription,netflix
+netflix LIMITED,Subscription,netflix
+netflix PAYMENT,Subscription,netflix
+netflix PAYMENT,Subscription,netflix
+UPI PAYMENT netflix,Subscription,netflix
+UPI PAYMENT netflix,Subscription,netflix
+netflix INDIA,Subscription,netflix
+netflix INDIA,Subscription,netflix
+TRANSFER netflix,Subscription,netflix
+TRANSFER netflix,Subscription,netflix
+netflix,Subscription,netflix
+netflix,Subscription,netflix
+UPI/spotify/12345,Subscription,spotify
+UPI/spotify/12345,Subscription,spotify
+IMPS/spotify/98765,Subscription,spotify
+IMPS/spotify/98765,Subscription,spotify
+spotify LIMITED,Subscription,spotify
+spotify LIMITED,Subscription,spotify
+spotify PAYMENT,Subscription,spotify
+spotify PAYMENT,Subscription,spotify
+UPI PAYMENT spotify,Subscription,spotify
+UPI PAYMENT spotify,Subscription,spotify
+spotify INDIA,Subscription,spotify
+spotify INDIA,Subscription,spotify
+TRANSFER spotify,Subscription,spotify
+TRANSFER spotify,Subscription,spotify
+spotify,Subscription,spotify
+spotify,Subscription,spotify
+UPI/amazon prime/12345,Subscription,amazon prime
+UPI/mazonprime/12345,Subscription,mazonprime
+IMPS/amazon prime/98765,Subscription,amazon prime
+IMPS/mazonprime/98765,Subscription,mazonprime
+amazon prime LIMITED,Subscription,amazon prime
+mazonprime LIMITED,Subscription,mazonprime
+amazon prime PAYMENT,Subscription,amazon prime
+mazonprime PAYMENT,Subscription,mazonprime
+UPI PAYMENT amazon prime,Subscription,amazon prime
+UPI PAYMENT mazonprime,Subscription,mazonprime
+amazon prime INDIA,Subscription,amazon prime
+mazonprime INDIA,Subscription,mazonprime
+TRANSFER amazon prime,Subscription,amazon prime
+TRANSFER mazonprime,Subscription,mazonprime
+amazon prime,Subscription,amazon prime
+mazonprime,Subscription,mazonprime
+UPI/hotstar/12345,Subscription,hotstar
+UPI/hotstr/12345,Subscription,hotstr
+IMPS/hotstar/98765,Subscription,hotstar
+IMPS/hotstr/98765,Subscription,hotstr
+hotstar LIMITED,Subscription,hotstar
+hotstr LIMITED,Subscription,hotstr
+hotstar PAYMENT,Subscription,hotstar
+hotstr PAYMENT,Subscription,hotstr
+UPI PAYMENT hotstar,Subscription,hotstar
+UPI PAYMENT hotstr,Subscription,hotstr
+hotstar INDIA,Subscription,hotstar
+hotstr INDIA,Subscription,hotstr
+TRANSFER hotstar,Subscription,hotstar
+TRANSFER hotstr,Subscription,hotstr
+hotstar,Subscription,hotstar
+hotstr,Subscription,hotstr
+UPI/hoichoi/12345,Subscription,hoichoi
+UPI/hoichoi/12345,Subscription,hoichoi
+IMPS/hoichoi/98765,Subscription,hoichoi
+IMPS/hoichoi/98765,Subscription,hoichoi
+hoichoi LIMITED,Subscription,hoichoi
+hoichoi LIMITED,Subscription,hoichoi
+hoichoi PAYMENT,Subscription,hoichoi
+hoichoi PAYMENT,Subscription,hoichoi
+UPI PAYMENT hoichoi,Subscription,hoichoi
+UPI PAYMENT hoichoi,Subscription,hoichoi
+hoichoi INDIA,Subscription,hoichoi
+hoichoi INDIA,Subscription,hoichoi
+TRANSFER hoichoi,Subscription,hoichoi
+TRANSFER hoichoi,Subscription,hoichoi
+hoichoi,Subscription,hoichoi
+hoichoi,Subscription,hoichoi
+UPI/sonyliv/12345,Subscription,sonyliv
+UPI/sonyliv/12345,Subscription,sonyliv
+IMPS/sonyliv/98765,Subscription,sonyliv
+IMPS/sonyliv/98765,Subscription,sonyliv
+sonyliv LIMITED,Subscription,sonyliv
+sonyliv LIMITED,Subscription,sonyliv
+sonyliv PAYMENT,Subscription,sonyliv
+sonyliv PAYMENT,Subscription,sonyliv
+UPI PAYMENT sonyliv,Subscription,sonyliv
+UPI PAYMENT sonyliv,Subscription,sonyliv
+sonyliv INDIA,Subscription,sonyliv
+sonyliv INDIA,Subscription,sonyliv
+TRANSFER sonyliv,Subscription,sonyliv
+TRANSFER sonyliv,Subscription,sonyliv
+sonyliv,Subscription,sonyliv
+sonyliv,Subscription,sonyliv
+UPI/zee5/12345,Subscription,zee
+UPI/zee5/12345,Subscription,zee
+IMPS/zee5/98765,Subscription,zee
+IMPS/zee5/98765,Subscription,zee
+zee5 LIMITED,Subscription,zee
+zee5 LIMITED,Subscription,zee
+zee5 PAYMENT,Subscription,zee
+zee5 PAYMENT,Subscription,zee
+UPI PAYMENT zee5,Subscription,zee
+UPI PAYMENT zee5,Subscription,zee
+zee5 INDIA,Subscription,zee
+zee5 INDIA,Subscription,zee
+TRANSFER zee5,Subscription,zee
+TRANSFER zee5,Subscription,zee
+zee5,Subscription,zee
+zee5,Subscription,zee
+UPI/jiocinema/12345,Subscription,jiocinema
+UPI/jiocinem/12345,Subscription,jiocinem
+IMPS/jiocinema/98765,Subscription,jiocinema
+IMPS/jiocinem/98765,Subscription,jiocinem
+jiocinema LIMITED,Subscription,jiocinema
+jiocinem LIMITED,Subscription,jiocinem
+jiocinema PAYMENT,Subscription,jiocinema
+jiocinem PAYMENT,Subscription,jiocinem
+UPI PAYMENT jiocinema,Subscription,jiocinema
+UPI PAYMENT jiocinem,Subscription,jiocinem
+jiocinema INDIA,Subscription,jiocinema
+jiocinem INDIA,Subscription,jiocinem
+TRANSFER jiocinema,Subscription,jiocinema
+TRANSFER jiocinem,Subscription,jiocinem
+jiocinema,Subscription,jiocinema
+jiocinem,Subscription,jiocinem
+UPI/youtube premium/12345,Subscription,youtube premium
+UPI/youtubepremium/12345,Subscription,youtubepremium
+IMPS/youtube premium/98765,Subscription,youtube premium
+IMPS/youtubepremium/98765,Subscription,youtubepremium
+youtube premium LIMITED,Subscription,youtube premium
+youtubepremium LIMITED,Subscription,youtubepremium
+youtube premium PAYMENT,Subscription,youtube premium
+youtubepremium PAYMENT,Subscription,youtubepremium
+UPI PAYMENT youtube premium,Subscription,youtube premium
+UPI PAYMENT youtubepremium,Subscription,youtubepremium
+youtube premium INDIA,Subscription,youtube premium
+youtubepremium INDIA,Subscription,youtubepremium
+TRANSFER youtube premium,Subscription,youtube premium
+TRANSFER youtubepremium,Subscription,youtubepremium
+youtube premium,Subscription,youtube premium
+youtubepremium,Subscription,youtubepremium
+UPI/apple/12345,Subscription,apple
+UPI/pple/12345,Subscription,pple
+IMPS/apple/98765,Subscription,apple
+IMPS/pple/98765,Subscription,pple
+apple LIMITED,Subscription,apple
+pple LIMITED,Subscription,pple
+apple PAYMENT,Subscription,apple
+pple PAYMENT,Subscription,pple
+UPI PAYMENT apple,Subscription,apple
+UPI PAYMENT pple,Subscription,pple
+apple INDIA,Subscription,apple
+pple INDIA,Subscription,pple
+TRANSFER apple,Subscription,apple
+TRANSFER pple,Subscription,pple
+apple,Subscription,apple
+pple,Subscription,pple
+UPI/wynk/12345,Subscription,wynk
+UPI/wynk/12345,Subscription,wynk
+IMPS/wynk/98765,Subscription,wynk
+IMPS/wynk/98765,Subscription,wynk
+wynk LIMITED,Subscription,wynk
+wynk LIMITED,Subscription,wynk
+wynk PAYMENT,Subscription,wynk
+wynk PAYMENT,Subscription,wynk
+UPI PAYMENT wynk,Subscription,wynk
+UPI PAYMENT wynk,Subscription,wynk
+wynk INDIA,Subscription,wynk
+wynk INDIA,Subscription,wynk
+TRANSFER wynk,Subscription,wynk
+TRANSFER wynk,Subscription,wynk
+wynk,Subscription,wynk
+wynk,Subscription,wynk
+UPI/kindle/12345,Subscription,kindle
+UPI/kindle/12345,Subscription,kindle
+IMPS/kindle/98765,Subscription,kindle
+IMPS/kindle/98765,Subscription,kindle
+kindle LIMITED,Subscription,kindle
+kindle LIMITED,Subscription,kindle
+kindle PAYMENT,Subscription,kindle
+kindle PAYMENT,Subscription,kindle
+UPI PAYMENT kindle,Subscription,kindle
+UPI PAYMENT kindle,Subscription,kindle
+kindle INDIA,Subscription,kindle
+kindle INDIA,Subscription,kindle
+TRANSFER kindle,Subscription,kindle
+TRANSFER kindle,Subscription,kindle
+kindle,Subscription,kindle
+kindle,Subscription,kindle
+UPI/salary credit/12345,Income,salary
+UPI/slarycredit/12345,Income,slarycredit
+IMPS/salary credit/98765,Income,salary
+IMPS/slarycredit/98765,Income,slarycredit
+salary credit LIMITED,Income,salary
+slarycredit LIMITED,Income,slarycredit
+salary credit PAYMENT,Income,salary
+slarycredit PAYMENT,Income,slarycredit
+UPI PAYMENT salary credit,Income,salary
+UPI PAYMENT slarycredit,Income,slarycredit
+salary credit INDIA,Income,salary
+slarycredit INDIA,Income,slarycredit
+TRANSFER salary credit,Income,salary
+TRANSFER slarycredit,Income,slarycredit
+salary credit,Income,salary
+slarycredit,Income,slarycredit
+UPI/interest credit/12345,Income,interest
+UPI/interestcredit/12345,Income,interestcredit
+IMPS/interest credit/98765,Income,interest
+IMPS/interestcredit/98765,Income,interestcredit
+interest credit LIMITED,Income,interest
+interestcredit LIMITED,Income,interestcredit
+interest credit PAYMENT,Income,interest
+interestcredit PAYMENT,Income,interestcredit
+UPI PAYMENT interest credit,Income,interest
+UPI PAYMENT interestcredit,Income,interestcredit
+interest credit INDIA,Income,interest
+interestcredit INDIA,Income,interestcredit
+TRANSFER interest credit,Income,interest
+TRANSFER interestcredit,Income,interestcredit
+interest credit,Income,interest
+interestcredit,Income,interestcredit
+UPI/salary/12345,Income,salary
+UPI/slary/12345,Income,slary
+IMPS/salary/98765,Income,salary
+IMPS/slary/98765,Income,slary
+salary LIMITED,Income,salary
+slary LIMITED,Income,slary
+salary PAYMENT,Income,salary
+slary PAYMENT,Income,slary
+UPI PAYMENT salary,Income,salary
+UPI PAYMENT slary,Income,slary
+salary INDIA,Income,salary
+slary INDIA,Income,slary
+TRANSFER salary,Income,salary
+TRANSFER slary,Income,slary
+salary,Income,salary
+slary,Income,slary
+UPI/dividend/12345,Income,dividend
+UPI/dividend/12345,Income,dividend
+IMPS/dividend/98765,Income,dividend
+IMPS/dividend/98765,Income,dividend
+dividend LIMITED,Income,dividend
+dividend LIMITED,Income,dividend
+dividend PAYMENT,Income,dividend
+dividend PAYMENT,Income,dividend
+UPI PAYMENT dividend,Income,dividend
+UPI PAYMENT dividend,Income,dividend
+dividend INDIA,Income,dividend
+dividend INDIA,Income,dividend
+TRANSFER dividend,Income,dividend
+TRANSFER dividend,Income,dividend
+dividend,Income,dividend
+dividend,Income,dividend
+UPI/cashback/12345,Income,cashback
+UPI/cshback/12345,Income,cshback
+IMPS/cashback/98765,Income,cashback
+IMPS/cshback/98765,Income,cshback
+cashback LIMITED,Income,cashback
+cshback LIMITED,Income,cshback
+cashback PAYMENT,Income,cashback
+cshback PAYMENT,Income,cshback
+UPI PAYMENT cashback,Income,cashback
+UPI PAYMENT cshback,Income,cshback
+cashback INDIA,Income,cashback
+cshback INDIA,Income,cshback
+TRANSFER cashback,Income,cashback
+TRANSFER cshback,Income,cshback
+cashback,Income,cashback
+cshback,Income,cshback
+UPI/reimbursement/12345,Income,reimbursement
+UPI/reimbursement/12345,Income,reimbursement
+IMPS/reimbursement/98765,Income,reimbursement
+IMPS/reimbursement/98765,Income,reimbursement
+reimbursement LIMITED,Income,reimbursement
+reimbursement LIMITED,Income,reimbursement
+reimbursement PAYMENT,Income,reimbursement
+reimbursement PAYMENT,Income,reimbursement
+UPI PAYMENT reimbursement,Income,reimbursement
+UPI PAYMENT reimbursement,Income,reimbursement
+reimbursement INDIA,Income,reimbursement
+reimbursement INDIA,Income,reimbursement
+TRANSFER reimbursement,Income,reimbursement
+TRANSFER reimbursement,Income,reimbursement
+reimbursement,Income,reimbursement
+reimbursement,Income,reimbursement
+UPI/rent/12345,Income,rent
+UPI/rent/12345,Income,rent
+IMPS/rent/98765,Income,rent
+IMPS/rent/98765,Income,rent
+rent LIMITED,Income,rent
+rent LIMITED,Income,rent
+rent PAYMENT,Income,rent
+rent PAYMENT,Income,rent
+UPI PAYMENT rent,Income,rent
+UPI PAYMENT rent,Income,rent
+rent INDIA,Income,rent
+rent INDIA,Income,rent
+TRANSFER rent,Income,rent
+TRANSFER rent,Income,rent
+rent,Income,rent
+rent,Income,rent
+UPI/pension/12345,Income,pension
+UPI/pension/12345,Income,pension
+IMPS/pension/98765,Income,pension
+IMPS/pension/98765,Income,pension
+pension LIMITED,Income,pension
+pension LIMITED,Income,pension
+pension PAYMENT,Income,pension
+pension PAYMENT,Income,pension
+UPI PAYMENT pension,Income,pension
+UPI PAYMENT pension,Income,pension
+pension INDIA,Income,pension
+pension INDIA,Income,pension
+TRANSFER pension,Income,pension
+TRANSFER pension,Income,pension
+pension,Income,pension
+pension,Income,pension
+UPI/refund/12345,Income,refund
+UPI/refund/12345,Income,refund
+IMPS/refund/98765,Income,refund
+IMPS/refund/98765,Income,refund
+refund LIMITED,Income,refund
+refund LIMITED,Income,refund
+refund PAYMENT,Income,refund
+refund PAYMENT,Income,refund
+UPI PAYMENT refund,Income,refund
+UPI PAYMENT refund,Income,refund
+refund INDIA,Income,refund
+refund INDIA,Income,refund
+TRANSFER refund,Income,refund
+TRANSFER refund,Income,refund
+refund,Income,refund
+refund,Income,refund
+UPI/bonus/12345,Income,bonus
+UPI/bonus/12345,Income,bonus
+IMPS/bonus/98765,Income,bonus
+IMPS/bonus/98765,Income,bonus
+bonus LIMITED,Income,bonus
+bonus LIMITED,Income,bonus
+bonus PAYMENT,Income,bonus
+bonus PAYMENT,Income,bonus
+UPI PAYMENT bonus,Income,bonus
+UPI PAYMENT bonus,Income,bonus
+bonus INDIA,Income,bonus
+bonus INDIA,Income,bonus
+TRANSFER bonus,Income,bonus
+TRANSFER bonus,Income,bonus
+bonus,Income,bonus
+bonus,Income,bonus
+UPI/stipend/12345,Income,stipend
+UPI/stipend/12345,Income,stipend
+IMPS/stipend/98765,Income,stipend
+IMPS/stipend/98765,Income,stipend
+stipend LIMITED,Income,stipend
+stipend LIMITED,Income,stipend
+stipend PAYMENT,Income,stipend
+stipend PAYMENT,Income,stipend
+UPI PAYMENT stipend,Income,stipend
+UPI PAYMENT stipend,Income,stipend
+stipend INDIA,Income,stipend
+stipend INDIA,Income,stipend
+TRANSFER stipend,Income,stipend
+TRANSFER stipend,Income,stipend
+stipend,Income,stipend
+stipend,Income,stipend
+UPI/zerodha/12345,Investment,zerodha
+UPI/zerodh/12345,Investment,zerodh
+IMPS/zerodha/98765,Investment,zerodha
+IMPS/zerodh/98765,Investment,zerodh
+zerodha LIMITED,Investment,zerodha
+zerodh LIMITED,Investment,zerodh
+zerodha PAYMENT,Investment,zerodha
+zerodh PAYMENT,Investment,zerodh
+UPI PAYMENT zerodha,Investment,zerodha
+UPI PAYMENT zerodh,Investment,zerodh
+zerodha INDIA,Investment,zerodha
+zerodh INDIA,Investment,zerodh
+TRANSFER zerodha,Investment,zerodha
+TRANSFER zerodh,Investment,zerodh
+zerodha,Investment,zerodha
+zerodh,Investment,zerodh
+UPI/groww/12345,Investment,groww
+UPI/groww/12345,Investment,groww
+IMPS/groww/98765,Investment,groww
+IMPS/groww/98765,Investment,groww
+groww LIMITED,Investment,groww
+groww LIMITED,Investment,groww
+groww PAYMENT,Investment,groww
+groww PAYMENT,Investment,groww
+UPI PAYMENT groww,Investment,groww
+UPI PAYMENT groww,Investment,groww
+groww INDIA,Investment,groww
+groww INDIA,Investment,groww
+TRANSFER groww,Investment,groww
+TRANSFER groww,Investment,groww
+groww,Investment,groww
+groww,Investment,groww
+UPI/mutual fund/12345,Investment,mutual fund
+UPI/mutulfund/12345,Investment,mutulfund
+IMPS/mutual fund/98765,Investment,mutual fund
+IMPS/mutulfund/98765,Investment,mutulfund
+mutual fund LIMITED,Investment,mutual fund
+mutulfund LIMITED,Investment,mutulfund
+mutual fund PAYMENT,Investment,mutual fund
+mutulfund PAYMENT,Investment,mutulfund
+UPI PAYMENT mutual fund,Investment,mutual fund
+UPI PAYMENT mutulfund,Investment,mutulfund
+mutual fund INDIA,Investment,mutual fund
+mutulfund INDIA,Investment,mutulfund
+TRANSFER mutual fund,Investment,mutual fund
+TRANSFER mutulfund,Investment,mutulfund
+mutual fund,Investment,mutual fund
+mutulfund,Investment,mutulfund
+UPI/upstox/12345,Investment,upstox
+UPI/upstox/12345,Investment,upstox
+IMPS/upstox/98765,Investment,upstox
+IMPS/upstox/98765,Investment,upstox
+upstox LIMITED,Investment,upstox
+upstox LIMITED,Investment,upstox
+upstox PAYMENT,Investment,upstox
+upstox PAYMENT,Investment,upstox
+UPI PAYMENT upstox,Investment,upstox
+UPI PAYMENT upstox,Investment,upstox
+upstox INDIA,Investment,upstox
+upstox INDIA,Investment,upstox
+TRANSFER upstox,Investment,upstox
+TRANSFER upstox,Investment,upstox
+upstox,Investment,upstox
+upstox,Investment,upstox
+UPI/angel one/12345,Investment,angel one
+UPI/ngelone/12345,Investment,ngelone
+IMPS/angel one/98765,Investment,angel one
+IMPS/ngelone/98765,Investment,ngelone
+angel one LIMITED,Investment,angel one
+ngelone LIMITED,Investment,ngelone
+angel one PAYMENT,Investment,angel one
+ngelone PAYMENT,Investment,ngelone
+UPI PAYMENT angel one,Investment,angel one
+UPI PAYMENT ngelone,Investment,ngelone
+angel one INDIA,Investment,angel one
+ngelone INDIA,Investment,ngelone
+TRANSFER angel one,Investment,angel one
+TRANSFER ngelone,Investment,ngelone
+angel one,Investment,angel one
+ngelone,Investment,ngelone
+UPI/coin/12345,Investment,coin
+UPI/coin/12345,Investment,coin
+IMPS/coin/98765,Investment,coin
+IMPS/coin/98765,Investment,coin
+coin LIMITED,Investment,coin
+coin LIMITED,Investment,coin
+coin PAYMENT,Investment,coin
+coin PAYMENT,Investment,coin
+UPI PAYMENT coin,Investment,coin
+UPI PAYMENT coin,Investment,coin
+coin INDIA,Investment,coin
+coin INDIA,Investment,coin
+TRANSFER coin,Investment,coin
+TRANSFER coin,Investment,coin
+coin,Investment,coin
+coin,Investment,coin
+UPI/kuvera/12345,Investment,kuvera
+UPI/kuver/12345,Investment,kuver
+IMPS/kuvera/98765,Investment,kuvera
+IMPS/kuver/98765,Investment,kuver
+kuvera LIMITED,Investment,kuvera
+kuver LIMITED,Investment,kuver
+kuvera PAYMENT,Investment,kuvera
+kuver PAYMENT,Investment,kuver
+UPI PAYMENT kuvera,Investment,kuvera
+UPI PAYMENT kuver,Investment,kuver
+kuvera INDIA,Investment,kuvera
+kuver INDIA,Investment,kuver
+TRANSFER kuvera,Investment,kuvera
+TRANSFER kuver,Investment,kuver
+kuvera,Investment,kuvera
+kuver,Investment,kuver
+UPI/indmoney/12345,Investment,indmoney
+UPI/indmoney/12345,Investment,indmoney
+IMPS/indmoney/98765,Investment,indmoney
+IMPS/indmoney/98765,Investment,indmoney
+indmoney LIMITED,Investment,indmoney
+indmoney LIMITED,Investment,indmoney
+indmoney PAYMENT,Investment,indmoney
+indmoney PAYMENT,Investment,indmoney
+UPI PAYMENT indmoney,Investment,indmoney
+UPI PAYMENT indmoney,Investment,indmoney
+indmoney INDIA,Investment,indmoney
+indmoney INDIA,Investment,indmoney
+TRANSFER indmoney,Investment,indmoney
+TRANSFER indmoney,Investment,indmoney
+indmoney,Investment,indmoney
+indmoney,Investment,indmoney
+UPI/paytm money/12345,Investment,paytm money
+UPI/pytmmoney/12345,Investment,pytmmoney
+IMPS/paytm money/98765,Investment,paytm money
+IMPS/pytmmoney/98765,Investment,pytmmoney
+paytm money LIMITED,Investment,paytm money
+pytmmoney LIMITED,Investment,pytmmoney
+paytm money PAYMENT,Investment,paytm money
+pytmmoney PAYMENT,Investment,pytmmoney
+UPI PAYMENT paytm money,Investment,paytm money
+UPI PAYMENT pytmmoney,Investment,pytmmoney
+paytm money INDIA,Investment,paytm money
+pytmmoney INDIA,Investment,pytmmoney
+TRANSFER paytm money,Investment,paytm money
+TRANSFER pytmmoney,Investment,pytmmoney
+paytm money,Investment,paytm money
+pytmmoney,Investment,pytmmoney
+UPI/epfo/12345,Investment,epfo
+UPI/epfo/12345,Investment,epfo
+IMPS/epfo/98765,Investment,epfo
+IMPS/epfo/98765,Investment,epfo
+epfo LIMITED,Investment,epfo
+epfo LIMITED,Investment,epfo
+epfo PAYMENT,Investment,epfo
+epfo PAYMENT,Investment,epfo
+UPI PAYMENT epfo,Investment,epfo
+UPI PAYMENT epfo,Investment,epfo
+epfo INDIA,Investment,epfo
+epfo INDIA,Investment,epfo
+TRANSFER epfo,Investment,epfo
+TRANSFER epfo,Investment,epfo
+epfo,Investment,epfo
+epfo,Investment,epfo
+UPI/ppf/12345,Investment,ppf
+UPI/ppf/12345,Investment,ppf
+IMPS/ppf/98765,Investment,ppf
+IMPS/ppf/98765,Investment,ppf
+ppf LIMITED,Investment,ppf
+ppf LIMITED,Investment,ppf
+ppf PAYMENT,Investment,ppf
+ppf PAYMENT,Investment,ppf
+UPI PAYMENT ppf,Investment,ppf
+UPI PAYMENT ppf,Investment,ppf
+ppf INDIA,Investment,ppf
+ppf INDIA,Investment,ppf
+TRANSFER ppf,Investment,ppf
+TRANSFER ppf,Investment,ppf
+ppf,Investment,ppf
+ppf,Investment,ppf
+UPI/sip/12345,Investment,sip
+UPI/sip/12345,Investment,sip
+IMPS/sip/98765,Investment,sip
+IMPS/sip/98765,Investment,sip
+sip LIMITED,Investment,sip
+sip LIMITED,Investment,sip
+sip PAYMENT,Investment,sip
+sip PAYMENT,Investment,sip
+UPI PAYMENT sip,Investment,sip
+UPI PAYMENT sip,Investment,sip
+sip INDIA,Investment,sip
+sip INDIA,Investment,sip
+TRANSFER sip,Investment,sip
+TRANSFER sip,Investment,sip
+sip,Investment,sip
+sip,Investment,sip
+UPI/icici direct/12345,Investment,icici direct
+UPI/icicidirect/12345,Investment,icicidirect
+IMPS/icici direct/98765,Investment,icici direct
+IMPS/icicidirect/98765,Investment,icicidirect
+icici direct LIMITED,Investment,icici direct
+icicidirect LIMITED,Investment,icicidirect
+icici direct PAYMENT,Investment,icici direct
+icicidirect PAYMENT,Investment,icicidirect
+UPI PAYMENT icici direct,Investment,icici direct
+UPI PAYMENT icicidirect,Investment,icicidirect
+icici direct INDIA,Investment,icici direct
+icicidirect INDIA,Investment,icicidirect
+TRANSFER icici direct,Investment,icici direct
+TRANSFER icicidirect,Investment,icicidirect
+icici direct,Investment,icici direct
+icicidirect,Investment,icicidirect
+UPI/hdfc sec/12345,Investment,hdfc sec
+UPI/hdfcsec/12345,Investment,hdfcsec
+IMPS/hdfc sec/98765,Investment,hdfc sec
+IMPS/hdfcsec/98765,Investment,hdfcsec
+hdfc sec LIMITED,Investment,hdfc sec
+hdfcsec LIMITED,Investment,hdfcsec
+hdfc sec PAYMENT,Investment,hdfc sec
+hdfcsec PAYMENT,Investment,hdfcsec
+UPI PAYMENT hdfc sec,Investment,hdfc sec
+UPI PAYMENT hdfcsec,Investment,hdfcsec
+hdfc sec INDIA,Investment,hdfc sec
+hdfcsec INDIA,Investment,hdfcsec
+TRANSFER hdfc sec,Investment,hdfc sec
+TRANSFER hdfcsec,Investment,hdfcsec
+hdfc sec,Investment,hdfc sec
+hdfcsec,Investment,hdfcsec
+UPI/sbi mutual fund/12345,Investment,sbi mutual fund
+UPI/sbimutulfund/12345,Investment,sbimutulfund
+IMPS/sbi mutual fund/98765,Investment,sbi mutual fund
+IMPS/sbimutulfund/98765,Investment,sbimutulfund
+sbi mutual fund LIMITED,Investment,sbi mutual fund
+sbimutulfund LIMITED,Investment,sbimutulfund
+sbi mutual fund PAYMENT,Investment,sbi mutual fund
+sbimutulfund PAYMENT,Investment,sbimutulfund
+UPI PAYMENT sbi mutual fund,Investment,sbi mutual fund
+UPI PAYMENT sbimutulfund,Investment,sbimutulfund
+sbi mutual fund INDIA,Investment,sbi mutual fund
+sbimutulfund INDIA,Investment,sbimutulfund
+TRANSFER sbi mutual fund,Investment,sbi mutual fund
+TRANSFER sbimutulfund,Investment,sbimutulfund
+sbi mutual fund,Investment,sbi mutual fund
+sbimutulfund,Investment,sbimutulfund

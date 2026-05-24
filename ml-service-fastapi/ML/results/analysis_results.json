@@ -1,0 +1,3120 @@
+{
+  "type_1_transactions": [
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Unusual Midnight Transaction",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "High Value Crypto Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Duplicate Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "High Value Crypto Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "UPI Transfer",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Unexpected Large Credit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Cash Deposit",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Mobile Recharge",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Fuel Payment",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "IMPS Payment",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Electricity Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Restaurant Bill",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "confidence": 0.46,
+      "prediction_source": "ML Model"
+    },
+    {
+      "transaction_statement": "Duplicate ATM Withdrawal",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Salary Credit",
+      "predicted_category": "Income",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Loan EMI",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Medical Expense",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Grocery Purchase",
+      "predicted_category": "Shopping",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": "Online Shopping",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "Travel Booking",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    }
+  ],
+  "type_2_category_statistics": {
+    "total_income": 7860473.38,
+    "total_expenses": 4417296.61,
+    "net_savings": 3443176.77,
+    "category_statistics": [
+      {
+        "category": "Income",
+        "total_credit": 5412405.31,
+        "total_debit": 229069.92,
+        "net_amount": 5183335.39,
+        "transaction_count": 74,
+        "average_transaction": 70045.07,
+        "percentage_of_income": 68.86,
+        "percentage_of_expenses": 5.19
+      },
+      {
+        "category": "Subscription",
+        "total_credit": 212806.97,
+        "total_debit": 126610.21,
+        "net_amount": 86196.76,
+        "transaction_count": 36,
+        "average_transaction": 2394.35,
+        "percentage_of_income": 2.71,
+        "percentage_of_expenses": 2.87
+      },
+      {
+        "category": "Shopping",
+        "total_credit": 225953.8,
+        "total_debit": 791073.46,
+        "net_amount": -565119.66,
+        "transaction_count": 42,
+        "average_transaction": -13455.23,
+        "percentage_of_income": 2.87,
+        "percentage_of_expenses": 17.91
+      },
+      {
+        "category": "Other",
+        "total_credit": 2009307.3,
+        "total_debit": 3270543.02,
+        "net_amount": -1261235.72,
+        "transaction_count": 348,
+        "average_transaction": -3624.24,
+        "percentage_of_income": 25.56,
+        "percentage_of_expenses": 74.04
+      }
+    ]
+  },
+  "type_3_anomalies": [
+    {
+      "transaction_statement": "Unusual Midnight Transaction",
+      "predicted_category": "Other",
+      "anomaly_reason": "Suspicious transaction 306,287.68 (low-confidence categorization). ML flagged as irregular.",
+      "confidence": 0.21
+    },
+    {
+      "transaction_statement": "High Value Crypto Purchase",
+      "predicted_category": "Shopping",
+      "anomaly_reason": "ML flagged 341,761.31 as a highly irregular pattern for Shopping.",
+      "confidence": 0.95
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "anomaly_reason": "ML flagged 14,027.12 as a highly irregular pattern for Subscription.",
+      "confidence": 0.46
+    },
+    {
+      "transaction_statement": "Insurance Premium",
+      "predicted_category": "Subscription",
+      "anomaly_reason": "ML flagged 13,737.31 as a highly irregular pattern for Subscription.",
+      "confidence": 0.46
+    },
+    {
+      "transaction_statement": "Duplicate Withdrawal",
+      "predicted_category": "Other",
+      "anomaly_reason": "Suspicious transaction 743,553.64 (low-confidence categorization). ML flagged as irregular.",
+      "confidence": 0.95
+    },
+    {
+      "transaction_statement": "High Value Crypto Purchase",
+      "predicted_category": "Shopping",
+      "anomaly_reason": "ML flagged 304,099.41 as a highly irregular pattern for Shopping.",
+      "confidence": 0.95
+    }
+  ],
+  "type_4_anomaly_threshold_categories": {
+    "categories_normal_threshold": [
+      "Food",
+      "Travel",
+      "Shopping",
+      "Bills & Utilities",
+      "EMI/Loan",
+      "Rent/Housing"
+    ],
+    "categories_high_threshold": [
+      "Transfer",
+      "Investment",
+      "Income",
+      "Other"
+    ]
+  },
+  "type_5_health_score": {
+    "score": 100,
+    "insights": [
+      "Excellent savings rate (43.8%). You are saving the recommended 20%+ of your income.",
+      "Zero EMI burden. You have excellent debt health.",
+      "Fixed costs (Rent, EMI, Bills) are well-managed at 0.0% of income."
+    ],
+    "metrics": {
+      "Total Income": 7860473.380000001,
+      "Total Expenses": 4417296.61,
+      "Savings Rate": 43.8,
+      "EMI Burden": 0.0,
+      "Fixed Costs Ratio": 0.0
+    }
+  }
+}

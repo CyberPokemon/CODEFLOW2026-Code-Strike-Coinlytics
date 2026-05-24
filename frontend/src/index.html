@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.1" />
+  <title>Coinlytics — AI-Powered Financial Intelligence</title>
+  <meta name="description" content="Upload bank statements securely and receive instant AI-driven spending insights, fraud detection, categorization, and analytics." />
+  <meta property="og:title" content="Coinlytics — AI Financial Intelligence" />
+  <meta property="og:description" content="Secure, AI-powered analytics for your bank statements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/homepage1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">C</span>
+        <span>Coinlytics</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#security">Security</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          ☀️
+        </button>
+      
+        <button class="btn btn-ghost" onclick="window.location.href='./login.html'">
+          Login
+        </button>
+      
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="container hero-inner">
+      <div class="reveal">
+        <span class="eyebrow">&#9679; AI Financial Intelligence</span>
+        <h1>
+          AI-Powered Financial Intelligence From
+          <span class="gradient-text">Bank Statements</span>
+        </h1>
+        <p class="lead">
+          Upload bank statements securely and receive instant AI-driven spending insights,
+          fraud detection, categorization, and analytics — all in one private workspace.
+        </p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" onclick="window.location.href='./login.html'">
+            Get Started &#8594;
+          </button>
+        </div>
+        <div class="hero-stats">
+          <!-- <div class="stat-card"><div class="num gradient-text">98%</div><div class="label">Detection Accuracy</div></div> -->
+          <div class="stat-card"><div class="num gradient-text">AES-256</div><div class="label">Encrypted Storage</div></div>
+          <div class="stat-card"><div class="num gradient-text">Smart AI</div><div class="label">Spending Insights</div></div>
+          <!-- <div class="stat-card"><div class="num gradient-text">Real-Time</div><div class="label">Analytics Engine</div></div> -->
+        </div>
+      </div>
+
+      <!--
+      <div class="hero-visual reveal">
+        <div class="float-card float-1">
+          <div class="badge">&#8593;</div>
+          <div><div style="font-weight: 600;">+$2,340</div><div style="color: var(--muted);">Income detected</div></div>
+        </div>
+        <div class="float-card float-2">
+          <span class="pulse-dot"></span>
+          <div><div style="font-weight: 600;">Anomaly flagged</div><div style="color: var(--muted);">$4,820 wire</div></div>
+        </div>
+        <div class="float-card float-3">
+          <div class="badge" style="background: rgba(20,241,149,0.2); color: var(--neon);">AI</div>
+          <div><div style="font-weight: 600;">Score: 842</div><div style="color: var(--muted);">Financial health</div></div>
+        </div>
+
+        <div class="dash">
+          <div class="dash-head">
+            <h4>Account Overview</h4>
+            <div class="dash-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="dash-balance">$48,392.10<span class="delta">+12.4%</span></div>
+          <div class="dash-sub">Net cash flow &#183; last 30 days</div>
+
+          <svg class="dash-chart" viewBox="0 0 400 140" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.45" />
+                <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#00d4ff" />
+                <stop offset="100%" stop-color="#14f195" />
+              </linearGradient>
+            </defs>
+            <path d="M0,110 C40,90 70,100 100,80 C140,55 170,70 200,55 C240,35 270,50 300,40 C340,25 370,30 400,15 L400,140 L0,140 Z" fill="url(#g1)" />
+            <path d="M0,110 C40,90 70,100 100,80 C140,55 170,70 200,55 C240,35 270,50 300,40 C340,25 370,30 400,15" fill="none" stroke="url(#g2)" stroke-width="2.5" />
+          </svg>
+
+          <div class="dash-list">
+            <div class="dash-tx">
+              <div class="left"><div class="ico">$</div><div><div>Stripe Payout</div><div style="color: var(--muted); font-size: 11px;">Today &#183; Income</div></div></div>
+              <div class="amount">+$2,340.00</div>
+            </div>
+            <div class="dash-tx">
+              <div class="left"><div class="ico" style="background: rgba(20,241,149,0.12); color: var(--neon);">&#9733;</div><div><div>Whole Foods</div><div style="color: var(--muted); font-size: 11px;">Yesterday &#183; Food</div></div></div>
+              <div class="amount neg">&#8722;$84.20</div>
+            </div>
+            <div class="dash-tx">
+              <div class="left"><div class="ico" style="background: rgba(255,107,139,0.12); color: #ff6b8b;">&#9888;</div><div><div>Unknown Merchant</div><div style="color: var(--muted); font-size: 11px;">Flagged &#183; Anomaly</div></div></div>
+              <div class="amount neg">&#8722;$4,820.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Platform Features</span>
+        <h2>Everything you need to <span class="gradient-text">understand your money</span></h2>
+        <p>A modern intelligence layer over your bank statements &#8212; categorized, analyzed, and protected.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature reveal">
+          <div class="icon" style="font-size: 22px;">&#129504;</div>
+          <h3>AI Transaction Categorization</h3>
+          <p>Machine-learning models label every transaction by category, merchant, and intent with high precision.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon" style="font-size: 22px;">&#128737;</div>
+          <h3>Fraud &amp; Anomaly Detection</h3>
+          <p>Real-time anomaly scoring surfaces suspicious activity before it becomes a problem.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon" style="font-size: 22px;">&#128202;</div>
+          <h3>Smart Spending Analytics</h3>
+          <p>Track trends, recurring charges, and category breakdowns through a clean visual dashboard.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon" style="font-size: 22px;">&#9829;</div>
+          <h3>Financial Health Score</h3>
+          <p>An at-a-glance score reflecting income stability, savings rate, and risk exposure.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon" style="font-size: 22px;">&#128274;</div>
+          <h3>Secure AES Encryption</h3>
+          <p>Statements are encrypted at rest with AES-256, with strict access controls end-to-end.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="icon" style="font-size: 22px;">&#128220;</div>
+          <h3>CSV &amp; PDF Statement Parsing</h3>
+          <p>Drop in any bank statement format &#8212; our parser normalizes it into clean structured data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>From statement to <span class="gradient-text">insight in seconds</span></h2>
+        <p>A secure, automated pipeline turns raw bank data into actionable financial intelligence.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h4>Upload Statement</h4>
+          <p>Drop in a CSV or PDF bank statement from any institution.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h4>AES Encryption</h4>
+          <p>Files are encrypted instantly with AES-256 before processing.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h4>AI Extraction</h4>
+          <p>Our engine parses every transaction with structured precision.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">4</div>
+          <h4>ML Categorization</h4>
+          <p>Models classify and detect anomalies across your activity.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">5</div>
+          <h4>Live Insights</h4>
+          <p>Interactive dashboards reveal patterns, risks and opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section id="security" class="section security">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Security &amp; Privacy</span>
+        <h2>Built with a <span class="gradient-text">zero-trust foundation</span></h2>
+        <p>Your financial data deserves bank-grade protection &#8212; by design, not as an afterthought.</p>
+      </div>
+      <div class="security-grid">
+        <div class="reveal">
+          <div class="security-list">
+            <div class="sec-item">
+              <div class="ico">&#128274;</div>
+              <div><h4>AES-256 Encrypted Storage</h4><p>Every file is encrypted at rest using industry-standard AES-256.</p></div>
+            </div>
+            <div class="sec-item">
+              <div class="ico">&#128274;</div>
+              <div><h4>Secure Authentication</h4><p>Modern, token-based auth with hardened session policies.</p></div>
+            </div>
+            <div class="sec-item">
+              <div class="ico">&#128274;</div>
+              <div><h4>Temporary File Retention</h4><p>Statements are auto-purged after a short window &#8212; no long-term storage.</p></div>
+            </div>
+            <div class="sec-item">
+              <div class="ico">&#128274;</div>
+              <div><h4>Privacy-First Architecture</h4><p>Designed so we see as little of your data as possible.</p></div>
+            </div>
+            <div class="sec-item">
+              <div class="ico">&#128274;</div>
+              <div><h4>Secure Cloud Infrastructure</h4><p>Deployed on hardened cloud with strict network isolation.</p></div>
+            </div>
+            <div class="sec-item">
+              <div class="ico">&#128274;</div>
+              <div><h4>Zero Bank Credential Collection</h4><p>We never connect to your bank or store credentials of any kind.</p></div>
+            </div>
+          </div>
+          <div class="sec-highlight">
+            <strong class="gradient-text">We never ask for your bank login credentials.</strong>
+            <p>Coinlytics works exclusively with statements you upload yourself. No screen-scraping, no credential storage, no third-party access.</p>
+          </div>
+          <div class="sec-highlight" style="margin-top: 14px;">
+            <strong class="gradient-text">Uploaded statements are auto-deleted.</strong>
+            <p>Files are automatically removed after a limited retention window to dramatically reduce the surface area for data leaks.</p>
+          </div>
+        </div>
+        <div class="sec-visual reveal">
+          <div class="shield-wrap">
+            <div class="shield-ring"></div>
+            <div class="shield-ring"></div>
+            <div class="shield-ring"></div>
+            <div class="shield-core" style="font-size: 56px;">&#128737;</div>
+            <div class="shield-badge sb-1">&#9679; AES-256</div>
+            <div class="shield-badge sb-2">&#9679; Encrypted</div>
+            <div class="shield-badge sb-3">&#9679; Zero-Trust</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">About Coinlytics</span>
+        <h2>Our mission: <span class="gradient-text">make financial clarity universal</span></h2>
+      </div>
+      <p class="about-intro reveal">
+        Coinlytics was built by a small team of engineers and designers who believe everyone deserves
+        bank-grade financial intelligence &#8212; not just institutions. We combine modern AI with a strict
+        privacy-first foundation so individuals can finally understand and trust their own money story.
+      </p>
+      <div class="team-grid">
+        <div class="member reveal">
+          <div class="avatar">IM</div>
+          <h4>Imon Mallik</h4>
+          <div class="role">Backend Lead</div>
+          <div class="socials">
+            <a href="https://github.com/CyberPokemon" aria-label="GitHub">G</a>
+            <a href="www.linkedin.com/in/imon-mallik-2821a8358" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="member reveal">
+          <div class="avatar">SS</div>
+          <h4>Soumi Sahu</h4>
+          <div class="role">Frontend Lead</div>
+          <div class="socials">
+            <a href="https://github.com/codewizard017" aria-label="GitHub">G</a>
+            <a href="https://www.linkedin.com/in/soumi-sahu-a1733028b" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="member reveal">
+          <div class="avatar">SN</div>
+          <h4>Santanu Nandi</h4>
+          <div class="role">Backend Lead</div>
+          <div class="socials">
+            <a href="https://github.com/Mrsantanunandi" aria-label="GitHub">G</a>
+            <a href="https://www.linkedin.com/in/santanu-nandi-96014428b" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="member reveal">
+          <div class="avatar">AR</div>
+          <h4>Atrij Roy</h4>
+          <div class="role">ML Lead</div>
+          <div class="socials">
+            <a href="https://github.com/atr86" aria-label="GitHub">G</a>
+            <a href="https://www.linkedin.com/in/atrij-roy-0077b8287" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <!-- <section class="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card reveal"><div class="num">10K+</div><div class="lbl">Statements Processed</div></div>
+        <div class="trust-card reveal"><div class="num">99.9%</div><div class="lbl">Secure Storage Uptime</div></div>
+        <div class="trust-card reveal"><div class="num">AI</div><div class="lbl">Powered Detection Engine</div></div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-about">
+          <a href="#home" class="logo">
+            <span class="logo-mark">C</span><span>Coinlytics</span>
+          </a>
+          <p>AI-powered financial intelligence from your bank statements &#8212; secure, private, and built for the modern era.</p>
+        </div>
+        <div class="foot-col">
+          <h5>PRODUCT</h5>
+          <ul><li><a href="#features">Features</a></li><li><a href="#how">How It Works</a></li><li><a href="#security">Security</a></li><li><a href="#about">About</a></li></ul>
+        </div>
+        <div class="foot-col">
+          <h5>COMPANY</h5>
+          <ul><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul>
+        </div>
+        <div class="foot-col">
+          <h5>CONTACT</h5>
+          <ul><li><a href="mailto:hello@coinlytics.ai">hello@coinlytics.ai</a></li><li><a href="#">Support</a></li><li><a href="#">Status</a></li></ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <div>&#169; 2026 Coinlytics. All rights reserved.</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter">&#120143;</a>
+          <a href="#" aria-label="GitHub">G</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/homepage1.js"></script>
+</body>
+</html>
