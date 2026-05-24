@@ -1,5 +1,6 @@
 package com.coinlytics.backend.service;
 
+import com.coinlytics.backend.dto.TransactionResponseDto;
 import com.coinlytics.backend.model.TransactionRecord;
 import com.coinlytics.backend.model.UploadedFile;
 import com.coinlytics.backend.model.Users;
@@ -209,5 +210,199 @@ public class FileService {
         return Double.parseDouble(
                 value.replace(",", "")
         );
+    }
+
+    @Transactional
+    public List<TransactionResponseDto> getFileData(
+            Long fileId
+    ) throws Exception {
+
+        String email =
+                SecurityContextHolder
+                        .getContext()
+                        .getAuthentication()
+                        .getName();
+
+        Users user =
+                userRepository.findByEmail(email)
+                        .orElseThrow();
+
+        UploadedFile uploadedFile =
+                uploadedFileRepository.findById(fileId)
+                        .orElseThrow(() ->
+                                new RuntimeException(
+                                        "File not found"
+                                )
+                        );
+
+        // OWNERSHIP VALIDATION
+        if(!uploadedFile.getUser()
+                .getId()
+                .equals(user.getId())) {
+
+            throw new RuntimeException(
+                    "Unauthorized access"
+            );
+        }
+
+        // CASE 1 → SQL DATA EXISTS
+        if(uploadedFile.isSqlPresent()) {
+
+            List<TransactionRecord> records =
+                    transactionRepository.findByTableId(fileId);
+
+            uploadedFile.setSqlExpiryAt(
+                    LocalDateTime.now().plusMinutes(30)
+            );
+
+            uploadedFile.setEncryptedExpiryAt(
+                    LocalDateTime.now().plusHours(1)
+            );
+
+            uploadedFileRepository.save(uploadedFile);
+
+            return mapToDto(records);
+        }
+
+        // CASE 2 → SQL EXPIRED BUT FILE EXISTS
+        if(uploadedFile.isFilePresent()) {
+
+            byte[] encryptedBytes =
+                    Files.readAllBytes(
+                            Path.of(
+                                    uploadedFile.getEncryptedPath()
+                            )
+                    );
+
+            byte[] decryptedBytes =
+                    aesUtil.decrypt(encryptedBytes);
+
+            rebuildTransactions(
+                    decryptedBytes,
+                    uploadedFile,
+                    user
+            );
+
+            uploadedFile.setSqlPresent(true);
+
+            uploadedFile.setSqlExpiryAt(
+                    LocalDateTime.now().plusMinutes(30)
+            );
+
+            uploadedFile.setEncryptedExpiryAt(
+                    LocalDateTime.now().plusHours(1)
+            );
+
+            uploadedFileRepository.save(uploadedFile);
+
+            List<TransactionRecord> records =
+                    transactionRepository.findByTableId(fileId);
+
+            return mapToDto(records);
+        }
+
+        throw new RuntimeException(
+                "Data expired permanently"
+        );
+    }
+
+    private void rebuildTransactions(
+            byte[] bytes,
+            UploadedFile uploadedFile,
+            Users user
+    ) throws Exception {
+
+        BufferedReader reader =
+                new BufferedReader(
+                        new InputStreamReader(
+                                new ByteArrayInputStream(bytes)
+                        )
+                );
+
+        CSVParser parser =
+                CSVFormat.DEFAULT
+                        .withFirstRecordAsHeader()
+                        .parse(reader);
+
+        Map<String, Integer> headers =
+                parser.getHeaderMap();
+
+        Map<String, String> normalized =
+                new HashMap<>();
+
+        for(String header : headers.keySet()) {
+
+            String mapped =
+                    csvHeaderMapper.normalize(header);
+
+            if(mapped != null) {
+                normalized.put(mapped, header);
+            }
+        }
+
+        long slNo = 1;
+
+        for(CSVRecord record : parser) {
+
+            TransactionRecord txn =
+                    TransactionRecord.builder()
+                            .tableId(uploadedFile.getFileNo())
+                            .slNo(slNo++)
+                            .txnDate(
+                                    LocalDate.parse(
+                                            record.get(
+                                                    normalized.get("DATE")
+                                            )
+                                    )
+                            )
+                            .particulars(
+                                    record.get(
+                                            normalized.get("PARTICULARS")
+                                    )
+                            )
+                            .credit(
+                                    parseDouble(
+                                            record.get(
+                                                    normalized.get("CREDIT")
+                                            )
+                                    )
+                            )
+                            .debit(
+                                    parseDouble(
+                                            record.get(
+                                                    normalized.get("DEBIT")
+                                            )
+                                    )
+                            )
+                            .balance(
+                                    parseDouble(
+                                            record.get(
+                                                    normalized.get("BALANCE")
+                                            )
+                                    )
+                            )
+                            .user(user)
+                            .build();
+
+            transactionRepository.save(txn);
+        }
+    }
+
+    private List<TransactionResponseDto> mapToDto(
+            List<TransactionRecord> records
+    ) {
+
+        return records.stream()
+                .map(record ->
+                        TransactionResponseDto.builder()
+                                .slNo(record.getSlNo())
+                                .txnDate(record.getTxnDate())
+                                .particulars(record.getParticulars())
+                                .credit(record.getCredit())
+                                .debit(record.getDebit())
+                                .balance(record.getBalance())
+                                .build()
+                )
+                .toList();
     }
 }
