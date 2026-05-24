@@ -15,7 +15,15 @@ import java.time.LocalDate;
 public class TransactionRecord {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "txn_seq"
+    )
+    @SequenceGenerator(
+            name = "txn_seq",
+            sequenceName = "txn_seq",
+            allocationSize = 1000
+    )
     private Long id;
 
     private Long tableId;

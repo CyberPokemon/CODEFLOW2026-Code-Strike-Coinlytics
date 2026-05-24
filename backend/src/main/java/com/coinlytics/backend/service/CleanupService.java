@@ -20,7 +20,7 @@ public class CleanupService {
 
     private final TransactionRepository transactionRepository;
 
-    @Scheduled(fixedRate = 2000)
+    @Scheduled(fixedRate = 60000)
     @Transactional
     public void cleanup() {
 

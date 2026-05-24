@@ -7,6 +7,8 @@ import com.coinlytics.backend.model.Users;
 import com.coinlytics.backend.repository.TransactionRepository;
 import com.coinlytics.backend.repository.UploadedFileRepository;
 import com.coinlytics.backend.repository.UserRepository;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.csv.CSVFormat;
@@ -23,6 +25,7 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,6 +47,9 @@ public class FileService {
 
     private static final String DIRECTORY =
             "encrypted_files/";
+
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Transactional
     public String upload(MultipartFile file)
@@ -151,6 +157,8 @@ public class FileService {
 
         long slNo = 1;
 
+        List<TransactionRecord> batch = new ArrayList<>();
+
         for(CSVRecord record : parser) {
 
             TransactionRecord txn =
@@ -193,7 +201,20 @@ public class FileService {
                             .user(user)
                             .build();
 
-            transactionRepository.save(txn);
+            batch.add(txn);
+
+            if(batch.size() == 1000) {
+                transactionRepository.saveAll(batch);
+
+                entityManager.flush();
+                entityManager.clear();
+
+                batch.clear();
+            }
+        }
+
+        if(!batch.isEmpty()) {
+            transactionRepository.saveAll(batch);
         }
     }
 
