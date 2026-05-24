@@ -26,4 +26,10 @@ public class AuthController {
     public ResponseEntity<LoginResponseDto> login(@RequestBody LoginRequest request) {
         return ResponseEntity.ok(authService.login(request));
     }
+
+    @GetMapping("/health")
+    public String health()
+    {
+        return "server up";
+    }
 }
