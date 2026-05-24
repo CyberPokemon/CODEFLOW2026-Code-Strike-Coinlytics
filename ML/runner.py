@@ -72,6 +72,14 @@ def process_bank_statement(file_path, model_path="model/transaction_categorizer.
     print(f"\nSaved full enriched dataset to {output_path}")
 
 if __name__ == "__main__":
-    # Point this to whatever CSV you want to test
-    input_csv = "test/transactions.csv" 
-    process_bank_statement(input_csv)
+    import sys
+    # Accept file path from command line or FastAPI
+    if len(sys.argv) > 1:
+        input_csv = sys.argv[1]
+    else:
+        input_csv = "test/transactions.csv"
+    
+    if input_csv:
+        process_bank_statement(input_csv)
+    else:
+        print("Error: No input CSV path provided")
