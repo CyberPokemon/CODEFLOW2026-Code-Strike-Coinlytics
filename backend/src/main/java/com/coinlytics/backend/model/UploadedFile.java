@@ -18,13 +18,19 @@ public class UploadedFile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long fileNo;
 
-    private String fileName;
+    private String originalFilename;
 
     private String encryptedPath;
 
     private LocalDateTime uploadedAt;
 
-    private LocalDateTime lastAccessedAt;
+    private LocalDateTime sqlExpiryAt;
+
+    private LocalDateTime encryptedExpiryAt;
+
+    private boolean sqlPresent;
+
+    private boolean filePresent;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
