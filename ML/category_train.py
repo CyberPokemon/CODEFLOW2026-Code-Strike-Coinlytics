@@ -3,7 +3,6 @@ import numpy as np
 import re
 import os
 import joblib
-import pickle
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -179,8 +178,3 @@ joblib_path = os.path.join(model_folder, "transaction_categorizer.joblib")
 joblib.dump(model, joblib_path)
 print(f"Saved model to {joblib_path}")
 
-# Save model in pickle format
-pkl_path = os.path.join(model_folder, "transaction_categorizer.pkl")
-with open(pkl_path, 'wb') as f:
-    pickle.dump(model, f)
-print(f"Saved model to {pkl_path}")
