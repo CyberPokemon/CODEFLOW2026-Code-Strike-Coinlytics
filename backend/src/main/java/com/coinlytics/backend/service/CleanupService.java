@@ -6,6 +6,7 @@ import com.coinlytics.backend.repository.UploadedFileRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.File;
 import java.time.LocalDateTime;
@@ -19,7 +20,8 @@ public class CleanupService {
 
     private final TransactionRepository transactionRepository;
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedRate = 2000)
+    @Transactional
     public void cleanup() {
 
         List<UploadedFile> files =
@@ -37,6 +39,8 @@ public class CleanupService {
                 );
 
                 file.setSqlPresent(false);
+                uploadedFileRepository.save(file);
+
             }
 
             if(file.isFilePresent() &&
