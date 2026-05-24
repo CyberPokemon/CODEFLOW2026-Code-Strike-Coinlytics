@@ -275,35 +275,38 @@ document.querySelectorAll('[data-count]').forEach(animateCount);
      FETCH ALL FILES
   ========================================= */
 
-  async function fetchFiles(){
+ /* =========================================
+   FETCH ALL FILES
+========================================= */
 
-    try{
+async function fetchFiles() {
 
-      const response = await fetch(
-        `${API_BASE_URL}/api/files/getfiles`,
-        {
-          method: "GET",
-          headers: {
-            "Authorization": `Bearer ${token}`
-          }
+  try {
+
+    const response = await fetch(
+      `${API_BASE_URL}/api/files/getfiles`,
+      {
+        method: "GET",
+        headers: {
+          "Authorization": `Bearer ${token}`
         }
-      );
-
-      if(!response.ok){
-        throw new Error("Failed to fetch files");
       }
+    );
 
-      const files = await response.json();
-
-      renderFiles(files);
-
+    if (!response.ok) {
+      throw new Error("Failed to fetch files");
     }
-    catch(error){
-      console.error(error);
-    }
+
+    const files = await response.json();
+
+    renderFiles(files);
 
   }
+  catch (error) {
+    console.error(error);
+  }
 
+}
   /* =========================================
      RENDER FILES
   ========================================= */
@@ -374,65 +377,69 @@ document.querySelectorAll('[data-count]').forEach(animateCount);
      FILE UPLOAD API
   ========================================= */
 
-  async function uploadFile(file){
+ /* =========================================
+   FILE UPLOAD API
+========================================= */
 
-    const formData = new FormData();
+async function uploadFile(file) {
 
-    formData.append("file", file);
+  const formData = new FormData();
 
-    try{
+  formData.append("file", file);
 
-      progress.classList.add("show");
+  try {
 
-      bar.style.width = "30%";
+    progress.classList.add("show");
 
-      const response = await fetch(
-        `${API_BASE_URL}/api/files/upload?=null`,
-        {
-          method: "POST",
+    bar.style.width = "30%";
 
-          headers: {
-            "Authorization": `Bearer ${token}`
-          },
+    const response = await fetch(
+      `${API_BASE_URL}/api/files/upload`,
+      {
+        method: "POST",
 
-          body: formData
-        }
-      );
+        headers: {
+          "Authorization": `Bearer ${token}`
+        },
 
-      bar.style.width = "80%";
-
-      const message = await response.text();
-
-      if(!response.ok){
-        throw new Error(message);
+        body: formData
       }
+    );
 
-      bar.style.width = "100%";
+    bar.style.width = "80%";
 
-      setTimeout(() => {
+    const message = await response.text();
 
-        progress.classList.remove("show");
-
-        bar.style.width = "0%";
-
-      }, 500);
-
-      alert(message);
-
-      fetchFiles();
-
+    if (!response.ok) {
+      throw new Error(message);
     }
-    catch(error){
+
+    bar.style.width = "100%";
+
+    setTimeout(() => {
 
       progress.classList.remove("show");
 
       bar.style.width = "0%";
 
-      alert(error.message || "Upload failed");
+    }, 500);
 
-    }
+    alert(message);
+
+    fetchFiles();
 
   }
+  catch (error) {
+
+    progress.classList.remove("show");
+
+    bar.style.width = "0%";
+
+    alert(error.message || "Upload failed");
+
+  }
+
+}
 
   /* =========================================
      HANDLE FILES
