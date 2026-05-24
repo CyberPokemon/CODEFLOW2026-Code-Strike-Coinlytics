@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Financial Dashboard</title>
+
+  <link rel="stylesheet" href="css/dashboard5.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="logo">
+      Coinlytics
+    </div>
+
+    <nav class="sidebar-menu">
+
+      <a href="#" class="menu-item active">
+        Dashboard
+      </a>
+
+      <a href="#" class="menu-item">
+        Uploads
+      </a>
+
+      <button class="logout-btn" onclick="logoutUser()">
+        Logout
+      </button>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <div class="topbar">
+
+      <div>
+        <h1>Welcome Back 👋</h1>
+
+        <p class="subtitle">
+          AES-256 Protected Financial Intelligence
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Upload Section -->
+    <div class="card">
+
+      <h2>Upload Bank Statement</h2>
+
+      <input type="file" id="fileInput" accept=".csv" />
+
+      <button onclick="uploadFile()">
+        Upload File
+      </button>
+
+      <p id="uploadStatus"></p>
+
+    </div>
+
+    <!-- Uploaded Files -->
+    <div class="card">
+
+      <h2>Uploaded Statements</h2>
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>File No</th>
+            <th>Filename</th>
+            <th>Uploaded Time</th>
+            <th>Expiry Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="filesTableBody"></tbody>
+
+      </table>
+
+    </div>
+
+    <!-- Analysis -->
+    <div id="analysisSection" style="display:none;">
+
+      <!-- Health Score -->
+      <div class="card">
+
+        <h2>Financial Health Score</h2>
+
+        <div id="healthScore" class="health-score"></div>
+
+        <div id="healthInsights"></div>
+
+      </div>
+
+      <!-- Pie Chart -->
+      <div class="card">
+
+        <h2>Expense Distribution</h2>
+
+        <canvas id="pieChart"></canvas>
+
+      </div>
+
+      <!-- Bar Chart -->
+      <div class="card">
+
+        <h2>Category Statistics</h2>
+
+        <canvas id="barChart"></canvas>
+
+      </div>
+
+      <!-- Statistics -->
+      <div class="card">
+
+        <h2>Detailed Statistics</h2>
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Credit</th>
+              <th>Debit</th>
+              <th>Net</th>
+              <th>Transactions</th>
+            </tr>
+          </thead>
+
+          <tbody id="statsTableBody"></tbody>
+
+        </table>
+
+      </div>
+
+      <!-- Anomalies -->
+      <div class="card">
+
+        <h2>AI Detected Anomalies</h2>
+
+        <div id="anomaliesContainer"></div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="js/dashboard5.js"></script>
+
+</body>
+</html>

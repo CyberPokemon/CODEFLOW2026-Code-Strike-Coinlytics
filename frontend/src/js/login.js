@@ -7,7 +7,7 @@
 /*
   Change ONLY this when deploying
 */
-const API_BASE_URL = "http://127.0.0.1:8080";
+const API_BASE_URL = "https://coindeployment-357779294190.asia-south1.run.app";
 
 /* ========= ELEMENTS ========= */
 
@@ -148,7 +148,7 @@ signUpForm.addEventListener("submit", async (e) => {
       Redirect
     */
     setTimeout(() => {
-      window.location.href = "./dashboard2.html";
+      window.location.href = "./dashboard5.html";
     }, 1000);
 
   } catch (error) {
@@ -209,7 +209,7 @@ signInForm.addEventListener("submit", async (e) => {
       Redirect
     */
     setTimeout(() => {
-      window.location.href = "./dashboard2.html";
+      window.location.href = "./dashboard5.html";
     }, 1000);
 
   } catch (error) {
