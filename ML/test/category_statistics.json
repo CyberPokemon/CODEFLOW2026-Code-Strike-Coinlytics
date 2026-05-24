@@ -1,16 +1,16 @@
 {
-  "total_income": 141800.36,
-  "total_expenses": 141649.76,
-  "net_savings": 150.6,
+  "total_income": 320900.18,
+  "total_expenses": 310824.88,
+  "net_savings": 10075.3,
   "category_statistics": [
     {
       "category": "Income",
-      "total_credit": 68868.0,
+      "total_credit": 318868.0,
       "total_debit": 0.0,
-      "net_amount": 68868.0,
-      "transaction_count": 15,
-      "average_transaction": 4591.2,
-      "percentage_of_income": 48.57,
+      "net_amount": 318868.0,
+      "transaction_count": 16,
+      "average_transaction": 19929.25,
+      "percentage_of_income": 99.37,
       "percentage_of_expenses": 0.0
     },
     {
@@ -20,18 +20,18 @@
       "net_amount": -1517.18,
       "transaction_count": 6,
       "average_transaction": -252.86,
-      "percentage_of_income": 0.38,
-      "percentage_of_expenses": 1.45
+      "percentage_of_income": 0.17,
+      "percentage_of_expenses": 0.66
     },
     {
       "category": "Other",
-      "total_credit": 72400.18,
-      "total_debit": 139600.4,
-      "net_amount": -67200.22,
-      "transaction_count": 43,
-      "average_transaction": -1562.8,
-      "percentage_of_income": 51.06,
-      "percentage_of_expenses": 98.55
+      "total_credit": 1500.0,
+      "total_debit": 308775.52,
+      "net_amount": -307275.52,
+      "transaction_count": 26,
+      "average_transaction": -11818.29,
+      "percentage_of_income": 0.47,
+      "percentage_of_expenses": 99.34
     }
   ]
 }

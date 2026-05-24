@@ -1,14 +1,14 @@
 {
   "score": 70,
   "insights": [
-    "Low savings rate (0.1%). You are barely saving money.",
+    "Low savings rate (3.1%). You are barely saving money.",
     "Zero EMI burden. You have excellent debt health.",
     "Fixed costs (Rent, EMI, Bills) are well-managed at 0.0% of income."
   ],
   "metrics": {
-    "Total Income": 141800.36,
-    "Total Expenses": 141649.75999999998,
-    "Savings Rate": 0.11,
+    "Total Income": 320900.18,
+    "Total Expenses": 310824.88,
+    "Savings Rate": 3.14,
     "EMI Burden": 0.0,
     "Fixed Costs Ratio": 0.0
   }

@@ -253,112 +253,16 @@
       "prediction_source": "Dictionary Rule"
     },
     {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
+      "transaction_statement": " DEP TFR   UPI/CR/121484708250/IMON  MA/CNRB/imo\n nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
     },
     {
-      "transaction_statement": NaN,
+      "transaction_statement": " WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah\n asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",
       "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": "Dr Count",
-      "predicted_category": "Other",
-      "confidence": 0.21,
-      "prediction_source": "ML (Low Confidence)"
-    },
-    {
-      "transaction_statement": "25",
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
-    },
-    {
-      "transaction_statement": NaN,
-      "predicted_category": "Other",
-      "confidence": 0.0,
-      "prediction_source": "Fallback (Empty String)"
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
     },
     {
       "transaction_statement": NaN,
@@ -386,18 +290,18 @@
     }
   ],
   "type_2_category_statistics": {
-    "total_income": 141800.36,
-    "total_expenses": 141649.76,
-    "net_savings": 150.6,
+    "total_income": 320900.18,
+    "total_expenses": 310824.88,
+    "net_savings": 10075.3,
     "category_statistics": [
       {
         "category": "Income",
-        "total_credit": 68868.0,
+        "total_credit": 318868.0,
         "total_debit": 0.0,
-        "net_amount": 68868.0,
-        "transaction_count": 15,
-        "average_transaction": 4591.2,
-        "percentage_of_income": 48.57,
+        "net_amount": 318868.0,
+        "transaction_count": 16,
+        "average_transaction": 19929.25,
+        "percentage_of_income": 99.37,
         "percentage_of_expenses": 0.0
       },
       {
@@ -407,33 +311,52 @@
         "net_amount": -1517.18,
         "transaction_count": 6,
         "average_transaction": -252.86,
-        "percentage_of_income": 0.38,
-        "percentage_of_expenses": 1.45
+        "percentage_of_income": 0.17,
+        "percentage_of_expenses": 0.66
       },
       {
         "category": "Other",
-        "total_credit": 72400.18,
-        "total_debit": 139600.4,
-        "net_amount": -67200.22,
-        "transaction_count": 43,
-        "average_transaction": -1562.8,
-        "percentage_of_income": 51.06,
-        "percentage_of_expenses": 98.55
+        "total_credit": 1500.0,
+        "total_debit": 308775.52,
+        "net_amount": -307275.52,
+        "transaction_count": 26,
+        "average_transaction": -11818.29,
+        "percentage_of_income": 0.47,
+        "percentage_of_expenses": 99.34
       }
     ]
   },
-  "type_3_anomalies": [],
+  "type_3_anomalies": [
+    {
+      "transaction_statement": " WDL TFR   FIRDFTFRREF:235870087933192953K580035   0\n 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "anomaly_reason": "Suspicious transaction \u20b925,000.00. Typical is under \u20b910,000.",
+      "confidence": 0.95
+    },
+    {
+      "transaction_statement": " WDL TFR   FIRDFTFRREF:235870087933192953K580035   0\n 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "anomaly_reason": "Suspicious transaction \u20b935,000.00. Typical is under \u20b910,000.",
+      "confidence": 0.95
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah\n asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "anomaly_reason": "Suspicious transaction \u20b9240,000.00. Typical is under \u20b910,000.",
+      "confidence": 0.95
+    }
+  ],
   "type_4_health_score": {
     "score": 70,
     "insights": [
-      "Low savings rate (0.1%). You are barely saving money.",
+      "Low savings rate (3.1%). You are barely saving money.",
       "Zero EMI burden. You have excellent debt health.",
       "Fixed costs (Rent, EMI, Bills) are well-managed at 0.0% of income."
     ],
     "metrics": {
-      "Total Income": 141800.36,
-      "Total Expenses": 141649.75999999998,
-      "Savings Rate": 0.11,
+      "Total Income": 320900.18,
+      "Total Expenses": 310824.88,
+      "Savings Rate": 3.14,
       "EMI Burden": 0.0,
       "Fixed Costs Ratio": 0.0
     }
