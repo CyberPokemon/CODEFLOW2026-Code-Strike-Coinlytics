@@ -1,3 +1,40 @@
+/* =========================================
+   API CONFIG
+========================================= */
+
+const API_BASE_URL = "http://127.0.0.1:8080";
+
+const token = sessionStorage.getItem("coinlytics_token");
+const userName = sessionStorage.getItem("coinlytics_name");
+
+/* =========================================
+   LOAD USER NAME
+========================================= */
+
+const welcomeHeading = document.querySelector(".welcome h1");
+
+if (welcomeHeading && userName) {
+  welcomeHeading.innerHTML = `
+    Welcome back, ${userName} <span class="wave">👋</span>
+  `;
+}
+
+/* =========================================
+   LOAD USER INITIALS
+========================================= */
+
+const avatar = document.querySelector(".avatar span");
+
+if (avatar && userName) {
+  const initials = userName
+    .split(" ")
+    .map(word => word[0])
+    .join("")
+    .toUpperCase();
+
+  avatar.textContent = initials;
+}
+
 /* ---------- Inline SVG icon system ---------- */
 const ICONS = {
   grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
@@ -222,68 +259,237 @@ document.querySelectorAll('[data-count]').forEach(animateCount);
   });
 })();
 
-/* ---------- Upload (drag & drop) ---------- */
+/* ---------- Upload (drag & drop + API) ---------- */
+
 (function upload(){
+
   const dz = document.getElementById('dropzone');
   const input = document.getElementById('fileInput');
+
   const progress = document.getElementById('progress');
   const bar = progress.querySelector('.bar');
+
   const body = document.getElementById('filesBody');
 
-  function handle(files){
-    if(!files || !files.length) return;
-    progress.classList.add('show');
-    bar.style.width = '0%';
-    let p=0;
-    const iv = setInterval(()=>{
-      p += Math.random()*14 + 6;
-      if(p>=100){
-        p=100; clearInterval(iv);
-        setTimeout(()=>{
-          progress.classList.remove('show');
-          bar.style.width='0%';
-          [...files].forEach(f=>addRow(f));
-        },280);
+  /* =========================================
+     FETCH ALL FILES
+  ========================================= */
+
+  async function fetchFiles(){
+
+    try{
+
+      const response = await fetch(
+        `${API_BASE_URL}/api/files/getfiles`,
+        {
+          method: "GET",
+          headers: {
+            "Authorization": `Bearer ${token}`
+          }
+        }
+      );
+
+      if(!response.ok){
+        throw new Error("Failed to fetch files");
       }
-      bar.style.width = p+'%';
-    },140);
-  }
 
-  function addRow(f){
-    const now = new Date();
-    const fmt = (d)=> d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-    const exp = new Date(now); exp.setDate(exp.getDate()+30);
-    const tr = document.createElement('tr');
-    tr.style.opacity=0; tr.style.transform='translateY(8px)';
-    tr.innerHTML = `
-      <td><i>${ICONS.file}</i> ${f.name}</td>
-      <td>${fmt(now)}</td>
-      <td><span class="status processing">Processing</span></td>
-      <td>${fmt(exp)}</td>
-      <td class="ta-right">
-        <button class="btn ghost">View</button>
-        <button class="btn primary">Analyze</button>
-        <button class="btn danger">Delete</button>
-      </td>`;
-    body.prepend(tr);
-    requestAnimationFrame(()=>{ tr.style.transition='all .4s ease'; tr.style.opacity=1; tr.style.transform='translateY(0)'; });
-    setTimeout(()=>{ const s=tr.querySelector('.status'); s.className='status ready'; s.textContent='Ready'; },1600);
-  }
+      const files = await response.json();
 
-  ['dragenter','dragover'].forEach(ev=> dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.add('drag');}));
-  ['dragleave','drop'].forEach(ev=> dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.remove('drag');}));
-  dz.addEventListener('drop', e=> handle(e.dataTransfer.files));
-  input.addEventListener('change', e=> handle(e.target.files));
+      renderFiles(files);
 
-  // delegated delete
-  body.addEventListener('click',(e)=>{
-    if(e.target.classList.contains('danger')){
-      const row = e.target.closest('tr');
-      row.style.transition='all .3s ease';
-      row.style.opacity=0; row.style.transform='translateX(-12px)';
-      setTimeout(()=>row.remove(),300);
     }
+    catch(error){
+      console.error(error);
+    }
+
+  }
+
+  /* =========================================
+     RENDER FILES
+  ========================================= */
+
+  function renderFiles(files){
+
+    body.innerHTML = "";
+
+    files.reverse().forEach(file => {
+
+      const uploadedDate = formatDate(file.uploadedAt);
+      const expiryDate = formatDate(file.encryptedExpiryAt);
+
+      const tr = document.createElement("tr");
+
+      tr.innerHTML = `
+        <td>
+          <i>${ICONS.file}</i>
+          ${file.originalFilename}
+        </td>
+
+        <td>${uploadedDate}</td>
+
+        <td>
+          <span class="status ready">
+            Uploaded
+          </span>
+        </td>
+
+        <td>${expiryDate}</td>
+
+        <td class="ta-right">
+          <button class="btn ghost">
+            View
+          </button>
+
+          <button class="btn primary">
+            Analyze
+          </button>
+        </td>
+      `;
+
+      body.appendChild(tr);
+
+    });
+
+  }
+
+  /* =========================================
+     FORMAT DATE
+  ========================================= */
+
+  function formatDate(dateString){
+
+    const date = new Date(dateString);
+
+    return date.toLocaleString("en-IN", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+  }
+
+  /* =========================================
+     FILE UPLOAD API
+  ========================================= */
+
+  async function uploadFile(file){
+
+    const formData = new FormData();
+
+    formData.append("file", file);
+
+    try{
+
+      progress.classList.add("show");
+
+      bar.style.width = "30%";
+
+      const response = await fetch(
+        `${API_BASE_URL}/api/files/upload?=null`,
+        {
+          method: "POST",
+
+          headers: {
+            "Authorization": `Bearer ${token}`
+          },
+
+          body: formData
+        }
+      );
+
+      bar.style.width = "80%";
+
+      const message = await response.text();
+
+      if(!response.ok){
+        throw new Error(message);
+      }
+
+      bar.style.width = "100%";
+
+      setTimeout(() => {
+
+        progress.classList.remove("show");
+
+        bar.style.width = "0%";
+
+      }, 500);
+
+      alert(message);
+
+      fetchFiles();
+
+    }
+    catch(error){
+
+      progress.classList.remove("show");
+
+      bar.style.width = "0%";
+
+      alert(error.message || "Upload failed");
+
+    }
+
+  }
+
+  /* =========================================
+     HANDLE FILES
+  ========================================= */
+
+  function handle(files){
+
+    if(!files || !files.length) return;
+
+    [...files].forEach(file => {
+      uploadFile(file);
+    });
+
+  }
+
+  /* =========================================
+     DRAG DROP EVENTS
+  ========================================= */
+
+  ['dragenter','dragover'].forEach(ev => {
+
+    dz.addEventListener(ev, e => {
+
+      e.preventDefault();
+
+      dz.classList.add('drag');
+
+    });
+
   });
+
+  ['dragleave','drop'].forEach(ev => {
+
+    dz.addEventListener(ev, e => {
+
+      e.preventDefault();
+
+      dz.classList.remove('drag');
+
+    });
+
+  });
+
+  dz.addEventListener('drop', e => {
+    handle(e.dataTransfer.files);
+  });
+
+  input.addEventListener('change', e => {
+    handle(e.target.files);
+  });
+
+  /* =========================================
+     INITIAL FETCH
+  ========================================= */
+
+  fetchFiles();
+
 })();
 
 /* ---------- Particle background ---------- */

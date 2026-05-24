@@ -139,7 +139,8 @@ signUpForm.addEventListener("submit", async (e) => {
       Store token
     */
     sessionStorage.setItem("coinlytics_token", data.accessToken);
-    sessionStorage.setItem("coinlytics_user", data.username);
+    sessionStorage.setItem("coinlytics_email", data.email);
+    sessionStorage.setItem("coinlytics_name", data.name);
 
     showMessage(signUpForm, "Account created successfully!", "success");
 
@@ -147,7 +148,7 @@ signUpForm.addEventListener("submit", async (e) => {
       Redirect
     */
     setTimeout(() => {
-      window.location.href = "./dashboard.html";
+      window.location.href = "./dashboard2.html";
     }, 1000);
 
   } catch (error) {
@@ -199,7 +200,8 @@ signInForm.addEventListener("submit", async (e) => {
       Store JWT
     */
     sessionStorage.setItem("coinlytics_token", data.jwt);
-    sessionStorage.setItem("coinlytics_user", data.username);
+    sessionStorage.setItem("coinlytics_email", data.email);
+    sessionStorage.setItem("coinlytics_name", data.name);
 
     showMessage(signInForm, "Login successful!", "success");
 
@@ -207,7 +209,7 @@ signInForm.addEventListener("submit", async (e) => {
       Redirect
     */
     setTimeout(() => {
-      window.location.href = "./dashboard.html";
+      window.location.href = "./dashboard2.html";
     }, 1000);
 
   } catch (error) {

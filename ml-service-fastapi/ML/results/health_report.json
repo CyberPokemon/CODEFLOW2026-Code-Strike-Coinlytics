@@ -1,0 +1,15 @@
+{
+  "score": 100,
+  "insights": [
+    "Excellent savings rate (43.8%). You are saving the recommended 20%+ of your income.",
+    "Zero EMI burden. You have excellent debt health.",
+    "Fixed costs (Rent, EMI, Bills) are well-managed at 0.0% of income."
+  ],
+  "metrics": {
+    "Total Income": 7860473.380000001,
+    "Total Expenses": 4417296.61,
+    "Savings Rate": 43.8,
+    "EMI Burden": 0.0,
+    "Fixed Costs Ratio": 0.0
+  }
+}

@@ -5,13 +5,17 @@ import subprocess
 import sys
 from pathlib import Path
 
+
 def analyze_transactions(records):
 
     df = pd.DataFrame(records)
 
-    ml_dir = Path(__file__).resolve().parents[3] / "ML"
+    # project-root/ML
+    ml_dir = Path(__file__).resolve().parents[2] / "ML"
+
     infer_dir = ml_dir / "infer"
     results_dir = ml_dir / "results"
+
     infer_dir.mkdir(parents=True, exist_ok=True)
     results_dir.mkdir(parents=True, exist_ok=True)
 
@@ -47,5 +51,6 @@ def analyze_transactions(records):
         }
 
     results_path = results_dir / "analysis_results.json"
+
     with open(results_path, "r", encoding="utf-8") as f:
         return json.load(f)
