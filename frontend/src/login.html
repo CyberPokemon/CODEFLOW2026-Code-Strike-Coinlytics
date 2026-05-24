@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coinlytics Authentication</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+
+  <div class="container">
+
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+
+      <div class="logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Coinlytics</span>
+      </div>
+
+      <div class="hero-content">
+        <h1>AI-Powered Financial Intelligence</h1>
+
+        <p>
+          Securely upload and analyze your bank statements
+          with advanced AI-powered insights.
+        </p>
+      </div>
+
+      <div class="visuals">
+
+        <div class="floating-card card-1">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Bank-Grade Security</span>
+        </div>
+
+        <div class="floating-card card-2">
+          <i class="fa-solid fa-brain"></i>
+          <span>AI Expense Insights</span>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+
+      <div class="auth-card">
+
+        <!-- SIGN IN -->
+        <div class="form-container sign-in active">
+
+          <h2>Welcome Back</h2>
+          <p class="form-subtitle">
+            Sign in to continue to Coinlytics
+          </p>
+
+          <form>
+
+            <div class="input-group">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i>
+
+              <input
+                type="password"
+                placeholder="Enter your password"
+                class="password-input"
+              />
+
+              <i class="fa-regular fa-eye toggle-password"></i>
+            </div>
+
+            <button type="submit" class="btn">
+              Sign In
+            </button>
+
+          </form>
+
+          <div class="switch-form">
+            Don't have an account?
+            <span id="show-signup">Create Account</span>
+          </div>
+
+        </div>
+
+        <!-- SIGN UP -->
+        <div class="form-container sign-up">
+
+          <h2>Create Account</h2>
+
+          <p class="form-subtitle">
+            Start your AI-powered finance journey
+          </p>
+
+          <form>
+
+            <div class="input-group">
+              <i class="fa-regular fa-user"></i>
+              <input
+                type="text"
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                placeholder="Enter your phone number"
+              />
+            </div>
+
+            <div class="input-group">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i>
+
+              <input
+                type="password"
+                placeholder="Create a secure password"
+                class="password-input"
+              />
+
+              <i class="fa-regular fa-eye toggle-password"></i>
+            </div>
+
+            <button type="submit" class="btn">
+              Create Account
+            </button>
+
+          </form>
+
+          <div class="switch-form">
+            Already have an account?
+            <span id="show-signin">Sign In</span>
+          </div>
+
+        </div>
+
+        <!-- SECURITY MESSAGE -->
+        <div class="security-message">
+          <i class="fa-solid fa-shield"></i>
+          Your data is encrypted and securely protected.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
