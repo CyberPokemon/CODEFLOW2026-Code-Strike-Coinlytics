@@ -1,150 +1,108 @@
-Date,Details,Ref No/Cheque No,Debit,Credit,Balance,transaction_statement,predicted_category,prediction_source,confidence,Amount,is_anomaly,anomaly_reason,anomaly_method
+Date,transaction_statement,Ref No/Cheque No,Debit,Credit,Balance,predicted_category,prediction_source,confidence,Credit_Amt,Debit_Amt,Amount,is_anomaly,anomaly_reason,anomaly_method
 01/02/2026," DEP TFR   UPI/CR/603298926822/SRIPARNA/SBIN/sri
- parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",,,2000.00,2015.61," DEP TFR   UPI/CR/603298926822/SRIPARNA/SBIN/sri
- parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",,,2000.00,2015.61,Income,Payment Type Rule,0.95,2000.0,0.0,0.0,False,,Statistical (IQR)
 01/02/2026," WDL TFR   UPI/DR/603256639520/SULABH B/YESB/pay
- tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",,1486.00,,529.61," WDL TFR   UPI/DR/603256639520/SULABH B/YESB/pay
- tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,1486.0,False,,Statistical (IQR)
+ tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",,1486.00,,529.61,Other,Payment Type Rule,0.95,0.0,1486.0,1486.0,False,,Statistical (IQR)
 02/02/2026," WDL TFR   UPI/DR/675641960336/Google C/utib/goo
- gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",,2.00,,527.61," WDL TFR   UPI/DR/675641960336/Google C/utib/goo
- gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,2.0,False,,Statistical (IQR)
+ gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",,2.00,,527.61,Other,Payment Type Rule,0.95,0.0,2.0,2.0,False,,Statistical (IQR)
 04/02/2026," WDL TFR   UPI/DR/979082750356/Google C/utib/goo
- gleclou/Mand   0097692162094 AT 11368 SHIBRAMPUR",,2.00,,525.61," WDL TFR   UPI/DR/979082750356/Google C/utib/goo
- gleclou/Mand   0097692162094 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,2.0,False,,Statistical (IQR)
+ gleclou/Mand   0097692162094 AT 11368 SHIBRAMPUR",,2.00,,525.61,Other,Payment Type Rule,0.95,0.0,2.0,2.0,False,,Statistical (IQR)
 06/02/2026," DEP TFR   UPI/CR/511068220376/Google C/utib/goo
- gleclou/UPI   0097736162097 AT 11368 SHIBRAMPUR",,,2.00,527.61," DEP TFR   UPI/CR/511068220376/Google C/utib/goo
- gleclou/UPI   0097736162097 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ gleclou/UPI   0097736162097 AT 11368 SHIBRAMPUR",,,2.00,527.61,Income,Payment Type Rule,0.95,2.0,0.0,0.0,False,,Statistical (IQR)
 08/02/2026," DEP TFR   UPI/CR/603984405143/Shubhaji/PPIW/861
- 7790759/Paid   0097738162095 AT 11368 SHIBRAMPUR",,,50.00,577.61," DEP TFR   UPI/CR/603984405143/Shubhaji/PPIW/861
- 7790759/Paid   0097738162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ 7790759/Paid   0097738162095 AT 11368 SHIBRAMPUR",,,50.00,577.61,Income,Payment Type Rule,0.95,50.0,0.0,0.0,False,,Statistical (IQR)
 09/02/2026," WDL TFR   UPI/DR/604045014382/SOHAM  J/KKBK/soh
- amjana3/tick   0097690162095 AT 11368 SHIBRAMPUR",,116.52,,461.09," WDL TFR   UPI/DR/604045014382/SOHAM  J/KKBK/soh
- amjana3/tick   0097690162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,116.52,False,,Statistical (IQR)
+ amjana3/tick   0097690162095 AT 11368 SHIBRAMPUR",,116.52,,461.09,Other,Payment Type Rule,0.95,0.0,116.52,116.52,False,,Statistical (IQR)
 09/02/2026," DEP TFR   UPI/CR/216954910406/Google C/utib/goo
- gleclou/UPI   0097732162091 AT 11368 SHIBRAMPUR",,,2.00,463.09," DEP TFR   UPI/CR/216954910406/Google C/utib/goo
- gleclou/UPI   0097732162091 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ gleclou/UPI   0097732162091 AT 11368 SHIBRAMPUR",,,2.00,463.09,Income,Payment Type Rule,0.95,2.0,0.0,0.0,False,,Statistical (IQR)
 10/02/2026," WDL TFR   UPI/DR/604189336457/SUMITA B/YESB/pay
- tmqr6n0/KitK   0097691162095 AT 11368 SHIBRAMPUR",,20.00,,443.09," WDL TFR   UPI/DR/604189336457/SUMITA B/YESB/pay
- tmqr6n0/KitK   0097691162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,20.0,False,,Statistical (IQR)
+ tmqr6n0/KitK   0097691162095 AT 11368 SHIBRAMPUR",,20.00,,443.09,Other,Payment Type Rule,0.95,0.0,20.0,20.0,False,,Statistical (IQR)
 11/02/2026," DEP TFR   UPI/CR/514273990426/Google C/utib/goo
- gleclou/UPI   0097734162099 AT 11368 SHIBRAMPUR",,,2.00,445.09," DEP TFR   UPI/CR/514273990426/Google C/utib/goo
- gleclou/UPI   0097734162099 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ gleclou/UPI   0097734162099 AT 11368 SHIBRAMPUR",,,2.00,445.09,Income,Payment Type Rule,0.95,2.0,0.0,0.0,False,,Statistical (IQR)
 11/02/2026," DEP TFR   UPI/CR/118517256994/IMON  MA/CNRB/imo
- nmallik/bala   0097734162099 AT 11368 SHIBRAMPUR",,,100.00,545.09," DEP TFR   UPI/CR/118517256994/IMON  MA/CNRB/imo
- nmallik/bala   0097734162099 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ nmallik/bala   0097734162099 AT 11368 SHIBRAMPUR",,,100.00,545.09,Income,Payment Type Rule,0.95,100.0,0.0,0.0,False,,Statistical (IQR)
 11/02/2026," WDL TFR   UPI/DR/604260828886/Amazon B/YESB/ama
- zonpayr/Requ   0097692162094 AT 11368 SHIBRAMPUR",,532.18,,12.91," WDL TFR   UPI/DR/604260828886/Amazon B/YESB/ama
- zonpayr/Requ   0097692162094 AT 11368 SHIBRAMPUR",Shopping,Dictionary Rule,1.0,532.18,False,,Statistical (IQR)
+ zonpayr/Requ   0097692162094 AT 11368 SHIBRAMPUR",,532.18,,12.91,Shopping,Dictionary Rule,1.0,0.0,532.18,532.18,False,,Statistical (IQR)
 11/02/2026," DEP TFR   UPI/CR/604228708263/Amazon I/YESB/ama
- zon.ref/Refu   0097734162099 AT 11368 SHIBRAMPUR",,,532.18,545.09," DEP TFR   UPI/CR/604228708263/Amazon I/YESB/ama
- zon.ref/Refu   0097734162099 AT 11368 SHIBRAMPUR",Shopping,Dictionary Rule,1.0,0.0,False,,Statistical (IQR)
+ zon.ref/Refu   0097734162099 AT 11368 SHIBRAMPUR",,,532.18,545.09,Shopping,Dictionary Rule,1.0,532.18,0.0,0.0,False,,Statistical (IQR)
 12/02/2026," WDL TFR   UPI/DR/604361213441/Amazon Pay/RATN/a
- mazonpayr/Re   0097693162093 AT 11368 SHIBRAMPUR",,532.18,,12.91," WDL TFR   UPI/DR/604361213441/Amazon Pay/RATN/a
- mazonpayr/Re   0097693162093 AT 11368 SHIBRAMPUR",Shopping,Dictionary Rule,1.0,532.18,False,,Statistical (IQR)
+ mazonpayr/Re   0097693162093 AT 11368 SHIBRAMPUR",,532.18,,12.91,Shopping,Dictionary Rule,1.0,0.0,532.18,532.18,False,,Statistical (IQR)
 20/02/2026," WDL TFR   UPI/DR/100438327827/Indian R/SBIN/bdp
- g2.irut/COLL   0097694162092 AT 11368 SHIBRAMPUR",,10.00,,2.91," WDL TFR   UPI/DR/100438327827/Indian R/SBIN/bdp
- g2.irut/COLL   0097694162092 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,10.0,False,,Statistical (IQR)
+ g2.irut/COLL   0097694162092 AT 11368 SHIBRAMPUR",,10.00,,2.91,Other,Payment Type Rule,0.95,0.0,10.0,10.0,False,,Statistical (IQR)
 24/02/2026," DEP TFR   UPI/CR/605523938203/SRIPARNA/SBIN/sri
- parnama/UPI   0097733162090 AT 11368 SHIBRAMPUR",,,1500.00,1502.91," DEP TFR   UPI/CR/605523938203/SRIPARNA/SBIN/sri
- parnama/UPI   0097733162090 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ parnama/UPI   0097733162090 AT 11368 SHIBRAMPUR",,,1500.00,1502.91,Income,Payment Type Rule,0.95,1500.0,0.0,0.0,False,,Statistical (IQR)
 24/02/2026," WDL TFR   UPI/DR/605524006133/IMON  MA/CNRB/imo
- nmallik/bala   0097691162095 AT 11368 SHIBRAMPUR",,1000.00,,502.91," WDL TFR   UPI/DR/605524006133/IMON  MA/CNRB/imo
- nmallik/bala   0097691162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,1000.0,False,,Statistical (IQR)
+ nmallik/bala   0097691162095 AT 11368 SHIBRAMPUR",,1000.00,,502.91,Other,Payment Type Rule,0.95,0.0,1000.0,1000.0,False,,Statistical (IQR)
 25/02/2026," WDL TFR   UPI/DR/605601918794/MEGHNA  /KKBK/meg
- hna.muk/prin   0097692162094 AT 11368 SHIBRAMPUR",,6.00,,496.91," WDL TFR   UPI/DR/605601918794/MEGHNA  /KKBK/meg
- hna.muk/prin   0097692162094 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,6.0,False,,Statistical (IQR)
+ hna.muk/prin   0097692162094 AT 11368 SHIBRAMPUR",,6.00,,496.91,Other,Payment Type Rule,0.95,0.0,6.0,6.0,False,,Statistical (IQR)
 25/02/2026," DEP TFR   UPI/CR/605602066902/Rishabh /SBIN/ris
- habhcha/UPI   0097734162099 AT 11368 SHIBRAMPUR",,,6.00,502.91," DEP TFR   UPI/CR/605602066902/Rishabh /SBIN/ris
- habhcha/UPI   0097734162099 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ habhcha/UPI   0097734162099 AT 11368 SHIBRAMPUR",,,6.00,502.91,Income,Payment Type Rule,0.95,6.0,0.0,0.0,False,,Statistical (IQR)
 01/03/2026," DEP TFR   UPI/CR/606033429328/SRIPARNA/SBIN/sri
- parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",,,1500.00,2002.91," DEP TFR   UPI/CR/606033429328/SRIPARNA/SBIN/sri
- parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",,,1500.00,2002.91,Income,Payment Type Rule,0.95,1500.0,0.0,0.0,False,,Statistical (IQR)
 01/03/2026," WDL TFR   UPI/DR/606068440313/SULABH B/YESB/pay
- tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",,1450.00,,552.91," WDL TFR   UPI/DR/606068440313/SULABH B/YESB/pay
- tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,1450.0,False,,Statistical (IQR)
+ tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",,1450.00,,552.91,Other,Payment Type Rule,0.95,0.0,1450.0,1450.0,False,,Statistical (IQR)
 10/03/2026," WDL TFR   UPI/DR/606924696529/SURESH T/BDBL/256
- 0068a@b/dhok   0097691162095 AT 11368 SHIBRAMPUR",,20.00,,532.91," WDL TFR   UPI/DR/606924696529/SURESH T/BDBL/256
- 0068a@b/dhok   0097691162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,20.0,False,,Statistical (IQR)
+ 0068a@b/dhok   0097691162095 AT 11368 SHIBRAMPUR",,20.00,,532.91,Other,Payment Type Rule,0.95,0.0,20.0,20.0,False,,Statistical (IQR)
 11/03/2026," WDL TFR   UPI/DR/607085645947/SHASHIKA/YESB/q59
- 8395649/bisc   0097692162094 AT 11368 SHIBRAMPUR",,20.00,,512.91," WDL TFR   UPI/DR/607085645947/SHASHIKA/YESB/q59
- 8395649/bisc   0097692162094 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,20.0,False,,Statistical (IQR)
+ 8395649/bisc   0097692162094 AT 11368 SHIBRAMPUR",,20.00,,512.91,Other,Payment Type Rule,0.95,0.0,20.0,20.0,False,,Statistical (IQR)
 14/03/2026," CEMTEX DEP   Assistan
- ce Banglar Yuba Sathi",,,1500.00,2012.91," CEMTEX DEP   Assistan
- ce Banglar Yuba Sathi",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ ce Banglar Yuba Sathi",,,1500.00,2012.91,Other,ML (Low Confidence),0.21,1500.0,0.0,0.0,False,,Statistical (IQR)
 15/03/2026," WDL TFR   UPI/DR/607451411420/imonmall/CNRB/imo
- nmallik/bala   0097696162090 AT 11368 SHIBRAMPUR",,1500.00,,512.91," WDL TFR   UPI/DR/607451411420/imonmall/CNRB/imo
- nmallik/bala   0097696162090 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,1500.0,False,,Statistical (IQR)
+ nmallik/bala   0097696162090 AT 11368 SHIBRAMPUR",,1500.00,,512.91,Other,Payment Type Rule,0.95,0.0,1500.0,1500.0,False,,Statistical (IQR)
 15/03/2026," POS ATM PURCH   OTHPG 607420916
- 810AMAZONWALLETLOAD      GURGOAN",,5.00,,507.91," POS ATM PURCH   OTHPG 607420916
- 810AMAZONWALLETLOAD      GURGOAN",Shopping,Dictionary Rule,1.0,5.0,False,,Statistical (IQR)
+ 810AMAZONWALLETLOAD      GURGOAN",,5.00,,507.91,Shopping,Dictionary Rule,1.0,0.0,5.0,5.0,False,,Statistical (IQR)
 15/03/2026," POS ATM PURCH   OTHPG 607420915
- 662AMAZONWALLETLOAD      GURGOAN",,500.00,,7.91," POS ATM PURCH   OTHPG 607420915
- 662AMAZONWALLETLOAD      GURGOAN",Shopping,Dictionary Rule,1.0,500.0,False,,Statistical (IQR)
+ 662AMAZONWALLETLOAD      GURGOAN",,500.00,,7.91,Shopping,Dictionary Rule,1.0,0.0,500.0,500.0,False,,Statistical (IQR)
 25/03/2026," DEP TFR   NEFT*RBIS0GOWBEP*RBISH00469672709*PAY
-  AND ACCOUNT   0099509044300 AT 11368 SHIBRAMPUR",,,60000.00,60007.91," DEP TFR   NEFT*RBIS0GOWBEP*RBISH00469672709*PAY
-  AND ACCOUNT   0099509044300 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+  AND ACCOUNT   0099509044300 AT 11368 SHIBRAMPUR",,,60000.00,60007.91,Income,Payment Type Rule,0.95,60000.0,0.0,0.0,False,,Statistical (IQR)
 25/03/2026," INTERES
- T CREDIT",,,6.00,60013.91," INTERES
- T CREDIT",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ T CREDIT",,,6.00,60013.91,Income,Payment Type Rule,0.95,6.0,0.0,0.0,False,,Statistical (IQR)
 27/03/2026," WDL TFR   FIRDFTFRREF:235870087933192953K580035   0
- 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,25000.00,,35013.91," WDL TFR   FIRDFTFRREF:235870087933192953K580035   0
- 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,25000.0,False,,Statistical (IQR)
+ 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,25000.00,,35013.91,Other,Payment Type Rule,0.95,0.0,25000.0,25000.0,False,,Statistical (IQR)
 27/03/2026," WDL TFR   FIRDFTFRREF:235870087933192953K580035   0
- 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,35000.00,,13.91," WDL TFR   FIRDFTFRREF:235870087933192953K580035   0
- 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,35000.0,False,,Statistical (IQR)
+ 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,35000.00,,13.91,Other,Payment Type Rule,0.95,0.0,35000.0,35000.0,False,,Statistical (IQR)
 12/04/2026," DEP TFR   UPI/CR/121484708250/IMON  MA/CNRB/imo
- nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",,,1200.00,1213.91," DEP TFR   UPI/CR/121484708250/IMON  MA/CNRB/imo
- nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",,,1200.00,1213.91,Income,Payment Type Rule,0.95,1200.0,0.0,0.0,False,,Statistical (IQR)
 12/04/2026," ATM WDL   ATM CASH 5071728619
-    RAIPUR MAHESHTALA     SOUTH",,1000.00,,213.91," ATM WDL   ATM CASH 5071728619
-    RAIPUR MAHESHTALA     SOUTH",Other,ML (Low Confidence),0.21,1000.0,False,,Statistical (IQR)
+    RAIPUR MAHESHTALA     SOUTH",,1000.00,,213.91,Other,Payment Type Rule,0.95,0.0,1000.0,1000.0,False,,Statistical (IQR)
 13/04/2026," DEP TFR   UPI/CR/750286957883/JAYANTA /SBIN/jkm
- allik@a/Paym   0097732162091 AT 11368 SHIBRAMPUR",,,700.00,913.91," DEP TFR   UPI/CR/750286957883/JAYANTA /SBIN/jkm
- allik@a/Paym   0097732162091 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ allik@a/Paym   0097732162091 AT 11368 SHIBRAMPUR",,,700.00,913.91,Income,Payment Type Rule,0.95,700.0,0.0,0.0,False,,Statistical (IQR)
 13/04/2026," DEP TFR   DBN 426883324950 YUBA SATHI ASSISTA
- NC 0024693   0097647105219 AT 11368 SHIBRAMPUR",,,1500.00,2413.91," DEP TFR   DBN 426883324950 YUBA SATHI ASSISTA
- NC 0024693   0097647105219 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ NC 0024693   0097647105219 AT 11368 SHIBRAMPUR",,,1500.00,2413.91,Income,Payment Type Rule,0.95,1500.0,0.0,0.0,False,,Statistical (IQR)
 20/04/2026," WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah
- asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",,45.00,,2368.91," WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah
- asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,45.0,False,,Statistical (IQR)
+ asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",,45.00,,2368.91,Other,Payment Type Rule,0.95,0.0,45.0,45.0,False,,Statistical (IQR)
 22/04/2026," DEBIT   ATMCard 
- AMC  652294*1438",,236.00,,2132.91," DEBIT   ATMCard 
- AMC  652294*1438",Other,ML (Low Confidence),0.21,236.0,False,,Statistical (IQR)
+ AMC  652294*1438",,236.00,,2132.91,Other,Payment Type Rule,0.95,0.0,236.0,236.0,False,,Statistical (IQR)
 22/04/2026," WDL TFR   UPI/DR/611290067766/CESC LTD/UTIB/mab
- .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",,1420.00,,712.91," WDL TFR   UPI/DR/611290067766/CESC LTD/UTIB/mab
- .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,1420.0,False,,Statistical (IQR)
+ .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",,1420.00,,712.91,Other,Payment Type Rule,0.95,0.0,1420.0,1420.0,False,,Statistical (IQR)
 22/04/2026," WDL TFR   UPI/DR/611290068134/CESC LTD/UTIB/mab
- .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",,440.00,,272.91," WDL TFR   UPI/DR/611290068134/CESC LTD/UTIB/mab
- .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,440.0,False,,Statistical (IQR)
+ .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",,440.00,,272.91,Other,Payment Type Rule,0.95,0.0,440.0,440.0,False,,Statistical (IQR)
 27/04/2026," WDL TFR   UPI/DR/943184841176/Google C/utib/goo
- gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",,2.00,,270.91," WDL TFR   UPI/DR/943184841176/Google C/utib/goo
- gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,2.0,False,,Statistical (IQR)
+ gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",,2.00,,270.91,Other,Payment Type Rule,0.95,0.0,2.0,2.0,False,,Statistical (IQR)
 30/04/2026," DEP TFR   UPI/CR/648612613230/IMON  MA/CNRB/imo
- nmallik/bala   0097735162098 AT 11368 SHIBRAMPUR",,,300.00,570.91," DEP TFR   UPI/CR/648612613230/IMON  MA/CNRB/imo
- nmallik/bala   0097735162098 AT 11368 SHIBRAMPUR",Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
+ nmallik/bala   0097735162098 AT 11368 SHIBRAMPUR",,,300.00,570.91,Income,Payment Type Rule,0.95,300.0,0.0,0.0,False,,Statistical (IQR)
 30/04/2026," POS ATM PURCH    OTHPG 612001787
- 652AMAZONWALLETLOAD      GURGOAN",,480.00,,90.91," POS ATM PURCH    OTHPG 612001787
- 652AMAZONWALLETLOAD      GURGOAN",Shopping,Dictionary Rule,1.0,480.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-Statement Summary : 01-02-2026  To  30-04-2026,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-Brought Forward (?),Dr Count,Cr Count,Total Debits (?),Total Credits (?),Closing Balance (?),Dr Count,Other,ML (Low Confidence),0.21,0.0,False,,Statistical (IQR)
-15.61CR,25,17,"70,824.88","70,900.18",90.91CR,25,Other,Fallback (Empty String),0.0,70824.88,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
+ 652AMAZONWALLETLOAD      GURGOAN",,480.00,,90.91,Shopping,Dictionary Rule,1.0,0.0,480.0,480.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+Statement Summary : 01-02-2026  To  30-04-2026,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+Brought Forward (?),Dr Count,Cr Count,Total Debits (?),Total Credits (?),Closing Balance (?),Other,ML (Low Confidence),0.21,0.0,0.0,0.0,False,,Statistical (IQR)
+15.61CR,25,17,"70,824.88","70,900.18",90.91CR,Other,Fallback (Empty String),0.0,70900.18,70824.88,70824.88,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
 "Please do not share your ATM, Debit/Credit Card number, PIN (Personal Identification number), OTP (One-Time Password), Username or Password with 
-anyone via email, SMS, phone call, or any other medium. Bank never asks for such information.",,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-"If your account is operated by a Power of Attorney holder, please review the transactions with extra care.",,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-This is a computer generated statement and does not require a signature.,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
-,,,,,,,Other,Fallback (Empty String),0.0,0.0,False,,Statistical (IQR)
+anyone via email, SMS, phone call, or any other medium. Bank never asks for such information.",,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+"If your account is operated by a Power of Attorney holder, please review the transactions with extra care.",,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+This is a computer generated statement and does not require a signature.,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)
+,,,,,,Other,Fallback (Empty String),0.0,0.0,0.0,0.0,False,,Statistical (IQR)

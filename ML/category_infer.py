@@ -52,7 +52,47 @@ MERCHANT_RULES = {
 }
 
 ####################################################
-# 2. ML CLEANING FUNCTION (Must match training exactly)
+# 2. PAYMENT TYPE RULES (Extract transaction type)
+####################################################
+
+PAYMENT_TYPE_RULES = {
+    # Income indicators
+    "dep tfr": "Income",           # Deposit Transfer
+    "deposit": "Income",
+    "credit": "Income",
+    "salary": "Income",
+    "dividend": "Income",
+    "interest": "Income",
+    "refund": "Income",
+    "cashback": "Income",
+    
+    # Shopping/Purchase indicators
+    "pos": "Shopping",             # Point of Sale
+    "purchase": "Shopping",
+    "wallet load": "Shopping",
+    "wallet": "Shopping",
+    
+    # Cash/ATM
+    "atm wdl": "Other",            # ATM Withdrawal
+    "atm cash": "Other",
+    "atm": "Other",
+    
+    # Transfers & Payments
+    "wdl tfr": "Other",            # Withdrawal Transfer
+    "withdrawal": "Other",
+    "neft": "Other",
+    "imps": "Other",
+    "rtgs": "Other",
+    "upi": "Other",
+    
+    # Fees & Charges
+    "amc": "Other",                # Annual Maintenance Charge
+    "charge": "Other",
+    "fee": "Other",
+}
+
+####################################################
+# 3. ML CLEANING FUNCTION (Must match training exactly)
 ####################################################
 
 BANKING_WORDS = {
@@ -72,22 +112,27 @@ def clean_for_ml(text):
     return " ".join(words)
 
 ####################################################
-# 3. CORE HYBRID ENGINE
+# 4. CORE HYBRID ENGINE
 ####################################################
 
 def categorize_transaction(narration, model):
     """
-    Applies the Hybrid Logic: Dictionary first, ML fallback second.
+    Applies the Hybrid Logic: Dictionary → Payment Type → ML Fallback
     Returns a tuple: (Category, Source, Confidence_Score)
     """
     raw_text = str(narration).lower()
     
-    # STEP 1: Fast-path Dictionary Lookup
+    # STEP 1: Fast-path Dictionary Lookup (Merchant Rules)
     for key_phrase, category in MERCHANT_RULES.items():
         if key_phrase in raw_text:
             return category, "Dictionary Rule", 1.00
+    
+    # STEP 2: Payment Type Detection (High confidence)
+    for payment_pattern, category in PAYMENT_TYPE_RULES.items():
+        if payment_pattern in raw_text:
+            return category, "Payment Type Rule", 0.95
             
-    # STEP 2: ML Fallback
+    # STEP 3: ML Fallback
     cleaned_text = clean_for_ml(raw_text)
     
     # If cleaning stripped everything
@@ -98,7 +143,7 @@ def categorize_transaction(narration, model):
     predicted_category = model.predict([cleaned_text])[0]
     confidence_score = np.max(model.predict_proba([cleaned_text]))
     
-    # STEP 3: Confidence Threshold
+    # STEP 4: Confidence Threshold
     if confidence_score < 0.40:
         return "Other", "ML (Low Confidence)", round(confidence_score, 2)
         
@@ -106,7 +151,7 @@ def categorize_transaction(narration, model):
 
 
 ####################################################
-# 4. EXECUTION SCRIPT
+# 5. EXECUTION SCRIPT
 ####################################################
 
 if __name__ == "__main__":

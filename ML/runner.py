@@ -5,6 +5,8 @@ import os
 # Import categorization and anomaly detection functions
 from category_infer import categorize_transaction
 from anomaly_detector import detect_anomalies_iqr, detect_anomalies_ml
+from health_score import generate_health_score
+from category_statistics import generate_category_statistics, print_category_statistics
 
 def categorize_all_transactions(df, model):
     """
@@ -16,20 +18,44 @@ def categorize_all_transactions(df, model):
     print("Running Hybrid Categorization Engine (Dictionary + ML)...")
     
     # Determine the transaction description column
-    # Support both 'transaction_statement' and 'Details' (from bank CSVs)
+    # Support multiple column name variations from different banks/formats
+    possible_columns = [
+        "transaction_statement",
+        "Details",
+        "description",
+        "Description",
+        "about",
+        "About",
+        "Remarks",
+        "remarks",
+        "Notes",
+        "notes",
+        "Transaction",
+        "transaction",
+        "Memo",
+        "memo",
+        "Narrative",
+        "narrative"
+    ]
+    
     statement_col = None
-    if "transaction_statement" in df.columns:
-        statement_col = "transaction_statement"
-    elif "Details" in df.columns:
-        statement_col = "Details"
-        # Create transaction_statement alias for consistency
-        df["transaction_statement"] = df["Details"]
-    else:
+    for col in possible_columns:
+        if col in df.columns:
+            statement_col = col
+            break
+    
+    if statement_col is None:
         print(f"Error: Could not find transaction description column")
         print(f"Available columns: {list(df.columns)}")
+        print(f"Expected one of: {possible_columns}")
         return df
     
+    # Rename the column to transaction_statement for consistency
+    if statement_col != "transaction_statement":
+        df = df.rename(columns={statement_col: "transaction_statement"})
+    
     # Apply categorization
+
     results = df["transaction_statement"].apply(
         lambda x: categorize_transaction(x, model)
     )
@@ -89,10 +115,23 @@ def process_bank_statement(file_path, model_path="model/transaction_categorizer.
     # STEP 1: CATEGORIZE TRANSACTIONS
     df = categorize_all_transactions(df, cat_model)
     
-    # STEP 2: DETECT ANOMALIES
+    # STEP 2: GENERATE CATEGORY STATISTICS
+    print("\n" + "="*50)
+    print("STEP 2: CATEGORY STATISTICS")
+    print("="*50)
+    category_stats = generate_category_statistics(df)
+    print_category_statistics(category_stats)
+    
+    # STEP 3: DETECT ANOMALIES
     df = detect_anomalies(df)
     
-    # STEP 3: EXTRACT AND PRINT RESULTS
+    # STEP 4: GENERATE FINANCIAL HEALTH SCORE
+    print("\n" + "="*50)
+    print("STEP 4: FINANCIAL HEALTH ANALYSIS")
+    print("="*50)
+    health_report = generate_health_score(df)
+    
+    # STEP 5: EXTRACT AND PRINT RESULTS
     anomalies = df[df['is_anomaly'] == True]
     
     print("\n" + "="*50)
@@ -110,12 +149,79 @@ def process_bank_statement(file_path, model_path="model/transaction_categorizer.
             print(f"  Anomaly Reason: {row['anomaly_reason']}")
     else:
         print("\n✓ No anomalies detected.")
+    
+    # --- HEALTH SCORE SUMMARY ---
+    print("\n" + "="*50)
+    print(f" FINANCIAL HEALTH SCORE: {health_report['score']} / 100")
+    print("="*50)
+    print("\nKey Insights:")
+    for insight in health_report['insights']:
+        print(f"  {insight}")
+    
+    print("\nFinancial Metrics:")
+    for key, value in health_report['metrics'].items():
+        print(f"  {key}: {value}")
         
-    # STEP 4: SAVE RESULTS
+    # STEP 6: SAVE RESULTS
     output_path = "test/final_processed_statement.csv"
     os.makedirs("test", exist_ok=True)
     df.to_csv(output_path, index=False)
     print(f"\n✓ Saved enriched dataset to {output_path}")
+    
+    # Save health report as JSON
+    import json
+    health_report_path = "test/health_report.json"
+    with open(health_report_path, 'w') as f:
+        json.dump(health_report, f, indent=2)
+    print(f"✓ Saved health report to {health_report_path}")
+    
+    # Save category statistics as JSON
+    category_stats_path = "test/category_statistics.json"
+    with open(category_stats_path, 'w') as f:
+        json.dump(category_stats, f, indent=2)
+    print(f"✓ Saved category statistics to {category_stats_path}")
+    
+    # STEP 7: CREATE COMPREHENSIVE RESULTS JSON (Execution Order: Categorize → Statistics → Anomaly → Health)
+    results_json = {
+        "type_1_transactions": [],
+        "type_2_category_statistics": {},
+        "type_3_anomalies": [],
+        "type_4_health_score": {}
+    }
+    
+    # Type 1: Transaction Classifications
+    for _, row in df.iterrows():
+        results_json["type_1_transactions"].append({
+            "transaction_statement": row["transaction_statement"],
+            "predicted_category": row["predicted_category"],
+            "confidence": row["confidence"],
+            "prediction_source": row["prediction_source"]
+        })
+    
+    # Type 2: Category Statistics
+    results_json["type_2_category_statistics"] = category_stats
+    
+    # Type 3: Anomalies with Reasons
+    for _, row in anomalies.iterrows():
+        results_json["type_3_anomalies"].append({
+            "transaction_statement": row["transaction_statement"],
+            "predicted_category": row["predicted_category"],
+            "anomaly_reason": row["anomaly_reason"],
+            "confidence": row["confidence"]
+        })
+    
+    # Type 4: Health Score
+    results_json["type_4_health_score"] = {
+        "score": health_report["score"],
+        "insights": health_report["insights"],
+        "metrics": health_report["metrics"]
+    }
+    
+    # Save comprehensive results
+    results_path = "test/analysis_results.json"
+    with open(results_path, 'w') as f:
+        json.dump(results_json, f, indent=2)
+    print(f"✓ Saved comprehensive results to {results_path}")
 
 if __name__ == "__main__":
     import sys

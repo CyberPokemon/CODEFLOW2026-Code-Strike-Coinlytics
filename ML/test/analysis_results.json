@@ -1,0 +1,441 @@
+{
+  "type_1_transactions": [
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/603298926822/SRIPARNA/SBIN/sri\n parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/603256639520/SULABH B/YESB/pay\n tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/675641960336/Google C/utib/goo\n gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/979082750356/Google C/utib/goo\n gleclou/Mand   0097692162094 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/511068220376/Google C/utib/goo\n gleclou/UPI   0097736162097 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/603984405143/Shubhaji/PPIW/861\n 7790759/Paid   0097738162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/604045014382/SOHAM  J/KKBK/soh\n amjana3/tick   0097690162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/216954910406/Google C/utib/goo\n gleclou/UPI   0097732162091 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/604189336457/SUMITA B/YESB/pay\n tmqr6n0/KitK   0097691162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/514273990426/Google C/utib/goo\n gleclou/UPI   0097734162099 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/118517256994/IMON  MA/CNRB/imo\n nmallik/bala   0097734162099 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/604260828886/Amazon B/YESB/ama\n zonpayr/Requ   0097692162094 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Shopping",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/604228708263/Amazon I/YESB/ama\n zon.ref/Refu   0097734162099 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Shopping",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/604361213441/Amazon Pay/RATN/a\n mazonpayr/Re   0097693162093 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Shopping",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/100438327827/Indian R/SBIN/bdp\n g2.irut/COLL   0097694162092 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/605523938203/SRIPARNA/SBIN/sri\n parnama/UPI   0097733162090 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/605524006133/IMON  MA/CNRB/imo\n nmallik/bala   0097691162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/605601918794/MEGHNA  /KKBK/meg\n hna.muk/prin   0097692162094 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/605602066902/Rishabh /SBIN/ris\n habhcha/UPI   0097734162099 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/606033429328/SRIPARNA/SBIN/sri\n parnama/UPI   0097738162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/606068440313/SULABH B/YESB/pay\n tmqr281/Milk   0097696162090 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/606924696529/SURESH T/BDBL/256\n 0068a@b/dhok   0097691162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/607085645947/SHASHIKA/YESB/q59\n 8395649/bisc   0097692162094 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " CEMTEX DEP   Assistan\n ce Banglar Yuba Sathi",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/607451411420/imonmall/CNRB/imo\n nmallik/bala   0097696162090 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " POS ATM PURCH   OTHPG 607420916\n 810AMAZONWALLETLOAD      GURGOAN",
+      "predicted_category": "Shopping",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": " POS ATM PURCH   OTHPG 607420915\n 662AMAZONWALLETLOAD      GURGOAN",
+      "predicted_category": "Shopping",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   NEFT*RBIS0GOWBEP*RBISH00469672709*PAY\n  AND ACCOUNT   0099509044300 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " INTERES\n T CREDIT",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   FIRDFTFRREF:235870087933192953K580035   0\n 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   FIRDFTFRREF:235870087933192953K580035   0\n 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/121484708250/IMON  MA/CNRB/imo\n nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " ATM WDL   ATM CASH 5071728619\n    RAIPUR MAHESHTALA     SOUTH",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/750286957883/JAYANTA /SBIN/jkm\n allik@a/Paym   0097732162091 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   DBN 426883324950 YUBA SATHI ASSISTA\n NC 0024693   0097647105219 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah\n asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEBIT   ATMCard \n AMC  652294*1438",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/611290067766/CESC LTD/UTIB/mab\n .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/611290068134/CESC LTD/UTIB/mab\n .037133/UPI   0097692162094 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " WDL TFR   UPI/DR/943184841176/Google C/utib/goo\n gleclou/Mand   0097690162095 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Other",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " DEP TFR   UPI/CR/648612613230/IMON  MA/CNRB/imo\n nmallik/bala   0097735162098 AT 11368 SHIBRAMPUR",
+      "predicted_category": "Income",
+      "confidence": 0.95,
+      "prediction_source": "Payment Type Rule"
+    },
+    {
+      "transaction_statement": " POS ATM PURCH    OTHPG 612001787\n 652AMAZONWALLETLOAD      GURGOAN",
+      "predicted_category": "Shopping",
+      "confidence": 1.0,
+      "prediction_source": "Dictionary Rule"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": "Dr Count",
+      "predicted_category": "Other",
+      "confidence": 0.21,
+      "prediction_source": "ML (Low Confidence)"
+    },
+    {
+      "transaction_statement": "25",
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    },
+    {
+      "transaction_statement": NaN,
+      "predicted_category": "Other",
+      "confidence": 0.0,
+      "prediction_source": "Fallback (Empty String)"
+    }
+  ],
+  "type_2_category_statistics": {
+    "total_income": 141800.36,
+    "total_expenses": 141649.76,
+    "net_savings": 150.6,
+    "category_statistics": [
+      {
+        "category": "Income",
+        "total_credit": 68868.0,
+        "total_debit": 0.0,
+        "net_amount": 68868.0,
+        "transaction_count": 15,
+        "average_transaction": 4591.2,
+        "percentage_of_income": 48.57,
+        "percentage_of_expenses": 0.0
+      },
+      {
+        "category": "Shopping",
+        "total_credit": 532.18,
+        "total_debit": 2049.36,
+        "net_amount": -1517.18,
+        "transaction_count": 6,
+        "average_transaction": -252.86,
+        "percentage_of_income": 0.38,
+        "percentage_of_expenses": 1.45
+      },
+      {
+        "category": "Other",
+        "total_credit": 72400.18,
+        "total_debit": 139600.4,
+        "net_amount": -67200.22,
+        "transaction_count": 43,
+        "average_transaction": -1562.8,
+        "percentage_of_income": 51.06,
+        "percentage_of_expenses": 98.55
+      }
+    ]
+  },
+  "type_3_anomalies": [],
+  "type_4_health_score": {
+    "score": 70,
+    "insights": [
+      "Low savings rate (0.1%). You are barely saving money.",
+      "Zero EMI burden. You have excellent debt health.",
+      "Fixed costs (Rent, EMI, Bills) are well-managed at 0.0% of income."
+    ],
+    "metrics": {
+      "Total Income": 141800.36,
+      "Total Expenses": 141649.75999999998,
+      "Savings Rate": 0.11,
+      "EMI Burden": 0.0,
+      "Fixed Costs Ratio": 0.0
+    }
+  }
+}
