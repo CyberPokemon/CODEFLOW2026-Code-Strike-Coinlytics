@@ -306,19 +306,19 @@
     {
       "transaction_statement": " WDL TFR   FIRDFTFRREF:235870087933192953K580035   0\r\n 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",
       "predicted_category": "Other",
-      "anomaly_reason": "Suspicious transaction \u20b925,000.00. Typical is under \u20b910,000.",
+      "anomaly_reason": "Suspicious transaction 25,000.00. Typical is < 10,000.",
       "confidence": 0.95
     },
     {
       "transaction_statement": " WDL TFR   FIRDFTFRREF:235870087933192953K580035   0\r\n 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",
       "predicted_category": "Other",
-      "anomaly_reason": "Suspicious transaction \u20b935,000.00. Typical is under \u20b910,000.",
+      "anomaly_reason": "Suspicious transaction 35,000.00. Typical is < 10,000.",
       "confidence": 0.95
     },
     {
       "transaction_statement": " WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah\r\n asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",
       "predicted_category": "Other",
-      "anomaly_reason": "Suspicious transaction \u20b9240,000.00. Typical is under \u20b910,000.",
+      "anomaly_reason": "Suspicious transaction 240,000.00. Typical is < 10,000.",
       "confidence": 0.95
     }
   ],

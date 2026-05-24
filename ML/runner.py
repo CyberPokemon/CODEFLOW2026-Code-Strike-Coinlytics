@@ -1,12 +1,40 @@
 import pandas as pd
 import joblib
 import os
+from pathlib import Path
 
 # Import categorization and anomaly detection functions
 from category_infer import categorize_transaction
-from anomaly_detector import detect_anomalies_iqr, detect_anomalies_ml
+from anomaly_detector import (
+    detect_anomalies_iqr,
+    detect_anomalies_ml,
+    get_anomaly_threshold_categories,
+)
 from health_score import generate_health_score
 from category_statistics import generate_category_statistics, print_category_statistics
+
+def make_json_safe(value):
+    if isinstance(value, dict):
+        return {str(key): make_json_safe(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [make_json_safe(item) for item in value]
+    if isinstance(value, tuple):
+        return [make_json_safe(item) for item in value]
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    if hasattr(value, "item"):
+        return value.item()
+    if pd.isna(value):
+        return None
+    return value
+
+def get_output_dir(file_path):
+    input_path = Path(file_path)
+    output_base = Path(__file__).resolve().parent
+    input_parts = {part.lower() for part in input_path.parts}
+    if "infer" in input_parts:
+        return output_base / "results"
+    return output_base / "test"
 
 def categorize_all_transactions(df, model):
     """
@@ -104,6 +132,7 @@ def process_bank_statement(file_path, model_path="model/transaction_categorizer.
         return
         
     print(f"Total Transactions Loaded: {len(df)}")
+    output_dir = get_output_dir(file_path)
     
     # LOAD MODEL
     if not os.path.exists(model_path):
@@ -163,30 +192,31 @@ def process_bank_statement(file_path, model_path="model/transaction_categorizer.
         print(f"  {key}: {value}")
         
     # STEP 6: SAVE RESULTS
-    output_path = "test/final_processed_statement.csv"
-    os.makedirs("test", exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / "final_processed_statement.csv"
     df.to_csv(output_path, index=False)
     print(f"\n✓ Saved enriched dataset to {output_path}")
     
     # Save health report as JSON
     import json
-    health_report_path = "test/health_report.json"
+    health_report_path = output_dir / "health_report.json"
     with open(health_report_path, 'w') as f:
-        json.dump(health_report, f, indent=2)
+        json.dump(make_json_safe(health_report), f, indent=2)
     print(f"✓ Saved health report to {health_report_path}")
     
     # Save category statistics as JSON
-    category_stats_path = "test/category_statistics.json"
+    category_stats_path = output_dir / "category_statistics.json"
     with open(category_stats_path, 'w') as f:
-        json.dump(category_stats, f, indent=2)
+        json.dump(make_json_safe(category_stats), f, indent=2)
     print(f"✓ Saved category statistics to {category_stats_path}")
     
-    # STEP 7: CREATE COMPREHENSIVE RESULTS JSON (Execution Order: Categorize → Statistics → Anomaly → Health)
+    # STEP 7: CREATE COMPREHENSIVE RESULTS JSON (Execution Order: Categorize -> Statistics -> Anomaly -> Thresholds -> Health)
     results_json = {
         "type_1_transactions": [],
         "type_2_category_statistics": {},
         "type_3_anomalies": [],
-        "type_4_health_score": {}
+        "type_4_anomaly_threshold_categories": {},
+        "type_5_health_score": {}
     }
     
     # Type 1: Transaction Classifications
@@ -210,26 +240,36 @@ def process_bank_statement(file_path, model_path="model/transaction_categorizer.
             "confidence": row["confidence"]
         })
     
-    # Type 4: Health Score
-    results_json["type_4_health_score"] = {
+    # Type 4: Anomaly Threshold Categories
+    results_json["type_4_anomaly_threshold_categories"] = get_anomaly_threshold_categories()
+    
+    # Type 5: Health Score
+    results_json["type_5_health_score"] = {
         "score": health_report["score"],
         "insights": health_report["insights"],
         "metrics": health_report["metrics"]
     }
     
     # Save comprehensive results
-    results_path = "test/analysis_results.json"
+    results_path = output_dir / "analysis_results.json"
     with open(results_path, 'w') as f:
-        json.dump(results_json, f, indent=2)
+        json.dump(make_json_safe(results_json), f, indent=2)
     print(f"✓ Saved comprehensive results to {results_path}")
 
 if __name__ == "__main__":
     import sys
+
+    ml_dir = Path(__file__).resolve().parent
+    infer_csv = ml_dir / "infer" / "transactions.csv"
+    test_csv = ml_dir / "test" / "transactions.csv"
+
     # Accept file path from command line or FastAPI
     if len(sys.argv) > 1:
         input_csv = sys.argv[1]
+    elif infer_csv.exists():
+        input_csv = str(infer_csv)
     else:
-        input_csv = "test/trans2.csv"
+        input_csv = str(test_csv)
     
     if input_csv:
         process_bank_statement(input_csv)

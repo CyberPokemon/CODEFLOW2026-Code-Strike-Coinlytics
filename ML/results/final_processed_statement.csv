@@ -58,9 +58,9 @@ Date,transaction_statement,Ref No/Cheque No,Debit,Credit,Balance,predicted_categ
 25-03-2026," INTERES
  T CREDIT",,,6.0,60013.91,Income,Payment Type Rule,0.95,6.0,0.0,0.0,False,,Statistical (IQR),False
 27-03-2026," WDL TFR   FIRDFTFRREF:235870087933192953K580035   0
- 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,25000.0,,35013.91,Other,Payment Type Rule,0.95,0.0,25000.0,25000.0,True,"Suspicious transaction ₹25,000.00. Typical is under ₹10,000.",Statistical (IQR),True
+ 045039467499 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,25000.0,,35013.91,Other,Payment Type Rule,0.95,0.0,25000.0,25000.0,True,"Suspicious transaction 25,000.00. Typical is < 10,000.",Statistical (IQR),True
 27-03-2026," WDL TFR   FIRDFTFRREF:235870087933192953K580035   0
- 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,35000.0,,13.91,Other,Payment Type Rule,0.95,0.0,35000.0,35000.0,True,"Suspicious transaction ₹35,000.00. Typical is under ₹10,000.",Statistical (IQR),True
+ 045039498451 OF Mr. Imon  Mallik AT 11368 SHIBRAMPUR",,35000.0,,13.91,Other,Payment Type Rule,0.95,0.0,35000.0,35000.0,True,"Suspicious transaction 35,000.00. Typical is < 10,000.",Statistical (IQR),True
 12-04-2026," DEP TFR   UPI/CR/121484708250/IMON  MA/CNRB/imo
  nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",,,1200.0,1213.91,Income,Payment Type Rule,0.95,1200.0,0.0,0.0,False,,Statistical (IQR),False
 12-04-2026," ATM WDL   ATM CASH 5071728619
@@ -86,4 +86,4 @@ Date,transaction_statement,Ref No/Cheque No,Debit,Credit,Balance,predicted_categ
 30-04-2026," DEP TFR   UPI/CR/121484708250/IMON  MA/CNRB/imo
  nmallik/bala   0097738162095 AT 11368 SHIBRAMPUR",,,250000.0,250090.91,Income,Payment Type Rule,0.95,250000.0,0.0,0.0,False,,Statistical (IQR),False
 ," WDL TFR   UPI/DR/611030657067/SAYANTIK/PUNB/sah
- asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",,240000.0,,10090.91,Other,Payment Type Rule,0.95,0.0,240000.0,240000.0,True,"Suspicious transaction ₹240,000.00. Typical is under ₹10,000.",Statistical (IQR),True
+ asayant/momo   0097690162095 AT 11368 SHIBRAMPUR",,240000.0,,10090.91,Other,Payment Type Rule,0.95,0.0,240000.0,240000.0,True,"Suspicious transaction 240,000.00. Typical is < 10,000.",Statistical (IQR),True
